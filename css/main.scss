@@ -70,7 +70,7 @@ img {
   padding-top: 1rem;
   margin: 0;
   font-size: 3em;
-  display: inline-block;
+  // display: inline-block;
   text-transform: uppercase;
   margin: 1rem 0;
 }
@@ -366,7 +366,39 @@ margin: 0.5rem 0;
 }
 
 #about{
-  height: 30rem;
+  // height: 30rem;
+}
+
+.half-img{
+  width: 50%;
+  display: inline-block;
+}
+
+.half-text{
+  width: 44%;
+padding:3%;
+
+  .p-style{
+    color: white;
+  }
+}
+
+.skillset{
+  margin:0 0 2rem 0;
+  padding: 1rem 0;
+}
+
+.skill-block{
+  display: inline-block;
+  width: 10%;
+  max-width: 6rem;
+  height: auto;
+  padding: 1rem 5%;
+  background: $blue;
+ border-radius: 50%;
+    color: white;
+    text-align: center;
+    margin-left: 10px;
 }
 
 #footer{
