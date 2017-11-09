@@ -18,38 +18,3 @@
       flex-basis: 30em;
   padding: 0 1rem;
 }
-
-.container .row-wrap {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-}
-
-.container .row {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.container .center {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
-}
-
-.container .row {
-  -ms-flex-wrap: row wrap;
-  flex-wrap: row wrap;
-}
-
-.container .col {
-  -ms-flex-wrap: col wrap;
-  flex-wrap: col wrap;
-}
