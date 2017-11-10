@@ -1,0 +1,26 @@
+body {
+  position: relative; }
+
+section {
+  margin: 0 0 10% 0; }
+
+.left-nav {
+  position: fixed;
+  top: 2.2rem;
+  left: 2%;
+  z-index: 100;
+  display: inline-block;
+  max-width: 10rem; }
+
+.right-nav {
+  top: 1.8rem;
+  position: fixed;
+  top: 2.2rem;
+  right: 2%;
+  z-index: 100;
+  display: inline-block;
+  width: 5rem; }
+
+.project-content {
+  padding-left: 10%;
+  width: 80%; }

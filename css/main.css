@@ -26,6 +26,9 @@ img {
   width: 100%;
   height: auto; }
 
+a {
+  text-decoration: none; }
+
 /* ------------- styling of styleguide id section ------------- */
 #text,
 #atoms,
@@ -40,22 +43,17 @@ img {
 /* stylized headers */
 [class*="head-"] {
   /*font-family: 'Playfair Display', serif;*/
-  font-family: 'Times New Roman', sans-serif;
-  margin: 2.15% 0 2.15% 0;
+  font-family: 'Roboto Mono', sans-serif;
   /*text-transform: uppercase;*/ }
 
 .head-1 {
-  font-family: 'Roboto Mono', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
-  padding-top: 1rem;
   margin: 0;
   font-size: 3em;
-  text-transform: uppercase;
-  margin: 1rem 0; }
+  text-transform: uppercase; }
 
 .head-2 {
-  font-family: 'Roboto Mono', sans-serif;
   font-size: 1.7em;
   letter-spacing: 0.2rem;
   /*border-top: solid black 1px;*/
@@ -64,11 +62,15 @@ img {
   margin: 0; }
 
 .head-3 {
-  font-family: 'Roboto Mono', sans-serif;
   font-size: 1.2rem;
   font-weight: 100;
   letter-spacing: 0.1rem;
-  opacity: 0.6;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+.head-4 {
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
   /*text-transform: uppercase;*/ }
 
 [class*="centered"] {
@@ -88,6 +90,7 @@ img {
 
 /* fonting some elements */
 .p-style {
+  font-family: 'Roboto Mono', sans-serif;
   padding: 0.8em 0;
   margin-bottom: 0;
   line-height: 28px;
@@ -199,15 +202,19 @@ img {
   background: white;
   color: #00c2e4;
   border: 1px #00c2e4 solid; }
+  .button-submit :hover {
+    width: 10rem;
+    color: white;
+    background: #00c2e4;
+    border: 1px #00c2e4 solid;
+    -webkit-transition: background-color 1s ease;
+    -o-transition: background-color 1s ease;
+    transition: background-color 1s ease; }
 
-.button-submit:hover {
-  width: 10rem;
-  color: white;
-  background: #00c2e4;
-  border: 1px #00c2e4 solid;
-  -webkit-transition: background-color 1s ease;
-  -o-transition: background-color 1s ease;
-  transition: background-color 1s ease; }
+.button-link, :visited {
+  color: grey; }
+  .button-link :hover, :visited :hover {
+    color: black; }
 
 /* color palette squares */
 /* c/o http://codeitdown.com/css-square-rectangle/ for this code */
@@ -293,34 +300,91 @@ img {
   width: 100%;
   height: 100vh; }
 
+.my-name {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.hero-link {
+  margin: 5%; }
+
+#featured {
+  padding: 10% 0 0 0; }
+
+.featured-description {
+  padding: 20% 0;
+  color: white;
+  text-decoration: none; }
+  .beep .featured-description {
+    text-align: left;
+    padding-left: 20%; }
+  .amorphous .featured-description {
+    text-align: left;
+    padding-left: 7%; }
+  .featured-description .head-4 {
+    margin-top: 1rem; }
+
+.featured-img {
+  max-width: 30rem; }
+
 #projects {
   height: auto;
-  margin: 5% 0; }
+  margin: 5rem 0 5% 0;
+  position: relative; }
+  #projects h1 {
+    position: absolute;
+    padding: 0;
+    top: -42px;
+    z-index: 100;
+    left: 3%;
+    text-shadow: 5px 5px 10px #768fa5; }
 
 .proj-article {
   max-width: 19rem;
   height: auto;
-  margin: 1rem; }
+  margin-left: 2%; }
 
 .proj-box {
   width: 100%;
-  height: auto; }
+  height: auto;
+  position: relative; }
+
+.proj-description {
+  position: absolute;
+  left: 0;
+  top: -50px;
+  margin-left: 4%;
+  color: white; }
 
 .proj-title {
-  margin: 0.5rem 0; }
+  margin: 0 0 5% 0; }
+
+#about {
+  padding: 5rem 0 3rem 0; }
+  #about .p-style {
+    color: white; }
 
 .half-img {
   width: 50%;
-  display: inline-block; }
+  height: auto;
+  display: inline-block;
+  position: relative; }
 
 .half-text {
-  width: 44%;
-  padding: 3%; }
-  .half-text .p-style {
-    color: white; }
+  width: 50%; }
 
 .skillset {
-  margin: 0 0 2rem 0;
   padding: 1rem 0; }
 
 .skill-block {
