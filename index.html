@@ -29,6 +29,9 @@
     <div class="my-name">
     <h1 class="head-1 ">Nancy Chen </h1>
   </div>
+  <div class="typed-text">
+  <h1>I like <span class="typed"></span></h1>
+</div>
   </section>
 
   <div class="centered">
@@ -140,6 +143,25 @@
     </div>
   </section>
 
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.6/typed.js"></script> -->
+
+<!-- typed -->
+<script src="js/typed.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+      Typed.new('.typed', {
+        strings: ["Moomins.", "Dragon Age."],
+        typeSpeed: 20,
+        loop:true,
+        showCursor:false,
+        shuffle: true,
+      	backDelay: 1800,
+        backSpeed: 0,
+        showCursor: true
+      });
+  });
+</script>
+</body>
 
 
 </html>
