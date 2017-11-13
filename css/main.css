@@ -150,7 +150,6 @@ a {
   position: relative;
   font-size: 1.2em;
   display: inline;
-  float: left;
   font-size: 2.5rem;
   letter-spacing: 3px;
   text-decoration: none; }
@@ -162,7 +161,6 @@ a {
 
 .nav-link,
 .nav-link:visited {
-  font-family: 'Raleway', sans-serif;
   /*margin-bottom: 1rem;*/
   font-size: 1.2em;
   text-align: center;
@@ -185,6 +183,26 @@ a {
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   opacity: 1; }
+
+#nav-toggle {
+  z-index: 10000;
+  color: black;
+  background: white; }
+
+#nav-items {
+  position: relative;
+  top: 0px;
+  animation: menu 1s ease-in;
+  -webkit-animation: menu 1s ease-in;
+  background: #efefef;
+  z-index: -1000; }
+
+.mobile-row {
+  padding: 0.7rem 0;
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  text-align: center; }
 
 /* buttons now */
 [class*="button-"] {

@@ -17,12 +17,55 @@
 
   <div class="container">
 
-    <nav>
+    <nav id="nav-default">
       <div class="left-nav">
         <a class="head-3 button-link" href="index.html">
           < home </a>
       </div>
       <div class="right-nav head-3 my-name"> nancy chen</div>
+    </nav>
+
+    <!-- nav for mobile -->
+    <nav class="hidden" id="nav-toggle">
+        <div class="mobile-row" id="name-row">
+            <div class="nav-title head-1">
+                Nancy Chen
+            </div>
+        </div>
+
+        <div class="" id="nav-items">
+            <a class="mobile-row" href="index.html">
+                <div class="nav-link">
+                    Home
+                </div>
+            </a>
+
+            <a class="mobile-row" href="index.html#tab-news">
+                <div class="nav-link">
+                    About
+                </div>
+            </a>
+            <a class="mobile-row" href="index.html#tab-news">
+                <div class="nav-link">
+                    Resume
+                </div>
+            </a>
+            <a class="mobile-row" href="index.html#tab-about">
+                <div class="nav-link">
+                    Projects
+                </div>
+            </a>
+
+            <div class="mobile-row">
+                <a href=""><img alt="black facebook icon" class="social-icon" src="img/icons/fb-blk.png"></a>
+                <a href=""><img alt="black instagram icon" class="social-icon" src="img/icons/insta-blk.png"></a>
+                <a href=""><img alt="black twitter icon" class="social-icon" src="img/icons/twitt-blk.png"></a>
+            </div>
+
+            <div class="mobile-row">
+                <a class="nav-link lang-opt" href="">FR</a> <span>|</span> <a class="nav-link lang-opt" href="">EN</a>
+            </div>
+        </div>
     </nav>
 
     <header id="amorphous-header">
@@ -165,6 +208,8 @@
     <h1 class="head-1 ">footer</h1>
   </footer>
   <!-- end footer -->
+
+  <script src="js/menu.js"></script>
 </body>
 
 </html>
