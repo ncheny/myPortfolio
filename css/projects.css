@@ -4,11 +4,38 @@ body {
 section {
   margin: 0 0 10% 0; }
 
+#amorphous-header {
+  background-image: url(../img/amorphous/header.jpg);
+  top: 0;
+  left: 0;
+  height: 80vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.header-text {
+  margin-top: auto;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end; }
+
+.header-details {
+  background: #ffffff91;
+  color: black;
+  padding: 0.8em; }
+
 .left-nav {
   position: fixed;
   top: 2.2rem;
   left: 2%;
-  z-index: 100;
+  z-index: 10;
   display: inline-block;
   max-width: 10rem; }
 
@@ -25,6 +52,5 @@ section {
   padding-left: 10%;
   width: 80%; }
 
-.text-content{
-  padding:0 5%;
-}
+.text-content {
+  padding: 0 5%; }

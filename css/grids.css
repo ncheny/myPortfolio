@@ -9,7 +9,7 @@
   height: auto;
 }
 
-.container>.block {
+/*.container>.block {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -17,4 +17,23 @@
   -ms-flex-preferred-size: 30em;
       flex-basis: 30em;
   padding: 0 1rem;
+}*/
+
+
+/*screen is smaller than 775px*/
+
+@media (max-width: 31.25em) {
+
+  .left-nav, .right-nav{
+    display: none;
+  }
+
+  .half-img, .half-text{
+    width: 100%;
+  }
+
+  .project-content{
+    padding-left: 0;
+        width: 100%;
+    }
 }

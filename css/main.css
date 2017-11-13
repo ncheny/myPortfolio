@@ -19,7 +19,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 2000;
+  z-index: 100;
   padding: 0; }
 
 img {
@@ -219,7 +219,8 @@ a {
 
 .button-link, :visited {
   color: grey;
-  width: auto; }
+  width: auto;
+  background-color: white; }
   .button-link:hover, :visited:hover {
     color: black;
     text-shadow: 5px 5px 10px #768fa5; }
@@ -406,8 +407,6 @@ a {
   color: white;
   text-align: center;
   margin-left: 10px; }
-
-
 
 #footer {
   height: 10rem; }
