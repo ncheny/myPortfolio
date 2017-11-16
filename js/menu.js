@@ -15,7 +15,7 @@ var navFirstItem = document.querySelector( "#nav-items a" );
 
 
 // showing nav toggle
-if ( windowWidth < 500 ) {
+if ( windowWidth < 560 ) {
     console.log( "Window width is less than 500px, collapsing menu" );
     // classList expllicitly specify it s aast
     navDefault.classList.add( "hidden" );
@@ -49,7 +49,7 @@ navToggle.addEventListener( "click", function() {
 window.addEventListener( "resize", function() {
     var width = document.documentElement.clientWidth;
     // console.log("window width:"+ width);
-    if ( width < 500 ) {
+    if ( width < 560 ) {
         console.log( "mobile nav hidden, showing it now" );
         //hide default nav, show mobile nav
         navDefault.classList.add( "hidden" );
