@@ -97,6 +97,11 @@
         width: 100%;
     }
 
+    .proj-article{
+      max-width: 100%;
+      height: auto;
+    }
+
     #overview{
           padding: 0 5%;
     }
@@ -117,6 +122,14 @@
 @media (max-width: 50em) {
    .half-img, .half-text{
     width: 100%;
+  }
+
+  .half-text{
+        margin: 0 4% 20% 4%;
+  }
+
+  .about-text{
+    padding: 0;
   }
 
 }

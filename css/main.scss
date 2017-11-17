@@ -512,7 +512,7 @@ strong {
 
 [id*="bg-"] {
   background-repeat: no-repeat;
-  background-size: 105%;
+  background-size: 100%;
   display: flex;
   transition: 0.2s linear;
   background-position: center;
@@ -522,20 +522,21 @@ strong {
 #bg-beep {
   background-image: url("../img/beep/concept3.png");
   width: 50%;
+  background-size: 80%;
 
   &:hover{
-    background-size: 110%;
+    background-size: 85%;
     transition: 0.2s linear;
   }
 }
 
 #bg-amorphous {
   background-image: url("../img/amorphous/astronaut-render.png");
-  // background-size: contain;
+  background-size: 28%;
   width: 50%;
 
   &:hover{
-    background-size: 110%;
+    background-size: 30%;
     transition: 0.2s linear;
   }
 }
@@ -563,9 +564,9 @@ strong {
 #bg-banners {
   background-image: url("../img/streetbanners/preview.JPG");
   width: 100%;
-  background-size: 180%;
+  background-size: 160%;
   &:hover{
-    background-size: 190%;
+    background-size: 170%;
     transition: 0.2s linear;
   }
 }

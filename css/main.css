@@ -466,7 +466,7 @@ strong {
 
 [id*="bg-"] {
   background-repeat: no-repeat;
-  background-size: 105%;
+  background-size: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -478,18 +478,20 @@ strong {
 
 #bg-beep {
   background-image: url("../img/beep/concept3.png");
-  width: 50%; }
+  width: 50%;
+  background-size: 80%; }
   #bg-beep:hover {
-    background-size: 110%;
+    background-size: 85%;
     -webkit-transition: 0.2s linear;
     -o-transition: 0.2s linear;
     transition: 0.2s linear; }
 
 #bg-amorphous {
   background-image: url("../img/amorphous/astronaut-render.png");
+  background-size: 28%;
   width: 50%; }
   #bg-amorphous:hover {
-    background-size: 110%;
+    background-size: 30%;
     -webkit-transition: 0.2s linear;
     -o-transition: 0.2s linear;
     transition: 0.2s linear; }
@@ -515,9 +517,9 @@ strong {
 #bg-banners {
   background-image: url("../img/streetbanners/preview.JPG");
   width: 100%;
-  background-size: 180%; }
+  background-size: 160%; }
   #bg-banners:hover {
-    background-size: 190%;
+    background-size: 170%;
     -webkit-transition: 0.2s linear;
     -o-transition: 0.2s linear;
     transition: 0.2s linear; }
