@@ -74,7 +74,7 @@
     display: none;
   }
 
-  #amorphous-header, .header-text{
+  #amorphous-header, #bg-amorphous, #bg-beep, .header-text{
     width: 100%;
   }
 
@@ -115,7 +115,7 @@
 
 /*half-media area resizes earlier at 720px*/
 @media (max-width: 50em) {
-  .project-detailview .half-img, .project-detailview .half-text{
+   .half-img, .half-text{
     width: 100%;
   }
 

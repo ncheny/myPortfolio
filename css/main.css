@@ -96,7 +96,7 @@ strong {
 /* fonting some elements */
 .p-style {
   font-family: 'Roboto Mono', sans-serif;
-  padding: 0.8em 0;
+  padding: 1rem 0;
   margin-bottom: 0;
   line-height: 28px;
   color: grey;
@@ -143,7 +143,8 @@ strong {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 100000; }
+  z-index: 100000;
+  background-color: white; }
 
 .thick {
   padding: 2rem;
@@ -253,8 +254,8 @@ strong {
 .dotstyle-fillup li a {
   overflow: hidden;
   background-color: transparent;
-  -webkit-box-shadow: inset 0 0 0 2px white;
-  box-shadow: inset 0 0 0 2px white;
+  -webkit-box-shadow: inset 0 0 0 2px #00c2e4;
+  box-shadow: inset 0 0 0 2px #00c2e4;
   -webkit-transition: background 0.3s;
   -o-transition: background 0.3s;
   transition: background 0.3s; }
@@ -266,7 +267,7 @@ strong {
   height: 0;
   left: 0;
   width: 100%;
-  background-color: #fff;
+  background-color: #00c2e4;
   -webkit-box-shadow: 0 0 1px #fff;
   box-shadow: 0 0 1px #fff;
   -webkit-transition: height 0.3s;
@@ -314,11 +315,17 @@ strong {
 .button-link,
 .button-link:visited {
   color: grey;
-  width: auto; }
+  width: auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
   .button-link:hover,
   .button-link:visited:hover {
     color: black;
-    text-shadow: 5px 5px 10px #768fa5; }
+    text-shadow: 5px 5px 10px #768fa5;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
 
 /* color palette squares */
 /* c/o http://codeitdown.com/css-square-rectangle/ for this code */
@@ -399,11 +406,14 @@ strong {
   width: 50%;
   margin-left: 10%; }
 
+.my-name .head-1 {
+  font-size: 4em; }
+
 #hero {
   width: 100%;
-  height: 40rem; }
+  height: 80vh; }
 
-.my-name {
+.hero-icons {
   width: 100%;
   height: 50%;
   display: -webkit-box;
@@ -420,15 +430,16 @@ strong {
   justify-content: center; }
 
 .hero-link {
-  margin: 1% 3% 5%; }
+  margin: 1% 3%; }
 
 #featured {
-  padding: 10% 0 0; }
+  padding: 5% 0; }
 
 .featured-description {
-  padding: 20% 0;
+  margin: 25% 0 30% 15%;
   color: white;
-  text-decoration: none; }
+  text-decoration: none;
+  text-shadow: 5px 5px 10px #7d7575; }
   .beep .featured-description {
     text-align: left;
     padding-left: 20%; }
@@ -443,7 +454,7 @@ strong {
 
 #projects {
   height: auto;
-  margin: 5rem 0 5%;
+  margin: 0;
   position: relative; }
   #projects h1 {
     position: absolute;
@@ -453,30 +464,89 @@ strong {
     left: 3%;
     text-shadow: 5px 5px 10px #768fa5; }
 
-.proj-article {
-  max-width: 17rem;
-  height: auto;
-  padding-left: 1%; }
+[id*="bg-"] {
+  background-repeat: no-repeat;
+  background-size: 105%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+  transition: 0.2s linear;
+  background-position: center; }
 
-.proj-box {
+#bg-beep {
+  background-image: url("../img/beep/concept3.png");
+  width: 50%; }
+  #bg-beep:hover {
+    background-size: 110%;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear; }
+
+#bg-amorphous {
+  background-image: url("../img/amorphous/astronaut-render.png");
+  width: 50%; }
+  #bg-amorphous:hover {
+    background-size: 110%;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear; }
+
+#bg-evidentp {
+  background-image: url("../img/beep/preview.jpg");
+  width: 100%; }
+  #bg-evidentp:hover {
+    background-size: 110%;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear; }
+
+#bg-eyexpo {
+  background-image: url("../img/eyexpo/preview.jpg");
+  width: 100%; }
+  #bg-eyexpo:hover {
+    background-size: 110%;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear; }
+
+#bg-banners {
+  background-image: url("../img/streetbanners/preview.JPG");
   width: 100%;
-  height: auto;
-  position: relative; }
+  background-size: 180%; }
+  #bg-banners:hover {
+    background-size: 190%;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear; }
+
+#bg-illus {
+  background-image: url("../img/illustrations/cryingboy.jpg");
+  width: 100%; }
+  #bg-illus:hover {
+    background-size: 110%;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear; }
+
+.proj-article {
+  max-width: 25%;
+  height: 35vh; }
 
 .proj-description {
-  position: absolute;
-  left: 0;
-  top: -50px;
-  margin-left: 4%;
-  color: white; }
+  color: white;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  padding: 5% 10%;
+  width: 100%;
+  background-color: rgba(35, 24, 130, 0.25); }
 
-.proj-title {
-  margin: 0 0 5%; }
-
-#about {
-  padding: 5rem 0 3rem; }
-  #about .p-style {
-    color: white; }
+.about-text {
+  max-width: 37rem;
+  padding: 10rem 0; }
 
 .about-text {
   padding-right: 2%; }
@@ -573,6 +643,15 @@ footer .nav-title {
   -webkit-transition: 0.2s ease-in-out;
   -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out; }
+
+.material-icons {
+  border: 3px solid white;
+  border-radius: 2rem;
+  padding: 0.2rem;
+  margin: 0 1.5% 3% 1.5%; }
+
+.material-icons.md-light {
+  color: white; }
 
 .fine-print {
   color: #f5f5f5;
