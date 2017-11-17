@@ -65,7 +65,10 @@ header {
   width: 95%; }
 
 .text-content {
-  padding: 0 5%; }
+  padding: 0 7%;
+  max-width: 30rem; }
+  .text-content .p-style {
+    padding-top: 1rem; }
 
 * {
   -webkit-box-sizing: border-box;
