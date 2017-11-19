@@ -1,0 +1,24 @@
+# This is an .htaccess file
+
+
+<IfModule mod_filter.c>
+
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/CSS
+AddOutputFilterByType DEFLATE application/javascript
+
+</IfModule>
+
+
+
+
+<IfModule mod_expires.c>
+
+ExpiresActive On
+ExpiresDefault "access 1 day"
+ExpiresByType text/css "access 1 day"
+ExpiresByType image/jpg "access 1 month"
+
+
+</IfModule>

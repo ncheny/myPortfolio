@@ -86,9 +86,6 @@
   .project-content {
     padding-left: 0;
     width: 100%; }
-  .proj-article {
-    max-width: 100%;
-    height: auto; }
   #overview {
     padding: 0 5%; }
   .footer-personalInfo {
@@ -105,4 +102,13 @@
   .half-text {
     margin: 0 4% 20% 4%; }
   .about-text {
-    padding: 0; } }
+    padding: 0; }
+  #featured, #about {
+    height: auto; }
+  .featured-description {
+    margin: 25% 0 30% 5%; }
+    .featured-description .head-1 {
+      font-size: 2.5em; }
+  .proj-article {
+    max-width: 100%;
+    height: auto; } }

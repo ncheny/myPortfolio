@@ -1,7 +1,7 @@
 /* ------------- variables ------------- */
 $pink: #ff9787;
 $blue: #00c2e4;
-$black: #343434;
+$black: black;
 $lightblue: #f0fbff; /* ------------- body layout ------------- */
 // html,footer,body {
 //   height: 100%;
@@ -241,9 +241,9 @@ strong {
   font-family: 'Roboto Mono', sans-serif;
 }
 
-.index-content {
-  position: relative;
-}
+// .index-content {
+//   position: relative;
+// }
 
 .dotstyle {
   position: fixed;
@@ -350,6 +350,7 @@ strong {
 
 .button-link,
 .button-link:visited {
+      background: none;
   color: grey;
   width: auto;
   transition: all 0.3s ease-in-out;
@@ -466,11 +467,11 @@ strong {
 }
 
 #featured {
-  padding: 5% 0;
-}
+    height: 65vh;
+  }
 
 .featured-description {
-  margin: 25% 0 30% 15%;
+  margin: 35% 0 30% 15%;
   color: white;
   text-decoration: none;
   text-shadow: 5px 5px 10px rgb(125, 117, 117);
@@ -495,7 +496,7 @@ strong {
 
 }
 
-#projects {
+.projects {
   height: auto;
   margin: 0;
   position: relative;
@@ -532,11 +533,11 @@ strong {
 
 #bg-amorphous {
   background-image: url("../img/amorphous/astronaut-render.png");
-  background-size: 28%;
+  background-size: 23%;
   width: 50%;
 
   &:hover{
-    background-size: 30%;
+    background-size: 25%;
     transition: 0.2s linear;
   }
 }
@@ -544,9 +545,10 @@ strong {
 #bg-evidentp {
   background-image: url("../img/beep/preview.jpg");
   width: 100%;
+  background-size: 120%;
 
   &:hover{
-    background-size: 110%;
+    background-size: 130%;
     transition: 0.2s linear;
   }
 }
@@ -554,9 +556,10 @@ strong {
 #bg-eyexpo {
   background-image: url("../img/eyexpo/preview.jpg");
   width: 100%;
+  background-size: 110%;
 
   &:hover{
-    background-size: 110%;
+    background-size: 120%;
     transition: 0.2s linear;
   }
 }
@@ -598,6 +601,7 @@ strong {
 
 #about {
   // padding: 5rem 0 3rem;
+      // height: 80vh;
   }
 
   .about-text{

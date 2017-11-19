@@ -78,6 +78,7 @@
     width: 100%;
   }
 
+
   .header-text{
     order:2;
     padding-left: 0;
@@ -95,11 +96,6 @@
   .project-content{
     padding-left: 0;
         width: 100%;
-    }
-
-    .proj-article{
-      max-width: 100%;
-      height: auto;
     }
 
     #overview{
@@ -130,6 +126,23 @@
 
   .about-text{
     padding: 0;
+  }
+
+  #featured, #about{
+    height: auto;
+  }
+
+  .featured-description {
+    margin: 25% 0 30% 5%;
+
+    .head-1{
+          font-size: 2.5em;
+    }
+  }
+
+  .proj-article{
+    max-width: 100%;
+    height: auto;
   }
 
 }

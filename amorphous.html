@@ -9,13 +9,13 @@
   <title>Amorphous</title>
   <link href="css/main.css" rel="stylesheet">
   <link href="css/projects.css" rel="stylesheet">
+
   <link href="css/grids.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 </head>
 <!-- Nav menu -->
 
 <body>
-
   <div class="container project-detailview">
 
     <nav id="nav-default">
@@ -29,13 +29,21 @@
 
       <div class="dotstyle dotstyle-fillup">
         <ul>
-          <li class="current"><a href="#">Home</a></li>
-          <li><a href="#hero">About</a></li>
-          <li><a href="#featured">Products</a></li>
-          <li><a href="#projects">Portfolio</a></li>
-          <li><a href="#about">Blog</a></li>
+          <li class="current"><a href="#amorphous-header">Home</a></li>
+          <li><a href="#overview">About</a></li>
+          <li><a href="#concept">Products</a></li>
+          <li><a href="#environment">Portfolio</a></li>
+          <li><a href="#modelling">Blog</a></li>
         </ul>
       </div>
+
+      <!-- <ul id="menu">
+      	<li data-menuanchor="firstPage"><a href="#concept">First slide</a></li>
+      	<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
+      	<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
+      	<li data-menuanchor="4thpage"><a href="#4thpage">Fourth slide</a></li>
+      </ul> -->
+
 
     </nav>
 
@@ -78,6 +86,8 @@
       </div>
     </nav>
 
+<!-- end mobile nav -->
+<div class="section">
     <header class="container">
       <div class="header-text">
         <div class="head-1"> Amorphous</div>
@@ -92,16 +102,16 @@
       <div id="amorphous-header"></div>
     </header>
 
-    <section id="overview" class="our-grey">
+    <div id="overview" class="our-grey">
       <h2 class="head-2">Overview </h2>
       <div class="p-style">Amorphous is a short 3D animation of an astronaut and a cat alien exploring in an alien world which was developed in Autodesk Maya and edited on Adobe programs. The ideation and storyboarding stage took our 4-people team the longest, while rigging,
         animating and rendering took roughly 1.5 week with the assistance of about 15 school computers.
         <br> <br> My role in this project switches between the role of concept artist, rigging artist, animator, and sound editor.
       </div>
-    </section>
+    </div>
+  </div>
 
-    <div class="project-content">
-      <section id="concept">
+      <section id="concept" class="section indented">
         <div class="container">
 
           <div class="half-img">
@@ -164,7 +174,7 @@
     </div>
   </section> -->
 
-      <section id="environment">
+      <section id="environment" class="section indented">
         <div class="container">
           <div class="half-text">
             <div class="text-content">
@@ -185,8 +195,8 @@
         </div>
       </section>
 
-      <section>
-        <div class="container">
+      <section id="modelling" class="section indented">
+        <div class="container ">
 
           <div class="half-img">
             <img src="img/amorphous/cat-progress.jpg" alt="">
@@ -205,8 +215,8 @@
         </div>
       </section>
 
-      <section>
-        <div class="container">
+      <section id="animation" class="section indented">
+        <div class="container ">
           <div class="half-text">
             <div class="text-content">
 
@@ -225,8 +235,8 @@
         </div>
       </section>
 
-      <section>
-        <div class="container">
+      <section id="post-production" class="section indented">
+        <div class="container ">
           <div class="half-text">
             <div class="text-content">
 
@@ -245,81 +255,102 @@
         </div>
       </section>
 
-      <section>
+      <section class="section">
+        <div class="indented" id="final-video">
+
+
         <h2 class="head-2">Final video</h2>
-        <div class="iframe-video">
-          <iframe src="https://player.vimeo.com/video/162523399" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+        <div class="p-style">
+          During the editing process, I edited the timing of most sequence shots and implemented the sound files we collected online. Sound was first added into the beta video footage via Adobe Premiere Pro where sound effects collected from freesounds.com were
+          layered over Terraria's background music. Once the editing of the final cut was completed, I layered the new video over the beta version and then re-adjusted the timing of the sounds to match it.
         </div>
+        <div class='embed-container'>
+            <iframe src='https://player.vimeo.com/video/162523399' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        </div>
+      </div>
+
+        <footer id="footer" class="our-blue">
+          <!-- top half of footer: contains company contact info and page links -->
+
+          <div class="container footer-top">
+            <div class="footer-personalInfo">
+              <div class="nav-title">
+                Nancy Chen
+              </div>
+
+              <div class="email">
+                nancy_chen107@hotmail.com
+              </div>
+            </div>
+
+            <div class="footer-listing">
+              <ul>
+                <li>
+                  <a class="footer-link" href="customize.html">About</a>
+                </li>
+
+                <li>
+                  <a class="footer-link" href="products.html">Works</a>
+                </li>
+
+                <li>
+                  <a class="footer-link" href="amorphous.html">Amorphous</a>
+                </li>
+
+                <li>
+                  <a class="footer-link" href="beep.html">Beep</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-listing">
+              <ul>
+                <li>
+                  <a class="footer-link" href="styleguide.html">Styleguide</a>
+                </li>
+
+                <li>
+                  <a class="footer-link" href="citations.html">Citation</a>
+                </li>
+
+                <li>
+                  <a class="footer-link" href="https://github.com/bordercases/iat339project02">Git Repo</a>
+                </li>
+              </ul>
+            </div>
+            <!-- go back up -->
+            <a class="top-link" href="#">
+              <div>
+                ^
+              </div>
+            </a>
+          </div>
+        </footer>
+        <!-- end footer -->
       </section>
 
-    </div>
-    <!-- end of project content -->
-  </div>
-  <!-- end of container -->
+  <!-- end of project writup -->
 
-  <footer id="footer" class="our-blue">
-    <!-- top half of footer: contains company contact info and page links -->
 
-    <div class="container footer-top">
-      <div class="footer-personalInfo">
-        <div class="nav-title">
-          Nancy Chen
-        </div>
-
-        <div class="email">
-          nancy_chen107@hotmail.com
-        </div>
-      </div>
-
-      <div class="footer-listing">
-        <ul>
-          <li>
-            <a class="footer-link" href="customize.html">About</a>
-          </li>
-
-          <li>
-            <a class="footer-link" href="products.html">Works</a>
-          </li>
-
-          <li>
-            <a class="footer-link" href="amorphous.html">Amorphous</a>
-          </li>
-
-          <li>
-            <a class="footer-link" href="beep.html">Beep</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="footer-listing">
-        <ul>
-          <li>
-            <a class="footer-link" href="styleguide.html">Styleguide</a>
-          </li>
-
-          <li>
-            <a class="footer-link" href="citations.html">Citation</a>
-          </li>
-
-          <li>
-            <a class="footer-link" href="https://github.com/bordercases/iat339project02">Git Repo</a>
-          </li>
-        </ul>
-      </div>
-      <!-- go back up -->
-      <a class="top-link" href="#">
-        <div>
-          ^
-        </div>
-      </a>
-    </div>
-    <!-- footer top ends-->
-
-  </footer>
-  <!-- end footer -->
 
   <script src="js/menu.js"></script>
   <script src="js/carousel.js"></script>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+  <script src="js/jquery.scrollify.js"></script>
+  <script>
+        $(function() {
+          $.scrollify({
+            section : ".section",
+            scrollSpeed: 1100,
+  offset : 0,
+  scrollbars: true,
+  setHeights:false,
+          });
+        });
+      </script>
 
 </body>
 

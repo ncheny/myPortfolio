@@ -9,8 +9,9 @@
   <title>Nancy Chen- Portfolio</title>
   <link href="css/main.css" rel="stylesheet">
   <link href="css/grids.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" /> -->
+
 </head>
 <!-- Nav menu -->
 
@@ -27,24 +28,24 @@
   </header> -->
   <!-- end nav menu -->
 
-  <section class="our-pink" id="hero">
-
-
-      <div class="hero-icons">
-      <i class="material-icons md-light">&#xE338;</i>
-      <i class="material-icons md-light">&#xE333;</i>
-      <i class="material-icons md-light">&#xE3AE;</i>
-      <i class="material-icons md-light">&#xE54B;</i>
-      <i class="material-icons md-light">&#xE54D;</i>
-      <i class="material-icons md-light">&#xE561;</i>
+  <div id="fullpage">
+    
+    <div class="our-pink section" id="hero">
+      <div class="hero-icons" >
+        <i class="material-icons md-light">&#xE338;</i>
+        <i class="material-icons md-light">&#xE333;</i>
+        <i class="material-icons md-light">&#xE3AE;</i>
+        <i class="material-icons md-light">&#xE54B;</i>
+        <i class="material-icons md-light">&#xE54D;</i>
+        <i class="material-icons md-light">&#xE561;</i>
       </div>
       <div class="my-name centered">
-      <h1 class="head-1 ">Nancy Chen </h1>
+        <h1 class="head-1 ">Nancy Chen </h1>
+      </div>
+      <div class="centered typed-text">
+        <h4 class="head-4">I like <span class="typed"></span></h1>
     </div>
-    <div class="centered typed-text">
-      <h4 class="head-4">I like <span class="typed"></span></h1>
-    </div>
-  </section>
+  </div>
 
   <div class="centered nav-sticky">
     <a class="head-3 hero-link button-link" href="index.html#featured"> projects </a>
@@ -52,13 +53,9 @@
     <a class="head-3 hero-link button-link" href=""> resume </a>
   </div>
 
-  <div class="index-content">
-
-
-    <div class="projects-content">
-      <section id="featured" class="our-blue container">
-
-        <a class="" id="bg-beep" href="beep.html">
+  <div class="section">
+      <div id="featured" class="our-blue container">
+                <a class="" id="bg-beep" href="beep.html">
           <div class="featured-description">
             <div class="head-3">01 Featured</div>
             <h1 class="head-1"> BEEP</h1>
@@ -79,34 +76,34 @@
             <div class="head-4">3D Animation 2016</div>
           </div>
         </a>
-      </section>
+      </div>
 
-      <section id="projects">
+      <div class="projects">
         <!-- <h1 class="head-1 ">Projects</h1> -->
         <div class="container centered">
 
-          <a class="proj-article " id="bg-evidentp">
+          <a class="proj-article our-black" id="bg-evidentp">
             <div class="proj-description">
               <div class="proj-title head-3 ">Evident Point </div>
               <div class=" head-4 ">ui designer 2016</div>
             </div>
           </a>
 
-          <a class="proj-article " id="bg-eyexpo">
+          <a class="proj-article our-black" id="bg-eyexpo">
             <div class="proj-description">
               <div class="proj-title head-3 ">Eyexpo </div>
               <div class=" head-4 ">graphic designer 2017</div>
             </div>
           </a>
 
-          <a class="proj-article " id="bg-banners">
+          <a class="proj-article our-black" id="bg-banners">
             <div class="proj-description">
               <div class="proj-title head-3 ">Surrey Banners </div>
               <div class=" head-4 "> winning design 2014</div>
             </div>
           </a>
 
-          <a class="proj-article " id="bg-illus">
+          <a class="proj-article our-black" id="bg-illus">
             <div class="proj-description">
               <div class="proj-title head-3 ">Illustrations </div>
               <div class=" head-4 ">sketches & renders </div>
@@ -114,10 +111,11 @@
           </a>
 
         </div>
-      </section>
+      </div>
+    </div>
 
-      <section>
-        <div class="" id="about">
+<div class="section">
+        <div id="about">
           <div class="container ">
             <div class="half-img">
               <img alt="img" class="" src="img/me.png">
@@ -130,98 +128,92 @@
                 <br> In my off time, I can be found doodling in a sketchbook, playing video games, or scrolling through Twitter.</p>
             </div>
           </div>
+      </div>
 
-          <!-- <div class="skillset centered">
-        <div class="skill-block">
-          <img src="img/icons/wacom-wht.png" alt="">
-          <div>Drawing</div>
+      <footer id="footer" class="our-blue">
+        <!-- top half of footer: contains company contact info and page links -->
+
+        <div class="container footer-top">
+          <div class="footer-personalInfo">
+            <div class="nav-title">
+              Nancy Chen
+            </div>
+
+            <div class="email">
+              nancy_chen107@hotmail.com
+            </div>
+          </div>
+
+          <div class="footer-listing">
+            <ul>
+              <li>
+                <a class="footer-link" href="customize.html">About</a>
+              </li>
+              <li>
+                <a class="footer-link" href="products.html">Works</a>
+              </li>
+              <li>
+                <a class="footer-link" href="amorphous.html">Amorphous</a>
+              </li>
+              <li>
+                <a class="footer-link" href="beep.html">Beep</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-listing">
+            <ul>
+              <li>
+                <a class="footer-link" href="styleguide.html">Styleguide</a>
+              </li>
+              <li>
+                <a class="footer-link" href="citations.html">Citation</a>
+              </li>
+              <li>
+                <a class="footer-link" href="https://github.com/bordercases/iat339project02">Git Repo</a>
+              </li>
+            </ul>
+          </div>
+          <!-- go back up -->
+          <a class="top-link" href="#">
+            <div>
+              ^
+            </div>
+          </a>
         </div>
-        <div class="skill-block">
-          <img src="img/icons/wacom-wht.png" alt="">
-          <div>Animating</div>
-        </div>
-        <div class="skill-block">
-          <img src="img/icons/wacom-wht.png" alt="">
-          <div>HTML/CSS</div>
-        </div>
-        <div class="skill-block">
-          <img src="img/icons/wacom-wht.png" alt="">
-          <div>Modeling</div>
-        </div>
-      </div> -->
-        </div>
-      </section>
-    </div>
+        <!-- footer top ends-->
+</div>
 
   </div>
-  <!-- end index content-->
+  <!-- end fullpage content-->
 
-  <footer id="footer" class="our-blue">
-    <!-- top half of footer: contains company contact info and page links -->
 
-    <div class="container footer-top">
-      <div class="footer-personalInfo">
-        <div class="nav-title">
-          Nancy Chen
-        </div>
-
-        <div class="email">
-          nancy_chen107@hotmail.com
-        </div>
-      </div>
-
-      <div class="footer-listing">
-        <ul>
-          <li>
-            <a class="footer-link" href="customize.html">About</a>
-          </li>
-
-          <li>
-            <a class="footer-link" href="products.html">Works</a>
-          </li>
-
-          <li>
-            <a class="footer-link" href="amorphous.html">Amorphous</a>
-          </li>
-
-          <li>
-            <a class="footer-link" href="beep.html">Beep</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="footer-listing">
-        <ul>
-          <li>
-            <a class="footer-link" href="styleguide.html">Styleguide</a>
-          </li>
-
-          <li>
-            <a class="footer-link" href="citations.html">Citation</a>
-          </li>
-
-          <li>
-            <a class="footer-link" href="https://github.com/bordercases/iat339project02">Git Repo</a>
-          </li>
-        </ul>
-      </div>
-      <!-- go back up -->
-      <a class="top-link" href="#">
-        <div>
-          ^
-        </div>
-      </a>
-    </div>
-    <!-- footer top ends-->
 
   </footer>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        anchors: ['firstPage', 'secondPage', '3rdPage'],
+        navigation: true,
+        navigationPosition: 'left',
+        navigationTooltips: ['First page', 'Second page', 'Third and last page'],
+        responsiveWidth: 900,
+      });
+
+    });
+  </script> -->
 
   <script src="js/typed.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       Typed.new('.typed', {
         strings: ["Moomins.", "Dragon Age.", "learning about history (and lores).", "tomatoes and potatoes.", "curry.", "Harry Potter.", "collecting art books.", "Juuni Kokki.", "to eat dessert first.", "Calvin and Hobbes.", "salmon pink.",
-          "playing the board game Shadow Hunters.", "to hoard pens and markers.", "Ghibli films.", "Monsters Inc.", "Rune Factory", "...", "to make short comics."
+          "playing the board game Shadow Hunters.", "to hoard pens and markers.", "Ghibli films.", "Monsters Inc.", "Rune Factory", "...", "to make short comics.", "card-collecting games."
         ],
         typeSpeed: 20,
         loop: true,
@@ -233,6 +225,20 @@
       });
     });
   </script>
+
+  <script src="js/jquery.scrollify.js"></script>
+  <script>
+				$(function() {
+					$.scrollify({
+						section : ".section",
+            scrollSpeed: 1100,
+offset : 0,
+scrollbars: true,
+setHeights:false,
+					});
+				});
+			</script>
+
 </body>
 
 
