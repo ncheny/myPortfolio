@@ -8,7 +8,7 @@ body {
 .header {
   width: 100%; }
 
-#amorphous-header {
+.amorphous-header {
   background-image: url(../img/amorphous/preview.png);
   top: 0;
   left: 0;
@@ -178,25 +178,8 @@ body {
   to {
     opacity: 1; } }
 
-.embed-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-  margin: 2rem 0 7rem 0;
-}
 
-  .embed-container iframe,
-  .embed-container object,
-  .embed-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
-
-    #final-video{
-          max-width: 70vw;
-          margin-left: 3%;
+    iframe{
+      width: 100%;
+    height: 100%;
     }

@@ -27,15 +27,30 @@
       </div>
 
 
-      <div class="dotstyle dotstyle-fillup">
-        <ul>
-          <li class="current"><a href="#amorphous-header">Home</a></li>
-          <li><a href="#overview">About</a></li>
-          <li><a href="#concept">Products</a></li>
-          <li><a href="#environment">Portfolio</a></li>
-          <li><a href="#modelling">Blog</a></li>
-        </ul>
-      </div>
+      <div class="vNav">
+             <ul class="vNav">
+                  <li>
+                      <a href="#top">
+                          <div class="label">Header</div>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#overview">
+                          <div class="label">Overview</div>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#concept">
+                          <div class="label">Concept</div>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#environment">
+                          <div class="label">Environment</div>
+                      </a>
+                  </li>
+           </ul>
+          </div>
 
       <!-- <ul id="menu">
       	<li data-menuanchor="firstPage"><a href="#concept">First slide</a></li>
@@ -86,82 +101,84 @@
       </div>
     </nav>
 
-<!-- end mobile nav -->
-<div class="section">
-    <header class="container">
-      <div class="header-text">
-        <div class="head-1"> Amorphous</div>
-        <div class="head-4"> 3D animation of an astronaut and an alien</div>
-        <ul class="header-details p-style">
-          <li><strong>TASKS </strong> Sketching, concept art, sound design, 3d modeling, rigging, animation, post production editing</li>
-          <li><strong>TOOLS </strong> Autodesk Maya, Adobe Premiere Pro, Adobe AfterEffects, Photoshop</li>
-          <li><strong>DATE </strong> Spring 2016</li>
-        </ul>
-      </div>
+    <!-- end mobile nav -->
+    <div class="section" id="to" data-section-name="top">
+      <header class="container">
+        <div class="header-text">
+          <div class="head-1"> Amorphous</div>
+          <div class="head-4"> 3D animation of an astronaut and an alien</div>
+          <ul class="header-details p-style">
+            <li><strong>TASKS </strong> Sketching, concept art, sound design, 3d modeling, rigging, animation, post production editing</li>
+            <li><strong>TOOLS </strong> Autodesk Maya, Adobe Premiere Pro, Adobe AfterEffects, Photoshop</li>
+            <li><strong>DATE </strong> Spring 2016</li>
+          </ul>
+        </div>
 
-      <div id="amorphous-header"></div>
-    </header>
+        <div class="amorphous-header" ></div>
+      </header>
+    </div>
 
-    <div id="overview" class="our-grey">
+<section class="section" data-section-name="overview">
+    <div id="overview" class="our-grey ">
       <h2 class="head-2">Overview </h2>
       <div class="p-style">Amorphous is a short 3D animation of an astronaut and a cat alien exploring in an alien world which was developed in Autodesk Maya and edited on Adobe programs. The ideation and storyboarding stage took our 4-people team the longest, while rigging,
         animating and rendering took roughly 1.5 week with the assistance of about 15 school computers.
         <br> <br> My role in this project switches between the role of concept artist, rigging artist, animator, and sound editor.
       </div>
     </div>
-  </div>
+  </section>
 
-      <section id="concept" class="section indented">
-        <div class="container">
+    <section id="concept" class="section indented">
+      <div class="container">
 
-          <div class="half-img">
-            <div class="slideshow-container">
-              <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="img/amorphous/sketchbook1.jpg" style="width:100%">
-                <div class="text">Caption Text</div>
-              </div>
-
-              <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="img/amorphous/sketchbook2.jpg" style="width:100%">
-                <div class="text">Caption Two</div>
-              </div>
-
-              <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="img/amorphous/astronaut-sketches.png" style="width:100%">
-                <div class="text">Caption Three</div>
-              </div>
-
-              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="half-img">
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="img/amorphous/sketchbook1.jpg" style="width:100%">
+              <div class="text">Caption Text</div>
             </div>
-            <br>
 
-            <div style="text-align:center">
-              <span class="dot" onclick="currentSlide(1)"></span>
-              <span class="dot" onclick="currentSlide(2)"></span>
-              <span class="dot" onclick="currentSlide(3)"></span>
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="img/amorphous/sketchbook2.jpg" style="width:100%">
+              <div class="text">Caption Two</div>
             </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="img/amorphous/astronaut-sketches.png" style="width:100%">
+              <div class="text">Caption Three</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
           </div>
+          <br>
 
-
-          <div class="half-text">
-            <div class="text-content">
-
-              <h2 class="head-2">Concept Ideation</h2>
-              <div class="p-style">
-                During the ideation stages, I was mostly focused on the main characters' designs. Although the cat's design had little changes from the beginning, albeit some minor body ratio adjustments, the astronaut's getup went through more stages.
-                <br> In addition to developing the characters' designs, I started working on environment concept sketches and color palette selection for each area.
-              </div>
-            </div>
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
           </div>
-
         </div>
-      </section>
 
-      <!-- <section id="storyboard">
+
+        <div class="half-text">
+          <div class="text-content">
+
+            <h2 class="head-2">Concept Ideation</h2>
+            <div class="p-style">
+              During the ideation stages, I was mostly focused on the main characters' designs. Although the cat's design had little changes from the beginning, albeit some minor body ratio adjustments, the astronaut's getup went through more stages.
+              <br> In addition to developing the characters' designs, I started working on environment concept sketches and color palette selection for each area.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- <section id="storyboard">
     <div class="">
       I played a minor role in the animatic storyboard which consisted mostly of line clean ups and shading addtions.
     </div>
@@ -174,183 +191,191 @@
     </div>
   </section> -->
 
-      <section id="environment" class="section indented">
-        <div class="container">
-          <div class="half-text">
-            <div class="text-content">
+    <section id="environment" class="section indented">
+      <div class="container">
+        <div class="half-text">
+          <div class="text-content">
 
-              <h2 class="head-2">Environment Design</h2>
-              <div class="p-style">
-                In order to ensure that the world looks cohesive, we created intital environment concept sketches. To do that we first decided on the colour palettes for each of the 3 main environments: forest, grassland, and cave scenes. Specificially, we wanted the
-                forest to be a filled with pastel green, lime, and blue, the grasslands to be filled with bright orange, red, and yellow, and the cave to have a sparkly palette of dark blues, purples, and white. ​ During this stage, my roles as the design
-                director included sketching out two concept environments (grassland and inside of the cave), as well as editing the colours and lightings of the environment sketches done by my team.
-              </div>
+            <h2 class="head-2">Environment Design</h2>
+            <div class="p-style">
+              In order to ensure that the world looks cohesive, we created intital environment concept sketches. To do that we first decided on the colour palettes for each of the 3 main environments: forest, grassland, and cave scenes. Specificially, we wanted the
+              forest to be a filled with pastel green, lime, and blue, the grasslands to be filled with bright orange, red, and yellow, and the cave to have a sparkly palette of dark blues, purples, and white. ​ During this stage, my roles as the design
+              director included sketching out two concept environments (grassland and inside of the cave), as well as editing the colours and lightings of the environment sketches done by my team.
             </div>
           </div>
-
-          <div class="half-img">
-            <img src="img/amorphous/environment-tiles.jpg" alt="">
-          </div>
-
         </div>
-      </section>
 
-      <section id="modelling" class="section indented">
-        <div class="container ">
+        <div class="half-img">
+          <img src="img/amorphous/environment-tiles.jpg" alt="">
+        </div>
 
-          <div class="half-img">
-            <img src="img/amorphous/cat-progress.jpg" alt="">
-          </div>
-          <div class="half-text">
-            <div class="text-content">
+      </div>
+    </section>
 
-              <h2 class="head-2">Modelling & rigging</h2>
-              <div class="p-style">
-                Once the sketches for the characters were finalized, we moved on to modeling the cat, texture of the planets, and then the trees for the forest environment in Maya. While my team mate took over the environment layout of the forest, I took over her work
-                of rigging the cat, astronaut, and setting up eye movement controls, and the control circles constrained to the limbs for animation.
-              </div>
+    <section id="modelling" class="section indented">
+      <div class="container ">
+
+        <div class="half-img">
+          <img src="img/amorphous/cat-progress.jpg" alt="">
+        </div>
+        <div class="half-text">
+          <div class="text-content">
+
+            <h2 class="head-2">Modelling & rigging</h2>
+            <div class="p-style">
+              Once the sketches for the characters were finalized, we moved on to modeling the cat, texture of the planets, and then the trees for the forest environment in Maya. While my team mate took over the environment layout of the forest, I took over her work
+              of rigging the cat, astronaut, and setting up eye movement controls, and the control circles constrained to the limbs for animation.
             </div>
           </div>
-
         </div>
-      </section>
 
-      <section id="animation" class="section indented">
-        <div class="container ">
-          <div class="half-text">
-            <div class="text-content">
+      </div>
+    </section>
 
-              <h2 class="head-2">Animation</h2>
-              <div class="p-style">
-                Since our group divided the video into four sections, I was responsible for the animation in the forest scene (0:13-0:47) which had 10 different shots. Each shot was animated in a pre-selected view and the process of animating and rendering took about
-                2 days.
-              </div>
+    <section id="animation" class="section indented">
+      <div class="container ">
+        <div class="half-text">
+          <div class="text-content">
+
+            <h2 class="head-2">Animation</h2>
+            <div class="p-style">
+              Since our group divided the video into four sections, I was responsible for the animation in the forest scene (0:13-0:47) which had 10 different shots. Each shot was animated in a pre-selected view and the process of animating and rendering took about
+              2 days.
             </div>
           </div>
-
-          <div class="half-img">
-            <img src="img/amorphous/cat-alien.gif" alt="">
-          </div>
-
         </div>
-      </section>
 
-      <section id="post-production" class="section indented">
-        <div class="container ">
-          <div class="half-text">
-            <div class="text-content">
+        <div class="half-img">
+          <img src="img/amorphous/cat-alien.gif" alt="">
+        </div>
 
-              <h2 class="head-2">Post Production</h2>
-              <div class="p-style">
-                During the editing process, I edited the timing of most sequence shots and implemented the sound files we collected online. Sound was first added into the beta video footage via Adobe Premiere Pro where sound effects collected from freesounds.com were
-                layered over Terraria's background music. Once the editing of the final cut was completed, I layered the new video over the beta version and then re-adjusted the timing of the sounds to match it.
-              </div>
+      </div>
+    </section>
+
+    <section id="post-production" class="section indented">
+      <div class="container ">
+        <div class="half-text">
+          <div class="text-content">
+
+            <h2 class="head-2">Post Production</h2>
+            <div class="p-style">
+              During the editing process, I edited the timing of most sequence shots and implemented the sound files we collected online. Sound was first added into the beta video footage via Adobe Premiere Pro where sound effects collected from freesounds.com were
+              layered over Terraria's background music. Once the editing of the final cut was completed, I layered the new video over the beta version and then re-adjusted the timing of the sounds to match it.
             </div>
           </div>
+        </div>
 
-          <div class="half-img">
-            <img src="img/amorphous/sound-editing.png" alt="">
+        <div class="half-img">
+          <img src="img/amorphous/sound-editing.png" alt="">
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="indented container" id="final-video">
+
+        <div class="half-text">
+          <div class="text-content">
+            <h2 class="head-2">Final Video</h2>
+            <div class="p-style">
+              During the editing process, I edited the timing of most sequence shots and implemented the sound files we collected online. Sound was first added into the beta video footage via Adobe Premiere Pro where sound effects collected from freesounds.com were
+              layered over Terraria's background music. Once the editing of the final cut was completed, I layered the new video over the beta version and then re-adjusted the timing of the sounds to match it.
           </div>
-
         </div>
-      </section>
-
-      <section class="section">
-        <div class="indented" id="final-video">
-
-
-        <h2 class="head-2">Final video</h2>
-
-        <div class="p-style">
-          During the editing process, I edited the timing of most sequence shots and implemented the sound files we collected online. Sound was first added into the beta video footage via Adobe Premiere Pro where sound effects collected from freesounds.com were
-          layered over Terraria's background music. Once the editing of the final cut was completed, I layered the new video over the beta version and then re-adjusted the timing of the sounds to match it.
         </div>
-        <div class='embed-container'>
+
+        <div class="half-img">
             <iframe src='https://player.vimeo.com/video/162523399' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
         </div>
+
+
       </div>
 
-        <footer id="footer" class="our-blue">
-          <!-- top half of footer: contains company contact info and page links -->
+      <footer id="footer" class="our-blue">
+        <!-- top half of footer: contains company contact info and page links -->
 
-          <div class="container footer-top">
-            <div class="footer-personalInfo">
-              <div class="nav-title">
-                Nancy Chen
-              </div>
-
-              <div class="email">
-                nancy_chen107@hotmail.com
-              </div>
+        <div class="container footer-top">
+          <div class="footer-personalInfo">
+            <div class="nav-title">
+              Nancy Chen
             </div>
 
-            <div class="footer-listing">
-              <ul>
-                <li>
-                  <a class="footer-link" href="customize.html">About</a>
-                </li>
-
-                <li>
-                  <a class="footer-link" href="products.html">Works</a>
-                </li>
-
-                <li>
-                  <a class="footer-link" href="amorphous.html">Amorphous</a>
-                </li>
-
-                <li>
-                  <a class="footer-link" href="beep.html">Beep</a>
-                </li>
-              </ul>
+            <div class="email">
+              nancy_chen107@hotmail.com
             </div>
-
-            <div class="footer-listing">
-              <ul>
-                <li>
-                  <a class="footer-link" href="styleguide.html">Styleguide</a>
-                </li>
-
-                <li>
-                  <a class="footer-link" href="citations.html">Citation</a>
-                </li>
-
-                <li>
-                  <a class="footer-link" href="https://github.com/bordercases/iat339project02">Git Repo</a>
-                </li>
-              </ul>
-            </div>
-            <!-- go back up -->
-            <a class="top-link" href="#">
-              <div>
-                ^
-              </div>
-            </a>
           </div>
-        </footer>
-        <!-- end footer -->
-      </section>
 
-  <!-- end of project writup -->
+          <div class="footer-listing">
+            <ul>
+              <li>
+                <a class="footer-link" href="customize.html">About</a>
+              </li>
 
+              <li>
+                <a class="footer-link" href="products.html">Works</a>
+              </li>
 
+              <li>
+                <a class="footer-link" href="amorphous.html">Amorphous</a>
+              </li>
 
-  <script src="js/menu.js"></script>
-  <script src="js/carousel.js"></script>
+              <li>
+                <a class="footer-link" href="beep.html">Beep</a>
+              </li>
+            </ul>
+          </div>
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-  <script src="js/jquery.scrollify.js"></script>
-  <script>
-        $(function() {
-          $.scrollify({
-            section : ".section",
-            scrollSpeed: 1100,
-  offset : 0,
-  scrollbars: true,
-  setHeights:false,
-          });
+          <div class="footer-listing">
+            <ul>
+              <li>
+                <a class="footer-link" href="styleguide.html">Styleguide</a>
+              </li>
+
+              <li>
+                <a class="footer-link" href="citations.html">Citation</a>
+              </li>
+
+              <li>
+                <a class="footer-link" href="https://github.com/bordercases/iat339project02">Git Repo</a>
+              </li>
+            </ul>
+          </div>
+          <!-- go back up -->
+          <a class="top-link" href="#">
+            <div>
+              ^
+            </div>
+          </a>
+        </div>
+      </footer>
+      <!-- end footer -->
+    </section>
+
+    <!-- end of project writup -->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+    <script src="js/menu.js"></script>
+    <script src="js/carousel.js"></script>
+        <script src="js/dotsNav.js"></script>
+        <script src="js/jquery.scrollify.js"></script>
+
+    <script>
+      $(function() {
+        $.scrollify({
+          section: ".section",
+          sectionName : "section-name",
+          scrollSpeed: 1100,
+          offset: 0,
+          scrollbars: true,
+          setHeights: false,
         });
-      </script>
+      });
+    </script>
+
+
 
 </body>
 

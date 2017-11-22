@@ -121,7 +121,7 @@
   }
 
   .half-text{
-        margin: 0 4% 20% 4%;
+        margin: 0 4% 4% 0%;
   }
 
   .about-text{
@@ -143,6 +143,10 @@
   .proj-article{
     max-width: 100%;
     height: auto;
+  }
+
+  iframe{
+    height: 20rem;
   }
 
 }
