@@ -22,7 +22,7 @@ body {
   display: -ms-flexbox;
   display: flex; }
 
-#beep-header {
+.beep-header {
   background-image: url(../img/beep/preview.jpg);
   top: 0;
   left: 0;
