@@ -74,7 +74,9 @@
     display: none;
   }
 
-  #amorphous-header, #bg-amorphous, #bg-beep, .header-text{
+  .amorphous-header, .beep-header,
+   #bg-amorphous, #bg-beep,
+   .header-text{
     width: 100%;
   }
 

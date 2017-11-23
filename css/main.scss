@@ -276,12 +276,16 @@ strong {
     border: 2px solid;
     border-color: $blue;
     text-decoration: none;
+    transition: all 0.3s ease-in-out;
+
 }
 
 .vNav a:hover{
     border-radius: 50%;
     background-color: $blue;
     text-decoration: none;
+    transition: all 0.3s ease-in-out;
+
 }
 
 .vNav a.active{
@@ -728,6 +732,10 @@ padding: 0.2rem;
   color: rgba(255, 255, 255, 1);
 }
 
+.nc-icon{
+width: 24px;
+margin: 0 1.5% 3% 1.5%;
+}
 
 .fine-print {
   color: #f5f5f5;

@@ -81,23 +81,32 @@ left: 2%;
 z-index: 10;
 display: inline-block;
 max-width: 10rem;
+opacity: 0.5;
+transition: 0.6s ease;
+&:hover{
+  opacity: 0.9;
+  transition: 0.6s ease;
 }
 
-.right-nav{
-  top: 1.8rem;
-  position: fixed;
-  top: 2.2rem;
-  right: 2%;
-  z-index: 100;
-  display: inline-block;
-  width: 5rem;
+  .nc-icon{
+    width: 40px;
+    height: auto;
+  }
+
+  .home-link, .home-link:visited{
+    font-size: 0.7rem;
+    color: black;
+  }
 }
+
 
 #overview{
-  padding: 2rem 0 2rem 10%;
+  padding: 2rem 2rem 2rem 10%;
   // background: whitesmoke;
   margin-bottom: 2rem;
-
+  .p-style{
+        max-width: 60rem;
+  }
 }
 
 .project-content{
@@ -111,6 +120,7 @@ max-width: 10rem;
 
   .p-style{
     padding-top: 1rem;
+    min-height: 10rem;
   }
 }
 
@@ -221,7 +231,6 @@ max-width: 10rem;
 }
 
 
-
 .indented{
-  margin: 0 0 2rem 8%;
+      margin: 10% 2rem 2rem 10%;
 }

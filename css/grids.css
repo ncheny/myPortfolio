@@ -70,7 +70,9 @@
 @media (max-width: 35em) {
   .left-nav, .right-nav {
     display: none; }
-  #amorphous-header, #bg-amorphous, #bg-beep, .header-text {
+  .amorphous-header, .beep-header,
+  #bg-amorphous, #bg-beep,
+  .header-text {
     width: 100%; }
   .header-text {
     -webkit-box-ordinal-group: 3;

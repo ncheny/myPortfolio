@@ -235,12 +235,18 @@ strong {
   border-radius: 50%;
   border: 2px solid;
   border-color: #00c2e4;
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
 
 .vNav a:hover {
   border-radius: 50%;
   background-color: #00c2e4;
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
 
 .vNav a.active {
   border-radius: 50%;
@@ -638,6 +644,10 @@ footer .nav-title {
 
 .material-icons.md-light {
   color: white; }
+
+.nc-icon {
+  width: 24px;
+  margin: 0 1.5% 3% 1.5%; }
 
 .fine-print {
   color: #f5f5f5;
