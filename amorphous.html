@@ -66,26 +66,14 @@
     <!-- start side nav -->
     <div class="vNav">
            <ul class="vNav">
-                <li>
-                    <a href="#top">
-                        <div class="label">Header</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#overview">
-                        <div class="label">Overview</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#concept">
-                        <div class="label">Concept</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#environment">
-                        <div class="label">Environment</div>
-                    </a>
-                </li>
+              <li><a href="#top"><div class="label">Header</div></a></li>
+              <li><a href="#overview"><div class="label">Overview</div></a></li>
+              <li><a href="#concept"><div class="label">Concept</div></a></li>
+              <li><a href="#environment"><div class="label">Environment</div></a></li>
+              <li><a href="#modelling"><div class="label">Modelling</div></a></li>
+              <li><a href="#animation"><div class="label">Animation</div></a></li>
+              <li><a href="#post-production"><div class="label">Post Production</div></a></li>
+              <li><a href="#final-video"><div class="label">Final Video</div></a></li>
          </ul>
         </div>
 
@@ -122,19 +110,19 @@
           <div class="slideshow-container">
             <div class="mySlides fade">
               <div class="numbertext">1 / 3</div>
-              <img src="img/amorphous/sketchbook1.jpg" style="width:100%">
+              <img src="img/amorphous/sketchbook1.jpg">
               <div class="text">Caption Text</div>
             </div>
 
             <div class="mySlides fade">
               <div class="numbertext">2 / 3</div>
-              <img src="img/amorphous/sketchbook2.jpg" style="width:100%">
+              <img src="img/amorphous/sketchbook2.jpg" >
               <div class="text">Caption Two</div>
             </div>
 
             <div class="mySlides fade">
               <div class="numbertext">3 / 3</div>
-              <img src="img/amorphous/astronaut-sketches.png" style="width:100%">
+              <img src="img/amorphous/astronaut-sketches.png">
               <div class="text">Caption Three</div>
             </div>
 
@@ -142,12 +130,6 @@
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
           </div>
           <br>
-
-          <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-          </div>
         </div>
 
 
@@ -165,19 +147,6 @@
       </div>
     </section>
 
-    <!-- <section id="storyboard">
-    <div class="">
-      I played a minor role in the animatic storyboard which consisted mostly of line clean ups and shading addtions.
-    </div>
-  </section>
-
-  <section id="animatic">
-    <div class="">
-      The purpose of the animatic video is to grasp the timing of each shots and the character's general movements. <br>
-      As we started on the initial animatic, I was assigned the forest scene (0:06-0:33) from the 4 main sequence: forest, grassland, cave, and the base.
-    </div>
-  </section> -->
-
     <section id="environment" class="section indented" data-section-name="environment">
       <div class="container">
         <div class="half-text">
@@ -193,13 +162,47 @@
         </div>
 
         <div class="half-img">
-          <img src="img/amorphous/environment-tiles.jpg" alt="">
-        </div>
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="img/amorphous/environment-tiles.jpg">
+              <div class="text">Caption Text</div>
+            </div>
 
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="img/amorphous/forest-Orig.jpg" >
+              <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="img/amorphous/forest.jpg">
+              <div class="text">Caption Three</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="img/amorphous/forest.jpg">
+              <div class="text">Caption Three</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+        </div>
       </div>
     </section>
 
-    <section id="modelling" class="section indented">
+    <!-- <section id="animatic">
+      <div class="">
+        The purpose of the animatic video is to grasp the timing of each shots and the character's general movements. <br>
+        As we started on the initial animatic, I was assigned the forest scene (0:06-0:33) from the 4 main sequence: forest, grassland, cave, and the base.
+      </div>
+    </section> -->
+
+    <section id="modelling" class="section indented" data-section-name="modelling">
       <div class="container ">
 
         <div class="half-img">
@@ -219,7 +222,7 @@
       </div>
     </section>
 
-    <section id="animation" class="section indented">
+    <section id="animation" class="section indented" data-section-name="animation">
       <div class="container ">
         <div class="half-text">
           <div class="text-content">
@@ -233,13 +236,15 @@
         </div>
 
         <div class="half-img">
-          <img src="img/amorphous/cat-alien.gif" alt="">
+          <div class="img-container">
+            <img src="img/amorphous/cat-alien.gif" alt="">
+          </div>
         </div>
 
       </div>
     </section>
 
-    <section id="post-production" class="section indented">
+    <section id="post-production" class="section indented " data-section-name="post-production">
       <div class="container ">
         <div class="half-text">
           <div class="text-content">
@@ -260,7 +265,7 @@
     </section>
 
     <section class="section">
-      <div class="indented container" id="final-video">
+      <div class="indented container" id="final-video" data-section-name="final-video">
 
         <div class="half-text">
           <div class="text-content">

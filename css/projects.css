@@ -1,19 +1,20 @@
 body {
   position: relative; }
 
-.section {
-  width: 100%;
-   }
-
-.header {
+header {
   width: 100%; }
 
+iframe {
+  width: 100%;
+  height: 100%; }
+
 .amorphous-header {
-  background-image: url(../img/amorphous/preview.png);
+  background-image: url(../img/amorphous/header.jpg);
   top: 0;
   left: 0;
   height: 70vh;
   width: 65%;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -28,6 +29,7 @@ body {
   left: 0;
   height: 70vh;
   width: 65%;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -35,7 +37,6 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
-
 
 .header-text {
   width: 35%;
@@ -75,10 +76,9 @@ body {
   padding: 2rem 0 2rem 10%;
   margin-bottom: 2rem; }
 
-.indented {
-  padding: 5% 0 0 10%;
-  width: 95%;
- }
+.project-content {
+  padding-left: 10%;
+  width: 95%; }
 
 .text-content {
   padding: 0 7%;
@@ -93,11 +93,15 @@ body {
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
-  position: relative;
   margin: auto; }
 
 .mySlides {
   display: none; }
+  .mySlides img {
+    position: absolute;
+    height: 100%;
+    width: auto;
+    z-index: -1; }
 
 /* Next & previous buttons */
 .prev, .next {
@@ -113,7 +117,8 @@ body {
   -webkit-transition: 0.6s ease;
   -o-transition: 0.6s ease;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0; }
+  border-radius: 0 3px 3px 0;
+  background: rgba(0, 0, 0, 0.18); }
 
 /* Position the "next button" to the right */
 .next {
@@ -122,7 +127,7 @@ body {
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background: rgba(0, 0, 0, 0.28); }
+  background: rgba(0, 0, 0, 0.5); }
 
 /* Caption text */
 .text {
@@ -141,7 +146,8 @@ body {
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
-  top: 0; }
+  top: 0;
+  text-shadow: 1px 2px 2px black; }
 
 /* The dots/bullets/indicators */
 .dot {
@@ -156,8 +162,8 @@ body {
   -o-transition: background-color 0.6s ease;
   transition: background-color 0.6s ease; }
 
-/*.active, .dot:hover {
-  background-color: #717171; }*/
+.active, .dot:hover {
+  background-color: #717171; }
 
 /* Fading animation */
 .fade {
@@ -178,8 +184,5 @@ body {
   to {
     opacity: 1; } }
 
-
-    iframe{
-      width: 100%;
-    height: 100%;
-    }
+.indented {
+  margin: 0 0 2rem 8%; }

@@ -537,7 +537,8 @@ strong {
   width: 50%;
   height: auto;
   display: inline-block;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 .half-text {
   width: 50%; }

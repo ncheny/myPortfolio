@@ -16,14 +16,13 @@
 <!-- Nav menu -->
 
 <body>
-
-
     <nav id="nav-default">
       <div class="left-nav">
         <a class="head-3 button-link" href="index.html">
           < home </a>
       </div>
       <div class="right-nav head-3 my-name"> nancy chen</div>
+    </nav>
 
     <!-- nav for mobile -->
     <nav class="hidden" id="nav-toggle">
@@ -62,9 +61,8 @@
         </div>
 
       </div>
-    </nav>
+    </nav> -->
 
-<div id="fullpage">
     <div class="section">
       <div class="container header">
               <div class="header-text">
@@ -77,9 +75,11 @@
         </ul>
       </div>
 
-      <div class=""="beep-header"></div>
+      <div class="beep-header"></div>
     </div>
+  </div>
 
+  <div class="section">
     <div id="overview" class=" our-grey">
       <h2 class="head-2">Overview </h2>
       <div class="p-style">Beep is a 3D game developed in Unity where user can control a spherical alien who can change it’s shape to interact and solve puzzles in the environment. As player hides and dodges from hostile cube aliens in the different areas on the foreign planet, player will slowly uncover the hidden history of the planet.
@@ -87,11 +87,11 @@
         In this project I am jumping between the role of concept artist, 3d modeller, and coder.
       </div>
     </div>
-
     </div>
 
 
     <div class="project-content">
+
       <div  class="section indented">
         <div class="container" id="concept">
 
@@ -245,28 +245,30 @@ My role in creating and texturing the models were  focused on the design of the 
         <!-- footer top ends-->
 
       </footer>
-    </div>
     <!-- end of project content -->
   </div>
   <!-- end of container -->
 
-  <script src="js/menu.js"></script>
-  <script src="js/carousel.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="js/jquery.scrollify.js"></script>
-<script>
-      $(function() {
-        $.scrollify({
-          section : ".section",
-          scrollSpeed: 1100,
-offset : 0,
-scrollbars: true,
-setHeights:false,
-        });
+
+  <script src="js/menu.js"></script>
+  <script src="js/carousel.js"></script> -->
+      <script src="js/dotsNav.js"></script> -->
+      <script src="js/jquery.scrollify.js"></script>
+
+  <script>
+    $(function() {
+      $.scrollify({
+        section: ".section",
+        sectionName : "section-name",
+        scrollSpeed: 1100,
+        offset: 0,
+        scrollbars: true,
+        setHeights: false,
       });
-    </script>
+    });
+  </script>
 
 </body>
 
