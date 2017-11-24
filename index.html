@@ -20,7 +20,7 @@
   <div id="fullpage">
 
     <div class="our-pink section" id="hero">
-      <div class="hero-icons" >
+      <div class="hero-icons">
         <i class="material-icons md-light">&#xE338;</i>
         <i class="material-icons md-light">&#xE333;</i>
         <i class="material-icons md-light">&#xE3AE;</i>
@@ -37,11 +37,13 @@
     </div>
   </div>
 
-  <div class="centered nav-sticky">
-    <a class="head-3 hero-link button-link" href="index.html#featured"> projects </a>
-    <a class="head-3 hero-link button-link" href="index.html#about"> about </a>
-    <a class="head-3 hero-link button-link" href=""> resume </a>
-  </div>
+  <nav class="centered nav-sticky our-pink" id="nav-default">
+    <a href="#"><img alt="img" class="nc-icon" src="img/nc.png" id="sticky-logo"></a>
+    <a class="head-3 hero-link button-link" href="index.html#featured" style="color:white;"> projects </a>
+    <a class="head-3 hero-link button-link" href="index.html#about" style="color:white;"> about </a>
+    <a class="head-3 hero-link button-link" href="img/resume.pdf" target="_blank" style="color:white;"> resume </a>
+  </nav>
+
 
   <div class="section">
       <div id="featured" class="our-blue container">
@@ -104,14 +106,16 @@
         <div id="about">
           <div class="container ">
             <div class="half-img">
-              <img alt="img" class="" src="img/me.png">
+              <img alt="img" class="about-img" src="img/me.png">
             </div>
             <div class="half-text about-text">
               <h1 class="head-1 ">Hello!</h1>
               <p class="p-style">
-                My name is Nancy and I'm a design student interested in game design, 3D modelling, concept art, and web design. Adept in sketching, storytelling, and HTML& CSS, I love using these skills to create fun projects. While coding may not be my strongest point,
+                I'm Nancy! I'm a hardworking design student interested in game design, 3D modelling, concept art, and web design. Experienced in sketching, storytelling, and HTML& CSS, I'm always excited to contribute to fun projects. While coding may not be my strongest point,
                 I would gladly take on the challenge and learn new languages along the way.<br>
-                <br> In my off time, I can be found doodling in a sketchbook, playing video games, or scrolling through Twitter.</p>
+                <br> In my free time, I can be found doodling, playing video games, or scrolling through Twitter.</p>
+
+                <a class="head-3 about-resume" href="">> Resume</a>
             </div>
           </div>
       </div>
@@ -125,9 +129,15 @@
               Nancy Chen
             </div>
 
-            <div class="email">
-              nancy_chen107@hotmail.com
-            </div>
+
+            <a href="mailto:yca207@sfu.ca" class="contact email">
+                <i class="material-icons md-light social-icon">&#xE0E1;</i>
+                <span class="footer-label">yca207@sfu.ca</span>
+            </a>
+            <a class="contact" href="https://www.linkedin.com/in/nancy-chen-b20206133/">
+              <img class="footer-icon social-icon" src="img/icons/wht-filled-linkedin.png" alt="">
+              <span class="footer-label">linkedin.com/nancy-chen</span>
+            </a>
           </div>
 
           <div class="footer-listing">
@@ -136,13 +146,10 @@
                 <a class="footer-link" href="customize.html">About</a>
               </li>
               <li>
-                <a class="footer-link" href="products.html">Works</a>
+                <a class="footer-link" href="products.html">Projects</a>
               </li>
               <li>
-                <a class="footer-link" href="amorphous.html">Amorphous</a>
-              </li>
-              <li>
-                <a class="footer-link" href="beep.html">Beep</a>
+                <a class="footer-link" href="img/resume.pdf" target="_blank">Resume</a>
               </li>
             </ul>
           </div>
@@ -150,6 +157,19 @@
           <div class="footer-listing">
             <ul>
               <li>
+                <a class="footer-link" href="amorphous.html">Amorphous</a>
+              </li>
+              <li>
+                <a class="footer-link" href="beep.html">Beep</a>
+              </li>
+              <li>
+                <a class="footer-link" href="">Eyexpo</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-listing">
+            <ul>
                 <a class="footer-link" href="styleguide.html">Styleguide</a>
               </li>
               <li>
@@ -167,32 +187,21 @@
             </div>
           </a>
         </div>
-        <!-- footer top ends-->
-</div>
+
+      </footer>
+      <!-- footer ends -->
+
+      </div>
 
   </div>
   <!-- end fullpage content-->
 
 
 
-  </footer>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <!-- <script type="text/javascript" src="js/jquery.fullPage.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('#fullpage').fullpage({
-        anchors: ['firstPage', 'secondPage', '3rdPage'],
-        navigation: true,
-        navigationPosition: 'left',
-        navigationTooltips: ['First page', 'Second page', 'Third and last page'],
-        responsiveWidth: 900,
-      });
-
-    });
-  </script> -->
 
   <script src="js/typed.js"></script>
   <script>
@@ -211,14 +220,13 @@
       });
     });
   </script>
-
+  <script src="js/indexNav.js"></script>
   <script src="js/jquery.scrollify.js"></script>
   <script>
 				$(function() {
 					$.scrollify({
 						section : ".section",
             scrollSpeed: 1100,
-offset : 0,
 scrollbars: true,
 setHeights:false,
 					});

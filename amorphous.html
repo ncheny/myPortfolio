@@ -15,6 +15,8 @@
 
   <link href="css/grids.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 <!-- Nav menu -->
 
@@ -34,36 +36,11 @@
 
   <!-- nav for mobile -->
   <nav class="hidden" id="nav-toggle">
-    <div class="mobile-row" id="name-row">
-      <div class="nav-title head-1">
-        Nancy Chen
-      </div>
-    </div>
-    <div class="" id="nav-items">
-      <a class="mobile-row" href="index.html">
-        <div class="nav-link">
-          Home
-        </div>
-      </a>
-      <a class="mobile-row" href="index.html#tab-news">
-        <div class="nav-link">
-          About
-        </div>
-      </a>
-      <a class="mobile-row" href="index.html#tab-news">
-        <div class="nav-link">
-          Resume
-        </div>
-      </a>
-      <a class="mobile-row" href="index.html#tab-about">
-        <div class="nav-link">
-          Projects
-        </div>
-      </a>
-      <div class="mobile-row">
-        <a href=""><img alt="black linkedin icon" class="social-icon" src="img/icons/blk-linkedin.png"></a>
-        <a href=""><img alt="black email icon" class="social-icon" src="img/icons/blk-linkedin.png"></a>
-      </div>
+    <div class="centered nav-sticky" id="nav-default">
+      <a href="#"><img alt="img" class="nc-icon" src="img/nc.png" style="opacity:1;" id="sticky-logo"></a>
+      <a class="head-3 hero-link button-link" href="index.html#featured" > projects </a>
+      <a class="head-3 hero-link button-link" href="index.html#about"> about </a>
+      <a class="head-3 hero-link button-link" href="img/resume.pdf" target="_blank"> resume </a>
     </div>
   </nav>
   <!-- end mobile nav -->
@@ -223,9 +200,6 @@
   <section id="modelling" class="section indented" data-section-name="modelling">
     <div class="container ">
 
-      <div class="half-img">
-        <img src="img/amorphous/cat-progress.jpg" alt="">
-      </div>
       <div class="half-text">
         <div class="text-content">
 
@@ -236,6 +210,25 @@
           </div>
         </div>
       </div>
+
+      <div class="half-img">
+        <div class="model-slides">
+          <div>
+            <img src="img/amorphous/cat-progress.jpg">
+            <div class="text">Caption Text</div>
+          </div>
+
+          <div class="">
+            <img src="img/amorphous/planet-model.png">
+            <div class="text">Caption Text</div>
+          </div>
+
+          <div class="">
+            <img src="img/amorphous/rig-cat.png">
+            <div class="text">Caption Text</div>
+          </div>
+        </div>
+        </div>
 
     </div>
   </section>
@@ -254,9 +247,18 @@
       </div>
 
       <div class="half-img">
-        <div class="img-container">
-          <img src="img/amorphous/cat-alien.gif" alt="">
+
+        <div class="container">
+        <div class="half-img">
+          <img src="img/amorphous/meet-cat.gif" alt="">
+          <img src="img/amorphous/walk-away.gif" alt="">
         </div>
+
+        <div class="half-img">
+          <img src="img/amorphous/cat-alien.gif">
+        </div>
+      </div>
+
       </div>
 
     </div>
@@ -310,9 +312,15 @@
             Nancy Chen
           </div>
 
-          <div class="email">
-            nancy_chen107@hotmail.com
-          </div>
+
+          <a href="mailto:yca207@sfu.ca" class="contact email">
+              <i class="material-icons md-light social-icon">&#xE0E1;</i>
+              <span class="footer-label">yca207@sfu.ca</span>
+          </a>
+          <a class="contact" href="https://www.linkedin.com/in/nancy-chen-b20206133/">
+            <img class="footer-icon social-icon" src="img/icons/wht-filled-linkedin.png" alt="">
+            <span class="footer-label">linkedin.com/nancy-chen</span>
+          </a>
         </div>
 
         <div class="footer-listing">
@@ -320,17 +328,11 @@
             <li>
               <a class="footer-link" href="customize.html">About</a>
             </li>
-
             <li>
-              <a class="footer-link" href="products.html">Works</a>
+              <a class="footer-link" href="products.html">Projects</a>
             </li>
-
             <li>
-              <a class="footer-link" href="amorphous.html">Amorphous</a>
-            </li>
-
-            <li>
-              <a class="footer-link" href="beep.html">Beep</a>
+              <a class="footer-link" href="img/resume.pdf" target="_blank">Resume</a>
             </li>
           </ul>
         </div>
@@ -338,13 +340,24 @@
         <div class="footer-listing">
           <ul>
             <li>
+              <a class="footer-link" href="amorphous.html">Amorphous</a>
+            </li>
+            <li>
+              <a class="footer-link" href="beep.html">Beep</a>
+            </li>
+            <li>
+              <a class="footer-link" href="">Eyexpo</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-listing">
+          <ul>
               <a class="footer-link" href="styleguide.html">Styleguide</a>
             </li>
-
             <li>
               <a class="footer-link" href="citations.html">Citation</a>
             </li>
-
             <li>
               <a class="footer-link" href="https://github.com/bordercases/iat339project02">Git Repo</a>
             </li>
@@ -357,6 +370,7 @@
           </div>
         </a>
       </div>
+
     </footer>
     <!-- end footer -->
   </section>
@@ -368,7 +382,7 @@
 
   <script src="js/menu.js"></script>
   <script src="js/dotsNav.js"></script>
-  <script src="js/jquery.scrollify.js"></script>
+  <!-- <script src="js/jquery.scrollify.js"></script>
 
   <script>
     $(function() {
@@ -381,7 +395,7 @@
         setHeights: false,
       });
     });
-  </script>
+  </script> -->
 
   <script type="text/javascript" src="slick/slick.min.js"></script>
   <script type="text/javascript" src="js/amorphous-slides.js"></script>

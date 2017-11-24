@@ -1,5 +1,5 @@
   $(document).ready(function() {
-    $('.slides').slick({
+    $('.slides', ).slick({
       dots: true,
       arrows: true,
       infinite: true,
@@ -18,4 +18,26 @@ arrows: true,
 dots: true,
 
   });
+
+  $('.model-slides').slick({
+    dots: true,
+    arrows: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    cssEase: 'linear'
+  });
+
+  // $('.animation-slides').slick({
+  //   dots: true,
+  //   arrows: true,
+  //   infinite: true,
+  //   speed: 500,
+  //   fade: true,
+  //   autoplay: true,
+  //   autoplaySpeed: 2000,
+  //   cssEase: 'linear'
+  // });
   });

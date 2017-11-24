@@ -51,7 +51,7 @@ strong {
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   margin: 0;
-  font-size: 3em;
+  font-size: 300%;
   text-transform: uppercase;
   font-weight: bold; }
 
@@ -100,14 +100,15 @@ strong {
   margin-bottom: 0;
   line-height: 28px;
   color: grey;
-  font-size: 0.9rem; }
+  font-size: 1rem; }
 
-/* entry fields */
-.field-label {
-  font-family: 'Raleway', sans-serif;
-  margin: 0.5rem 0;
-  display: block;
-  font-weight: 400; }
+.footer-label {
+  display: inline-block;
+  font-weight: 400;
+  position: absolute;
+  left: 30px;
+  top: 3px;
+  font-size: 0.8rem; }
 
 /* anchor and button styles */
 .inline-link,
@@ -144,13 +145,21 @@ strong {
   position: sticky;
   top: 0;
   z-index: 100000;
-  background-color: white; }
+  background-color: white;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
 
-.thick {
-  padding: 2rem;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
+#sticky-logo {
+  position: absolute;
+  left: 4%;
+  width: 30px;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  top: 15%; }
+
+#sticky-logo:hover {
+  width: 35px; }
 
 .nav-title {
   position: relative;
@@ -395,7 +404,7 @@ strong {
 
 #hero {
   width: 100%;
-  height: 80vh; }
+  height: 90vh; }
 
 .hero-icons {
   width: 100%;
@@ -534,34 +543,29 @@ strong {
 
 .about-text {
   max-width: 37rem;
-  padding: 10rem 0; }
+  padding: 10rem 0 3rem 2%; }
 
-.about-text {
-  padding-right: 2%; }
+.about-resume, .about-resume:visited {
+  color: black;
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+  transition: 0.2s linear; }
+  .about-resume:hover, .about-resume:visited:hover {
+    color: #00c2e4;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear; }
 
 .half-img {
   width: 50%;
   height: auto;
   display: inline-block;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  padding-left: 1%; }
 
 .half-text {
   width: 50%; }
-
-.skillset {
-  padding: 1rem 0; }
-
-.skill-block {
-  display: inline-block;
-  width: 10%;
-  max-width: 6rem;
-  height: auto;
-  background: #00c2e4;
-  border-radius: 50%;
-  color: white;
-  text-align: center;
-  margin-left: 10px; }
 
 /*-------------footer----------*/
 #footer {
@@ -574,23 +578,26 @@ footer .nav-title {
   width: 100%;
   text-transform: uppercase; }
 
-.email,
-.location {
+.contact {
   font-style: italic;
   color: #f5f5f5;
-  font-size: 0.9rem; }
+  font-size: 0.9rem;
+  position: relative;
+  display: block; }
+  .contact .email:visited {
+    color: #f5f5f5;
+    display: block; }
+  .contact .material-icons {
+    border: none;
+    padding: 0;
+    margin: 0; }
 
 .email {
-  padding: 1rem 0; }
-
-.footer-linkheading {
-  text-decoration: none;
-  color: #f5f5f5;
-  margin: 0 0 0.5rem;
-  font-weight: bold; }
+  margin-top: 1rem; }
 
 .footer-link {
-  font-size: 0.8rem;
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 0.9rem;
   color: #f5f5f5;
   text-decoration: none;
   opacity: 0.7;
@@ -599,6 +606,7 @@ footer .nav-title {
   -webkit-transition: 0.2s linear; }
 
 .footer-link:hover {
+  font-size: 1rem;
   -o-transition: 0.2s linear;
   transition: 0.2s linear;
   -webkit-transition: 0.2s linear;
@@ -613,22 +621,18 @@ footer .nav-title {
   justify-content: center; }
 
 .footer-personalInfo {
-  margin: 2% 5%; }
+  margin: 2% 0;
+  width: 40%;
+  max-width: 30rem; }
 
 .footer-listing {
-  margin: 2% 5%; }
-
-.footer-bottom {
-  background-color: black;
-  padding: 1.5rem;
-  text-align: center; }
-
-.social-list {
-  margin: 0.5rem; }
+  margin: 3%; }
+  .footer-listing li {
+    margin: 3% 0; }
 
 .social-icon {
   color: white;
-  max-width: 18px;
+  max-width: 24px;
   height: auto;
   opacity: 0.7;
   margin: 0 0.5rem 0 0;
@@ -648,11 +652,6 @@ footer .nav-title {
 .nc-icon {
   width: 24px;
   margin: 0 1.5% 3% 1.5%; }
-
-.fine-print {
-  color: #f5f5f5;
-  opacity: 0.5;
-  font-size: 0.65rem; }
 
 .social-icon:hover {
   opacity: 1;
