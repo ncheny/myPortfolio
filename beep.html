@@ -7,71 +7,91 @@
   <meta content="width=device-width, initial-scale=1" name="viewport">
 
   <title>Beep</title>
-  <link href="css/main.css" rel="stylesheet">
-  <link href="css/projects.css" rel="stylesheet">
-  <link href="css/grids.css" rel="stylesheet">
+  <link href="css/stylesheets.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
 </head>
 <!-- Nav menu -->
 
 <body>
-    <nav id="nav-default">
-      <div class="left-nav">
-        <a class="head-3 button-link" href="index.html">
-          < home </a>
-      </div>
-      <div class="right-nav head-3 my-name"> nancy chen</div>
-    </nav>
+  <nav id="nav-default">
+    <div class="left-nav">
+      <a class="head-3 my-name" href="index.html">
+          <img alt="img" class="nc-icon" src="img/nc.png">
 
-    <!-- nav for mobile -->
-    <nav class="hidden" id="nav-toggle">
-      <div class="mobile-row" id="name-row">
-        <div class="nav-title head-1">
-          Nancy Chen
-        </div>
-      </div>
+      <div class="head-3 home-link">
+            &lt;home </div>
+            </a>
+    </div>
+  </nav>
 
-      <div class="" id="nav-items">
-        <a class="mobile-row" href="index.html">
-          <div class="nav-link">
-            Home
-          </div>
+
+  <!-- nav for mobile -->
+  <nav class="hidden" id="nav-toggle">
+    <div class="centered nav-sticky" id="nav-default">
+      <a href="#"><img alt="img" class="nc-icon" src="img/nc.png" style="opacity:1;" id="sticky-logo"></a>
+      <a class="head-3 hero-link button-link" href="index.html#featured" > projects </a>
+      <a class="head-3 hero-link button-link" href="index.html#about"> about </a>
+      <a class="head-3 hero-link button-link" href="img/resume.pdf" target="_blank"> resume </a>
+    </div>
+  </nav>
+  <!-- end mobile nav -->
+
+  <!-- start side nav -->
+  <div class="vNav">
+    <ul class="vNav head-4">
+      <li>
+        <a href="#top">
+          <div class="label ">Header</div>
         </a>
-
-        <a class="mobile-row" href="index.html#tab-news">
-          <div class="nav-link">
-            About
-          </div>
+      </li>
+      <li>
+        <a href="#overview">
+          <div class="label">Overview</div>
         </a>
-        <a class="mobile-row" href="index.html#tab-news">
-          <div class="nav-link">
-            Resume
-          </div>
+      </li>
+      <li>
+        <a href="#concept">
+          <div class="label">Concept</div>
         </a>
-        <a class="mobile-row" href="index.html#tab-about">
-          <div class="nav-link">
-            Projects
-          </div>
+      </li>
+      <li>
+        <a href="#environment">
+          <div class="label">Environment</div>
         </a>
-
-        <div class="mobile-row">
-          <a href=""><img alt="black linkedin icon" class="social-icon" src="img/icons/blk-linkedin.png"></a>
-          <a href=""><img alt="black email icon" class="social-icon" src="img/icons/blk-linkedin.png"></a>
-        </div>
-
-      </div>
-    </nav>
+      </li>
+      <li>
+        <a href="#modelling">
+          <div class="label">Modelling</div>
+        </a>
+      </li>
+      <li>
+        <a href="#animation">
+          <div class="label">Animation</div>
+        </a>
+      </li>
+      <li>
+        <a href="#post-production">
+          <div class="label">Post Production</div>
+        </a>
+      </li>
+      <li>
+        <a href="#final-video">
+          <div class="label">Final Video</div>
+        </a>
+      </li>
+    </ul>
+  </div>
 
     <div class="section">
       <div class="container header">
               <div class="header-text">
-        <div class="head-1"> Beep</div>
+        <h1 class="head-1"> Beep</h1>
         <div class="head-4"> 3D adventure game of a morphing alien</div>
         <ul class="header-details p-style">
           <li><strong>TASKS </strong> Conceptualization, illustration, sound design, 3d modelling, rigging, researching, coding, building </li>
           <li><strong>TOOLS </strong> Autodesk Maya, Unity3D, Clip Studio, Photoshop</li>
-          <li><strong>DATE </strong> Spring 2017</li>
+          <li><strong>Spring 2017 </strong> </li>
         </ul>
       </div>
 
@@ -96,34 +116,30 @@
         <div class="container" id="concept">
 
           <div class="half-img">
-            <div class="slideshow-container">
-              <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="img/beep/concept1.png" style="width:100%">
-                <div class="text">Caption Text</div>
-              </div>
-
-              <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="img/beep/concept2.png" style="width:100%">
-                <div class="text">Caption Two</div>
-              </div>
-
-              <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="img/beep/concept3.png" style="width:100%">
-                <div class="text">Caption Three</div>
-              </div>
-
-              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="concept-slides">
+              <figure>
+                <img src="img/beep/4 forms.jpg">
+                <figcaption class="text">Caption Text</figcaption>
+              </figure>
+              <figure class="">
+                <img src="img/beep/concept1.png">
+                <figcaption class="text">Caption Text</figcaption>
+              </figure>
+              <figure class="">
+                <img src="img/beep/concept2.png">
+                <figcaption class="text">Caption Text</figcaption>
+              </figure>
             </div>
-            <br>
-
-            <div style="text-align:center">
-              <span class="dot" onclick="currentSlide(1)"></span>
-              <span class="dot" onclick="currentSlide(2)"></span>
-              <span class="dot" onclick="currentSlide(3)"></span>
+            <div class="concept-slides-nav">
+              <figure>
+                <img src="img/beep/4 forms.jpg">
+              </figure>
+              <figure class="">
+                <img src="img/beep/concept1.png">
+              </figure>
+              <figure class="">
+                <img src="img/beep/concept2.png">
+              </figure>
             </div>
           </div>
 
@@ -142,8 +158,8 @@
         </div>
       </div>
 
-      <div class="section indented">
-        <div class="container" id="environment">
+      <div class="section indented" id="coding">
+        <div class="container" >
           <div class="half-text">
             <div class="text-content">
 
@@ -161,7 +177,7 @@ As our team has more designers than coder, I had to help our main programmers de
         </div>
       </div>
 
-      <div class="section indented">
+      <div class="section indented" id="coding">
         <div class="container">
           <div class="half-text">
             <div class="text-content">
@@ -253,22 +269,10 @@ My role in creating and texturing the models were  focused on the design of the 
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
   <script src="js/menu.js"></script>
-  <script src="js/carousel.js"></script> -->
-      <script src="js/dotsNav.js"></script> -->
-      <script src="js/jquery.scrollify.js"></script>
+  <script src="js/dotsNav.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script src="js/beep-slides.js"></script>
 
-  <script>
-    $(function() {
-      $.scrollify({
-        section: ".section",
-        sectionName : "section-name",
-        scrollSpeed: 1100,
-        offset: 0,
-        scrollbars: true,
-        setHeights: false,
-      });
-    });
-  </script>
 
 </body>
 
