@@ -61,10 +61,11 @@ border: none;
 
   .head-1{
     //project title text
-    // position: absolute;
-    // top: 25%;
-    padding-top: 50%;
+    position: relative;
+z-index: 100;
+   padding-top: 50%;
   }
+
 }
 
 .header-details{
@@ -83,7 +84,8 @@ border: none;
   box-shadow: $shadow;
 }
 
-#beep-header:before {
+#beep-header:before,
+#amorphous-header:before {
   content: "";
   position: absolute;
   left: 35%;
@@ -135,7 +137,7 @@ transition: 0.6s ease;
 }
 
 .text-content{
-  margin:0 2%;
+  margin:0 5%;
   max-width: 50rem;
 
   .p-style{
@@ -149,8 +151,15 @@ figure{
 
 .grids-4{
   max-width: 25%;
-  height: auto;
+  height: 100%;
   display: block;
+}
+
+.grids-3{
+  max-width: 33%;
+  height: 100%;
+  display: block;
+  padding: 1% 1% 0 0;
 }
 
 
