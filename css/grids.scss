@@ -74,10 +74,8 @@
     display: none;
   }
 
-  .amorphous-header, .beep-header,
-   #bg-amorphous, #bg-beep,
-   .header-text{
-    width: 100%;
+  .vNav{
+    display: none;
   }
 
   #sticky-logo{
@@ -108,21 +106,6 @@
   .typed-text, .hero-icons{
     padding-left: 10%;
     justify-content: left;
-  }
-
-
-  .header-text{
-    order:2;
-    padding-left: 0;
-        padding: 0 15%;
-
-    .head-1{
-      padding-top: 10%;
-    }
-  }
-
-  .header-details{
-    padding-top: 10%;
   }
 
   .project-content{
@@ -194,6 +177,34 @@
 
   iframe{
     height: 20rem;
+  }
+
+  #top #amorphous-header, #top #beep-header,
+  #bg-amorphous, #bg-beep,
+   .header-text{
+    width: 100%;
+  }
+
+  #top #amorphous-header, #top #beep-header{
+    height: 80vh;
+  }
+
+  #beep-header:before{
+    display: none;
+  }
+
+  .header-text{
+    order:2;
+    padding-left: 0;
+        padding: 0 15%;
+
+    .head-1{
+      padding-top: 10%;
+    }
+  }
+
+  .header-details{
+    padding-top: 10%;
   }
 
 }

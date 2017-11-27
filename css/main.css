@@ -131,7 +131,7 @@ strong {
 /*nav*/
 .nav-default {
   background-color: white;
-  -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 5px 5px 10px rgba(118, 143, 165, 0.47);
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
   padding: 0.5rem 2.2rem;
   /*text-align: right;*/
@@ -315,7 +315,7 @@ strong {
   .button-link:hover,
   .button-link:visited:hover {
     color: black;
-    text-shadow: 5px 5px 10px #768fa5;
+    text-shadow: 5px 5px 10px rgba(118, 143, 165, 0.47);
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out; }

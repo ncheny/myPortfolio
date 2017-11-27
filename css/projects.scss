@@ -1,3 +1,11 @@
+/* ------------- variables ------------- */
+$pink: #ff9787;
+$blue: #00c2e4;
+$black: black;
+$lightblue: #f0fbff;
+$shadow: 5px 5px 10px rgba(118, 143, 165, 0.47);
+
+
 body{
   position: relative;
 }
@@ -17,12 +25,12 @@ height: 100%;
 border: none;
 }
 
-.amorphous-header{
+#amorphous-header{
   background-image: url(../img/amorphous/preview.png);
   top: 0;
   left: 0;
   width: 65%;
-  background-attachment: fixed;
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,13 +38,12 @@ border: none;
   display: flex;
 }
 
-.beep-header{
+#beep-header{
   background-image: url(../img/beep/preview.jpg);
   top: 0;
   left: 0;
-  height: 70vh;
+  height: 100vh;
   width: 65%;
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -61,9 +68,7 @@ border: none;
 }
 
 .header-details{
-  // position: absolute;
-  // top: 55%;
-      padding-top: 25%;
+      padding-top: 10%;
   background: white;
   color: grey;
   font-size: 0.8rem;
@@ -72,6 +77,27 @@ border: none;
   li{
     padding-bottom: 0.5rem;
   }
+}
+
+.header-project{
+  box-shadow: $shadow;
+}
+
+#beep-header:before {
+  content: "";
+  position: absolute;
+  left: 35%;
+  top: 0;
+  width: 0;
+  height: 100vh;
+  border-left: 8vh solid #ffffff;
+  border-top: 50vh solid transparent;
+  border-bottom: 50vh solid transparent;
+}
+
+.centered .beep-outlinks{
+  color: white;
+  margin-left:5%;
 }
 
 .left-nav{
@@ -99,14 +125,8 @@ transition: 0.6s ease;
   }
 }
 
-
-#overview{
-  padding: 2rem 2rem 2rem 10%;
-  // background: whitesmoke;
-  margin-bottom: 2rem;
-  .p-style{
-        max-width: 60rem;
-  }
+.step{
+ color: $blue
 }
 
 .project-content{
@@ -115,13 +135,22 @@ transition: 0.6s ease;
 }
 
 .text-content{
-  padding:0 7%;
-  max-width: 30rem;
+  margin:0 2%;
+  max-width: 50rem;
 
   .p-style{
     padding-top: 1rem;
     min-height: 10rem;
   }
+}
+figure{
+  margin: 0;
+}
+
+.grids-4{
+  max-width: 25%;
+  height: auto;
+  display: block;
 }
 
 
@@ -232,5 +261,5 @@ transition: 0.6s ease;
 
 
 .indented{
-      margin: 10% 2rem 2rem 10%;
+      margin: 10% 2rem 2rem 3%;
 }

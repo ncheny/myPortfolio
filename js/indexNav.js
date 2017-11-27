@@ -2,6 +2,7 @@
 // var nameofVariable= object.property
 window.innerWidth;
 var windowWidth = window.innerWidth;
+var windowHeight = window.innerHeight;
 var navDefault = document.querySelector( "#nav-default" );
 var stickyLogo = document.querySelector( "#sticky-logo" );
 
@@ -12,7 +13,7 @@ window.addEventListener('scroll', function() {
   var i;
   // console.log( lastYPos );
 
-  if(lastYPos> 50){
+  if(lastYPos> windowHeight-50){
     navDefault.classList.remove("our-pink");
     stickyLogo.style.opacity = "0";
     stickyLogo.style.opacity = "0.8";

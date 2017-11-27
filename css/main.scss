@@ -2,7 +2,10 @@
 $pink: #ff9787;
 $blue: #00c2e4;
 $black: black;
-$lightblue: #f0fbff; /* ------------- body layout ------------- */
+$lightblue: #f0fbff;
+$shadow: 5px 5px 10px rgba(118, 143, 165, 0.47);
+
+ /* ------------- body layout ------------- */
 // html,footer,body {
 //   height: 100%;
 //   font-family: 'Roboto Mono', sans-serif;
@@ -152,7 +155,7 @@ strong {
 
 .nav-default {
   background-color: white;
-  -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: $shadow;
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
   padding: 0.5rem 2.2rem;
   /*text-align: right;*/
@@ -363,7 +366,7 @@ opacity: 0;
 
   &:hover {
     color: black;
-    text-shadow: 5px 5px 10px rgba(118, 143, 165, 0.47);
+    text-shadow: $shadow;
     transition: all 0.3s ease-in-out;
 
   }

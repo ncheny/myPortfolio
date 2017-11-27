@@ -22,6 +22,9 @@ $('.concept-slides-nav').slick({
  slidesToScroll: 1,
  asNavFor: '.concept-slides',
  centerMode: true,
+ autoplay: true,
+ autoplaySpeed: 5000,
+
  focusOnSelect: true
 });
 
