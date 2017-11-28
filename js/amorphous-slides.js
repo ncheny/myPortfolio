@@ -1,35 +1,59 @@
   $(document).ready(function() {
-    $('.slides', ).slick({
-      dots: true,
-      arrows: true,
-      infinite: true,
-      speed: 500,
-      fade: true,
-      autoplay: true,
-      autoplaySpeed: 2000,
-      cssEase: 'linear'
-    });
 
     $('.concept-slides').slick({
-      dots: true,
-      arrows: true,
-      infinite: true,
-      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
       fade: true,
-      autoplay: true,
-      autoplaySpeed: 2000,
-      cssEase: 'linear'
+      asNavFor: '.concept-slides-nav'
+  });
+
+  $('.concept-slides-nav').slick({
+   slidesToShow: 3,
+   slidesToScroll: 1,
+   asNavFor: '.concept-slides',
+   centerMode: true,
+   autoplay: true,
+   autoplaySpeed: 5000,
+   focusOnSelect: true
+  });
+
+  $('.environment-slides', ).slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.environment-slides-nav'
+  });
+
+  $('.environment-slides-nav').slick({
+   slidesToShow: 3,
+   slidesToScroll: 1,
+   asNavFor: '.environment-slides',
+   centerMode: true,
+   autoplay: true,
+   autoplaySpeed: 5000,
+
+   focusOnSelect: true
   });
 
   $('.model-slides').slick({
-    dots: true,
-    arrows: true,
-    infinite: true,
-    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
     fade: true,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    cssEase: 'linear'
+    asNavFor: '.model-slides-nav'
+  });
+
+  $('.model-slides-nav').slick({
+   slidesToShow: 3,
+   slidesToScroll: 1,
+   asNavFor: '.model-slides',
+   centerMode: true,
+   autoplay: true,
+   autoplaySpeed: 5000,
+
+   focusOnSelect: true
   });
 
   // $('.animation-slides').slick({

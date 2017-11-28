@@ -567,6 +567,9 @@ strong {
 .half-text {
   width: 50%; }
 
+.half-text {
+  margin-left: 5%; }
+
 /*-------------footer----------*/
 #footer {
   margin-top: 5rem; }

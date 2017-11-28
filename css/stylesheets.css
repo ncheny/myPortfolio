@@ -54,7 +54,7 @@ strong {
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   margin: 0;
-  font-size: 300%;
+  font-size: 280%;
   text-transform: uppercase;
   font-weight: bold; }
 
@@ -151,7 +151,9 @@ strong {
   background-color: white;
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out; }
+  transition: all 0.5s ease-in-out;
+  -webkit-box-shadow: 5px 5px 10px rgba(118, 143, 165, 0.47);
+  box-shadow: 5px 5px 10px rgba(118, 143, 165, 0.47); }
 
 #sticky-logo {
   position: absolute;
@@ -451,7 +453,9 @@ strong {
 .projects {
   height: auto;
   margin: 0;
-  position: relative; }
+  position: relative;
+  -webkit-box-shadow: 5px 5px 10px rgba(118, 143, 165, 0.47);
+  box-shadow: 5px 5px 10px rgba(118, 143, 165, 0.47); }
   .projects h1 {
     position: absolute;
     padding: 0;
@@ -471,6 +475,8 @@ strong {
   -o-transition: 0.2s linear;
   transition: 0.2s linear;
   background-position: center; }
+  [id*="bg-"]:hover {
+    background-color: #00d8fe; }
 
 #bg-beep {
   background-image: url("../img/beep/concept3.png");
@@ -544,6 +550,10 @@ strong {
   width: 100%;
   background-color: rgba(35, 24, 130, 0.25); }
 
+.about-img {
+  position: relative;
+  z-index: -1; }
+
 .about-text {
   max-width: 37rem;
   padding: 10rem 0 3rem 2%; }
@@ -569,6 +579,9 @@ strong {
 
 .half-text {
   width: 50%; }
+
+.fullW-text {
+  padding-left: 2%; }
 
 /*-------------footer----------*/
 #footer {
@@ -609,7 +622,6 @@ footer .nav-title {
   -webkit-transition: 0.2s linear; }
 
 .footer-link:hover {
-  font-size: 1rem;
   -o-transition: 0.2s linear;
   transition: 0.2s linear;
   -webkit-transition: 0.2s linear;
@@ -738,6 +750,10 @@ iframe {
     z-index: 100;
     padding-top: 50%; }
 
+.header-overview {
+  font-size: 0.8rem;
+  margin-bottom: 25%; }
+
 .header-details {
   padding-top: 10%;
   background: white;
@@ -763,7 +779,7 @@ iframe {
   border-top: 50vh solid transparent;
   border-bottom: 50vh solid transparent; }
 
-.centered .beep-outlinks {
+.centered .outlinks {
   color: white;
   margin-left: 5%; }
 
@@ -917,7 +933,7 @@ figure {
     opacity: 1; } }
 
 .indented {
-  margin: 10% 2rem 2rem 3%; }
+  margin: 15% 2rem 2rem 5%; }
 
 /* This is some default styling for the exercise */
 *,
@@ -1015,13 +1031,13 @@ figure {
   .project-content {
     padding-left: 0;
     width: 100%; }
-  #overview {
-    padding: 10% 15%; }
+  .header-overview {
+    margin-bottom: 0; }
   .footer-personalInfo {
     width: 100%;
     margin: 5% 5% 8% 5%; }
   .footer-listing {
-    width: 40%; }
+    width: 25%; }
   .top-link {
     bottom: 18.25em; } }
 
@@ -1033,6 +1049,9 @@ figure {
     font-size: 80%; }
   .half-img, .half-text {
     width: 100%; }
+  .grids-3 {
+    max-width: 100%;
+    height: auto; }
   .half-text {
     margin: 0 4% 4% 0%; }
   .about-text {

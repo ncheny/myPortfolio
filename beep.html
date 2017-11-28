@@ -9,6 +9,7 @@
   <title>Beep</title>
   <link href="css/stylesheets.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 <!-- Nav menu -->
@@ -43,6 +44,12 @@
     <ul class="vNav head-4">
       <li><a href="#top">  <div class="label ">Header</div></a></li>
       <li><a href="#concept"><div class="label">Concept</div></a></li>
+      <li><a href="#modelling"><div class="label">Modelling</div></a></li>
+      <li><a href="#camera"><div class="label">Camera</div></a></li>
+      <li><a href="#ui"><div class="label">UI</div></a></li>
+      <li><a href="#sound"><div class="label">Sound</div></a></li>
+      <li><a href="#trailer"><div class="label">Trailer</div></a></li>
+
     </ul>
   </div>
 
@@ -51,11 +58,11 @@
       <div class="header-text">
         <h1 class="head-1"> Beep</h1>
         <div class="head-4"> 3D game of a morphing alien</div>
+        <div class="p-style header-overview">
+          Beep is a Unity developed stealth/adventure game where user play as a morphing alien who crash landed on a foreign planet with hostile enemies and a hidden history.
+        </div>
         <ul class="header-details p-style">
-          <li>Beep is a Unity developed stealth/adventure game where user play as a morphing alien who crash landed on a foreign planet with hostile enemies and a hidden history. </li>
-        <br>
-        <br></br>
-          <li><strong>TASKS </strong> Conceptualization, illustration, sound design, 3d modelling, rigging, researching, coding, building </li>
+          <li><strong>TASKS </strong> Concept art, illustration, sound design, 3d modelling, rigging, researching, coding, building </li>
           <li><strong>TOOLS </strong> Autodesk Maya, Unity3D, Clip Studio, Photoshop</li>
           <li><strong>TEAM </strong> Danielle Ragas, Josephine Ryu, Wan-teen Yang</li>
           <li><strong>Spring 2017 </strong> </li>
@@ -70,8 +77,8 @@
     </div>
 
     <div class="centered our-blue">
-      <a class="button-link  beep-outlinks" href="https://gamejolt.com/games/beep/259483">Play the game</a>
-      <a class="button-link  beep-outlinks" href="http://alces-team.tumblr.com/">Development Blog</a>
+      <a class="button-link  outlinks" href="https://gamejolt.com/games/beep/259483">Play the game</a>
+      <a class="button-link  outlinks" href="http://alces-team.tumblr.com/">Development Blog</a>
     </div>
   </div>
 
@@ -154,14 +161,14 @@
       </div>
     </div>
 
-    <div class="section indented" id="modelling">
-      <div class="container">
+    <div class="section indented" >
+      <div class="container" id="modelling">
         <div class="half-text">
           <div class="text-content">
 
             <h2 class="head-2 step"> 3D models & textures</h2>
             <div class="p-style">
-              My role in creating and texturing the models were focused on the design of the spaceship and the second enemy type found in later level of the game. While I explored different design of the spaceship models in Maya, the form of the trapezoid enemy was set pretty early on with wome minor changes in the body ratio. Textures of the trapezoid enemy was created in Clip Studio and then compiled in Unity3D.
+              My role in creating and texturing the models were focused on the design of the spaceship and the second enemy type found in later level of the game. While I explored different design of the spaceship models in Maya (with the texturing of the spaceship done by D.Ragas), the form of the trapezoid enemy was set pretty early on with some minor changes in the body ratio. Textures of the trapezoid enemy was created by me in Clip Studio and then compiled in Unity3D.
             </div>
           </div>
         </div>
@@ -177,8 +184,8 @@
       </div>
     </div>
 
-    <div class="section indented" id="camera">
-      <div class="container">
+    <div class="section indented" >
+      <div class="container" id="camera">
         <div class="half-text">
           <div class="text-content">
 
@@ -200,11 +207,11 @@
       </div>
     </div>
 
-    <div class="section indented" id="UI" style="margin-left:5%;">
-      <div class="container">
+    <div class="section indented fullW-text" >
+      <div class="container"  id="ui">
             <h2 class="head-2 step">UI and Particles</h2>
             <div class="p-style">
-               As our world were asset heavy, there was noticeable lag between levels. Thus, I researched for tutorials online to implement a fading transition between levels. After that, I was responsible for the menu UI where heiroglyphs and game settings would be stored. While the feature was scrapped from the final iteration, I created a particle effect on interactive cubes that would turn on only when they are in camera view.
+               As our world were asset heavy, there was noticeable lag between levels. Thus, I researched for tutorials online to implement a fading transition between levels. After that, I was responsible for the menu UI where heiroglyphs and game settings would be stored. While the particles feature was scrapped from the final iteration, I created a particle effect on interactive cubes that would activate only when they are in camera view.
             </div>
 
         <div class="container centered">
@@ -226,7 +233,7 @@
               <br><br>
               Water physic came at the latest part of the development so I had to look for one that would fit our game's semi-flat aesthetic with limited time. Through some research, I found a few wave prefabs provided in Unity's Standard Assets, played around with it, and was able to create a customized version in a relatively short time.
               <br><br>
-              Once that was done, I had to set up the intro screen and the tutorial map. Introduction screen was planned so that once user press start, player would see a UFO crashing onto a planet where our avatar would emerge into the tutorial level. I designed and coded the stage to have in-world tuturials popping up with control tips. The control tips were later adopted into other levels as well.
+              Once that was done, I had to set up the intro screen and the tutorial map. Introduction screen was planned so that once user press start, player would see a UFO crashing onto a planet where our avatar would emerge into the tutorial level. I designed and coded the tutorial stage so semi-diegetic tutorials pop up with control tips. The popup tips were later adopted into other levels as well.
             </div>
           </div>
         </div>
@@ -235,25 +242,26 @@
           <img src="img/beep/water.gif" style="margin-bottom:2%;"alt="">
           <img src="img/beep/tutorial.jpg" alt="">
         </div>
-
       </div>
     </div>
 
 
     <section class="section">
-      <div class="indented container" id="final-video" data-section-name="final-video">
+      <div class="indented container" id="trailer" data-section-name="final-video">
 
         <div class="half-text">
           <div class="text-content">
             <h2 class="head-2 step">Game Trailer & Thoughts</h2>
             <div class="p-style">
-              Final Reflection
+              While I've made some simple Unity 2D platformer game before, this was the first time I had to help code, build, and make assets for a Unity 3D game. There are still a lot of design refinements we can make on the game and more playertesting would have helped weed out the small bugs found throughout as well. Overall, if there wass something I would like to change, a final boss combat-able should have been added and some levels could have been compressed to enrich the content quality in each stage.
+              <br><br>
+              The game was showcased in class and at a local indie comic/game convention where we had positive reviews and suggestions. Game trailer was made by J.Ryu.
             </div>
           </div>
         </div>
 
         <div class="half-img">
-          <iframe src='https://vimeo.com/212249428'></iframe>
+            <iframe src='https://player.vimeo.com/video/212249428'></iframe>
         </div>
 
 
@@ -272,54 +280,44 @@
           Nancy Chen
         </div>
 
-        <div class="email">
-          nancy_chen107@hotmail.com
-        </div>
+
+        <a href="mailto:yca207@sfu.ca" class="contact email">
+            <i class="material-icons md-light social-icon">&#xE0E1;</i>
+            <span class="footer-label">yca207@sfu.ca</span>
+        </a>
+        <a class="contact" href="https://www.linkedin.com/in/nancy-chen-b20206133/">
+          <img class="footer-icon social-icon" src="img/icons/wht-filled-linkedin.png" alt="">
+          <span class="footer-label">linkedin.com/nancy-chen</span>
+        </a>
       </div>
 
       <div class="footer-listing">
         <ul>
-          <li>
-            <a class="footer-link" href="customize.html">About</a>
-          </li>
+          <li><a class="footer-link" href="customize.html">About</a></li>
+          <li><a class="footer-link" href="products.html">Projects</a></li>
+          <li><a class="footer-link" href="img/resume.pdf" target="_blank">Resume</a></li>
+        </ul>
+      </div>
 
-          <li>
-            <a class="footer-link" href="products.html">Works</a>
-          </li>
-
-          <li>
-            <a class="footer-link" href="amorphous.html">Amorphous</a>
-          </li>
-
-          <li>
-            <a class="footer-link" href="beep.html">Beep</a>
-          </li>
+      <div class="footer-listing">
+        <ul><li><a class="footer-link" href="amorphous.html">Amorphous</a></li>
+          <li><a class="footer-link" href="beep.html">Beep</a></li>
+          <li><a class="footer-link" href="">Eyexpo</a></li>
         </ul>
       </div>
 
       <div class="footer-listing">
         <ul>
-          <li>
-            <a class="footer-link" href="styleguide.html">Styleguide</a>
-          </li>
-
-          <li>
-            <a class="footer-link" href="citations.html">Citation</a>
-          </li>
-
-          <li>
-            <a class="footer-link" href="https://github.com/bordercases/iat339project02">Git Repo</a>
-          </li>
+          <li><a class="footer-link" href="styleguide.html">Styleguide</a></li>
+          <li><a class="footer-link" href="citations.html">Citation</a></li>
+          <li><a class="footer-link" href="https://github.com/bordercases/iat339project02">Git Repo</a></li>
         </ul>
       </div>
       <!-- go back up -->
       <a class="top-link" href="#">
-        <div>
-          ^
-        </div>
+        <div> ^ </div>
       </a>
     </div>
-    <!-- footer top ends-->
 
   </footer>
   <!-- end of container -->

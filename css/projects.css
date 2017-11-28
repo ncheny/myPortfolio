@@ -44,7 +44,13 @@ iframe {
   position: relative;
   background: white; }
   .header-text .head-1 {
+    position: relative;
+    z-index: 100;
     padding-top: 50%; }
+
+.header-overview {
+  font-size: 0.8rem;
+  margin-bottom: 25%; }
 
 .header-details {
   padding-top: 10%;
@@ -59,7 +65,8 @@ iframe {
   -webkit-box-shadow: 5px 5px 10px rgba(118, 143, 165, 0.47);
   box-shadow: 5px 5px 10px rgba(118, 143, 165, 0.47); }
 
-#beep-header:before {
+#beep-header:before,
+#amorphous-header:before {
   content: "";
   position: absolute;
   left: 35%;
@@ -70,7 +77,7 @@ iframe {
   border-top: 50vh solid transparent;
   border-bottom: 50vh solid transparent; }
 
-.centered .beep-outlinks {
+.centered .outlinks {
   color: white;
   margin-left: 5%; }
 
@@ -116,8 +123,14 @@ figure {
 
 .grids-4 {
   max-width: 25%;
-  height: auto;
+  height: 100%;
   display: block; }
+
+.grids-3 {
+  max-width: 33%;
+  height: 100%;
+  display: block;
+  padding: 1% 1% 0 0; }
 
 * {
   -webkit-box-sizing: border-box;

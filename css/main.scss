@@ -73,7 +73,7 @@ strong {
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   margin: 0;
-  font-size: 300%;
+  font-size: 280%;
   // display: inline-block;
   text-transform: uppercase;
   font-weight: bold;
@@ -174,6 +174,7 @@ strong {
       -webkit-transition: all 0.5s ease-in-out;
       -o-transition: all 0.5s ease-in-out;
       transition: all 0.5s ease-in-out;
+      box-shadow: $shadow;
 }
 
 #sticky-logo{
@@ -508,6 +509,7 @@ opacity: 0;
   height: auto;
   margin: 0;
   position: relative;
+  box-shadow: $shadow;
 
   h1 {
     position: absolute;
@@ -525,6 +527,10 @@ opacity: 0;
   display: flex;
   transition: 0.2s linear;
   background-position: center;
+
+    &:hover{
+        background-color: lighten($blue, 5%);
+    }
 }
 
 
@@ -612,6 +618,11 @@ opacity: 0;
       // height: 80vh;
   }
 
+  .about-img{
+    position: relative;
+z-index: -1;
+  }
+
   .about-text{
     max-width: 37rem;
     padding: 10rem 0 3rem 2%;
@@ -642,6 +653,11 @@ opacity: 0;
 
 .half-text {
   width: 50%;
+  // padding: 0 1rem;
+}
+
+.fullW-text {
+  padding-left:2%;
   // padding: 0 1rem;
 }
 
@@ -694,7 +710,7 @@ footer .nav-title {
 }
 
 .footer-link:hover {
-  font-size: 1rem;
+  // font-size: 1rem;
   -o-transition: 0.2s linear;
   transition: 0.2s linear;
   -webkit-transition: 0.2s linear;

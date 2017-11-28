@@ -68,6 +68,11 @@ z-index: 100;
 
 }
 
+.header-overview{
+  font-size: 0.8rem;
+margin-bottom: 25%;
+}
+
 .header-details{
       padding-top: 10%;
   background: white;
@@ -97,7 +102,7 @@ z-index: 100;
   border-bottom: 50vh solid transparent;
 }
 
-.centered .beep-outlinks{
+.centered .outlinks{
   color: white;
   margin-left:5%;
 }
@@ -270,5 +275,5 @@ figure{
 
 
 .indented{
-      margin: 10% 2rem 2rem 3%;
+      margin: 15% 2rem 2rem 5%;
 }
