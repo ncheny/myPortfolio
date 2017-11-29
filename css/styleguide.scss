@@ -1,0 +1,26 @@
+$blue: #00c2e4;
+
+section{
+  position: relative;
+}
+
+h2{
+  color: $blue;
+}
+
+.code-block{
+  border: 1px solid grey;
+  margin: 3%;
+  padding: 1rem;
+}
+
+#bg-beep{
+  width: 100%;
+}
+
+#headings, #paragraph{
+  width: 50%;
+  // max-width: 30rem;
+  // display: inline-block;
+  padding-right: 3%
+}

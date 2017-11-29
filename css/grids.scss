@@ -79,8 +79,9 @@
   }
 
   #sticky-logo{
-        top: 20%;
+        top: 22%;
             width: 6%;
+            left: 2%;
   }
 
   .hero-icons{
@@ -128,13 +129,21 @@
     .top-link{
           bottom: 18.25em;
     }
+
+   .outlinks{
+          font-size: 0.8rem;
+    }
+
+    .indented{
+          margin: 15% 1% 2rem 1%;
+    }
 }
 
 /*half-media area resizes earlier at 720px*/
 @media (max-width: 50em) {
 
   .head-1{
-        font-size: 250%;
+        font-size: 200%;
   }
   .head-3{
     font-size: 80%;
@@ -147,6 +156,10 @@
   .grids-3{
     max-width: 100%;
     height: auto;
+  }
+
+  .amorphous-cat-gif{
+    max-width: 100%;
   }
 
   .half-text{
@@ -169,10 +182,6 @@
 
   .featured-description {
     margin: 25% 0 30% 10%;
-
-    .head-1{
-          font-size: 200%;
-    }
   }
 
   .proj-article{
@@ -194,14 +203,15 @@
     height: 80vh;
   }
 
-  #beep-header:before{
+  #beep-header:before,
+  #amorphous-header:before{
     display: none;
   }
 
   .header-text{
     order:2;
     padding-left: 0;
-        padding: 0 15%;
+        padding: 0 5%;
 
     .head-1{
       padding-top: 10%;

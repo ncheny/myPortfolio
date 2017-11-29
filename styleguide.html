@@ -3,297 +3,364 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
 
-    <title>Style Guide</title>
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/projects.css" rel="stylesheet">
-    <link href="css/grids.css" rel="stylesheet">
+  <title>Style Guide</title>
+  <link href="css/stylesheets.css" rel="stylesheet">
+  <link href="css/styleguide.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <!-- Nav menu -->
 
 <body>
-    <header>
-      <nav id="nav-default">
-        <div class="left-nav">
-          <div class="head-3 my-name"> nancy chen</div>
+  <header>
+    <nav id="nav-default">
+      <div class="left-nav">
+        <a class="head-3 my-name" href="index.html">
+              <img alt="img" class="nc-icon" src="img/nc.png">
 
-          <a class="head-3 button-link" href="index.html">
-            < home </a>
-        </div>
+          <div class="head-3 home-link">
+                &lt;home </div>
+                </a>
+      </div>
+    </nav>
 
 
-      </nav>
+    <!-- nav for mobile -->
+    <nav class="hidden" id="nav-toggle">
+      <div class="centered nav-sticky" id="nav-default">
+        <a href="#"><img alt="img" class="nc-icon" src="img/nc.png" style="opacity:1;" id="sticky-logo"></a>
+        <a class="head-3 hero-link button-link" href="index.html#featured"> projects </a>
+        <a class="head-3 hero-link button-link" href="index.html#about"> about </a>
+        <a class="head-3 hero-link button-link" href="img/resume.pdf" target="_blank"> resume </a>
+      </div>
+    </nav>
+    <!-- end mobile nav -->
+  </header>
+  <!-- end nav menu -->
 
-      <!-- nav for mobile -->
-      <nav class="hidden" id="nav-toggle">
-        <div class="mobile-row" id="name-row">
-          <div class="nav-title head-1">
-            Nancy Chen
-          </div>
-        </div>
+  <!-- text, buttons, and atoms -->
 
-        <div class="" id="nav-items">
-          <a class="mobile-row" href="index.html">
-            <div class="nav-link">
-              Home
-            </div>
-          </a>
+  <div id="atoms">
 
-          <a class="mobile-row" href="index.html#tab-news">
-            <div class="nav-link">
-              About
-            </div>
-          </a>
-          <a class="mobile-row" href="index.html#tab-news">
-            <div class="nav-link">
-              Resume
-            </div>
-          </a>
-          <a class="mobile-row" href="index.html#tab-about">
-            <div class="nav-link">
-              Projects
-            </div>
-          </a>
 
-          <div class="mobile-row">
-            <a href=""><img alt="black linkedin icon" class="social-icon" src="img/icons/blk-linkedin.png"></a>
-            <a href=""><img alt="black email icon" class="social-icon" src="img/icons/blk-linkedin.png"></a>
+    <section id="section-color">
+      <header>
+        <h2 class="">Color Swatches</h2>
+      </header>
+
+      <div class="block">
+
+        <div class="container">
+          <!-- color boxes -->
+
+
+          <div class="square our-pink">
+            <span class="square-content">#ff9787</span>
           </div>
 
-        </div>
-      </nav>
-    </header>
-    <!-- end nav menu -->
-
-    <!-- text, buttons, and atoms -->
-
-    <div id="atoms">
-
-
-      <section id="section-color">
-          <header>
-              <h2 class="">Color Swatches</h2>
-          </header>
-
-          <div class="block">
-
-          <div class="container">
-                  <!-- color boxes -->
-
-
-                  <div class="square our-pink">
-                      <span class="square-content">#ff9787</span>
-                  </div>
-
-                  <div class="square our-grey">
-                      <span class="square-content">#f5f5f5</span>
-                  </div>
-
-                  <div class="square our-blue">
-                      <span class="square-content">#00c2e4</span>
-                  </div>
-
-                  <div class="square our-black">
-                      <span class="square-content">#343434</span>
-                  </div>
-                  <!-- color boxes -->
-              </div>
+          <div class="square our-grey">
+            <span class="square-content">#f5f5f5</span>
           </div>
+
+          <div class="square our-blue">
+            <span class="square-content">#00c2e4</span>
+          </div>
+
+          <div class="square our-black">
+            <span class="square-content">#343434</span>
+          </div>
+          <!-- color boxes -->
+        </div>
+      </div>
+
+      <div class="code-block">
+        <code>
+              <h3>Code:</h3>
+                &lt;div class=&quot;centered nav-sticky our-pink&quot; id=&quot;&quot;&gt; &lt;a href=&quot;#&quot;&gt;&lt;img alt=&quot;img&quot; class=&quot;nc-icon&quot; src=&quot;img/nc.png&quot; id=&quot;sticky-logo&quot;&gt;&lt;/a&gt; &lt;a class=&quot;head-3 hero-link button-link&quot; href=&quot;index.html#featured&quot; style=&quot;color:white;&quot;&gt; projects &lt;/a&gt; &lt;a class=&quot;head-3 hero-link button-link&quot; href=&quot;index.html#about&quot; style=&quot;color:white;&quot;&gt; about &lt;/a&gt; &lt;a class=&quot;head-3 hero-link button-link&quot; href=&quot;img/resume.pdf&quot; target=&quot;_blank&quot; style=&quot;color:white;&quot;&gt; resume &lt;/a&gt; &lt;/div&gt;
+            </code>
+      </div>
+    </section>
+
+    <!-- stylized headings -->
+    <article class="container" >
+      <section id="headings">
+        <header>
+          <h2 class="">Stylized Headings</h2>
+        </header>
+        <div class="block">
+
+          <h1 class="head-1">Heading 1</h1>
+          <br>
+
+          <h2 class="head-2">Heading 2</h2>
+
+          <h3 class="head-3">Heading 3</h3>
+
+        </div>
+
+        <div class="code-block">
+          <code>
+                <h3>Code:</h3>
+                  &lt;div class=&quot;centered nav-sticky our-pink&quot; id=&quot;&quot;&gt; &lt;a href=&quot;#&quot;&gt;&lt;img alt=&quot;img&quot; class=&quot;nc-icon&quot; src=&quot;img/nc.png&quot; id=&quot;sticky-logo&quot;&gt;&lt;/a&gt; &lt;a class=&quot;head-3 hero-link button-link&quot; href=&quot;index.html#featured&quot; style=&quot;color:white;&quot;&gt; projects &lt;/a&gt; &lt;a class=&quot;head-3 hero-link button-link&quot; href=&quot;index.html#about&quot; style=&quot;color:white;&quot;&gt; about &lt;/a&gt; &lt;a class=&quot;head-3 hero-link button-link&quot; href=&quot;img/resume.pdf&quot; target=&quot;_blank&quot; style=&quot;color:white;&quot;&gt; resume &lt;/a&gt; &lt;/div&gt;
+              </code>
+        </div>
       </section>
+      <!-- end stylized headings -->
 
-        <!-- stylized headings -->
-        <article class="container">
-        <section>
-            <header>
-                <h2 class="">Stylized Headings</h2>
-            </header>
-                <div class="block">
+      <!-- paragraph style -->
+      <section id="paragraph">
+        <header>
+          <h2 class="">Paragraphs</h2>
+        </header>
+        <div class="block">
+          <p class="p-style">"Karma is experience, and experience creates memory, and memory creates imagination and desire, <em>and desire creates karma again</em>. If I buy a cup of coffee, that's karma. I now have that memory that might give me the potential desire for
+            having cappuccino, and I walk into Starbucks, and there's karma all over again."<br>
+            <strong>Deepak Chopra</strong></p>
+        </div>
 
-                    <h1 class="head-1">Heading 1</h1>
-                    <br>
+        <div class="code-block">
+          <code>
+                <h3>Code:</h3>
+                  &lt;div class=&quot;centered nav-sticky our-pink&quot; id=&quot;&quot;&gt; &lt;a href=&quot;#&quot;&gt;&lt;img alt=&quot;img&quot; class=&quot;nc-icon&quot; src=&quot;img/nc.png&quot; id=&quot;sticky-logo&quot;&gt;&lt;/a&gt; &lt;a class=&quot;head-3 hero-link button-link&quot; href=&quot;index.html#featured&quot; style=&quot;color:white;&quot;&gt; projects &lt;/a&gt; &lt;a class=&quot;head-3 hero-link button-link&quot; href=&quot;index.html#about&quot; style=&quot;color:white;&quot;&gt; about &lt;/a&gt; &lt;a class=&quot;head-3 hero-link button-link&quot; href=&quot;img/resume.pdf&quot; target=&quot;_blank&quot; style=&quot;color:white;&quot;&gt; resume &lt;/a&gt; &lt;/div&gt;
+              </code>
+        </div>
+      </section>
+    </article>
+    <!-- paragraph style end -->
+    <!-- bulleted list -->
 
-                    <h2 class="head-2">Heading 2</h2>
+    <article class="container">
+      <section id="section-bulleted">
+        <header>
+          <h2 class="">Bulleted List</h2>
+        </header>
 
-                    <h3 class="head-3">Heading 3</h3>
+        <div class="container">
+          <div class="block">
+            <ul class="bullet-list">
+              <li>Dark Roast</li>
 
-                </div>
-        </section>
-        <!-- end stylized headings -->
+              <li>Medium Roast</li>
 
-        <!-- paragraph style -->
-        <section id="section-paragraph">
-            <header>
-                <h2 class="">Paragraphs</h2>
-            </header>
-                <div class="block">
-                    <p class="p-style">"Karma is experience, and experience creates memory, and memory creates imagination and desire, <em>and desire creates karma again</em>. If I buy a cup of coffee, that's karma. I now have that memory that might give me the potential desire for having cappuccino, and I walk into Starbucks, and there's karma all over again."<br>
-                        <strong>Deepak Chopra</strong></p>
+              <li>Blonde Roast</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- end bulletted list -->
 
-                    <p>
-                    </p>
-                </div>
-        </section>
-      </article>
-        <!-- paragraph style end -->
-        <!-- bulleted list -->
+      <!-- numbered list -->
+      <section id="section-numbered">
+        <header>
+          <h2 class="">Numbered List</h2>
+        </header>
 
-<article class="container">
-        <section id="section-bulleted">
-            <header>
-                <h2 class="">Bulleted List</h2>
-            </header>
+        <div class="container">
+          <div class="block">
+            <ol class="numbered-list">
+              <li>Small</li>
 
-            <div class="container">
-                <div class="block">
-                    <ul class="bullet-list">
-                        <li>Dark Roast</li>
+              <li>Medium</li>
 
-                        <li>Medium Roast</li>
+              <li>Large</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <!-- end numbered list -->
 
-                        <li>Blonde Roast</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <!-- end bulletted list -->
+      <!-- in text link-->
+      <section id="section-textLink">
+        <header>
+          <h2 class="">An In-Text Link</h2>
+        </header>
 
-        <!-- numbered list -->
-        <section id="section-numbered">
-            <header>
-                <h2 class="">Numbered List</h2>
-            </header>
+        <div class="container">
+          <div class="block">
+            <p>This is our
+              <a class="inline-link " href="#">in-text</a> link.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- in text link end -->
+    </article>
 
-            <div class="container">
-                <div class="block">
-                    <ol class="numbered-list">
-                        <li>Small</li>
+    <!-- button styles -->
+    <section>
+      <header>
+        <h2 class="">Buttons</h2>
+      </header>
 
-                        <li>Medium</li>
+      <div class="container">
+        <div class="block">
+          <button class="button-link">Submit</button>
 
-                        <li>Large</li>
-                    </ol>
-                </div>
-            </div>
-        </section>
-        <!-- end numbered list -->
-
-        <!-- in text link-->
-        <section id="section-textLink">
-            <header>
-                <h2 class="">An In-Text Link</h2>
-            </header>
-
-            <div class="container">
-                <div class="block">
-                    <p>This is our
-                      <a class="inline-link " href="#">in-text</a> link.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <!-- in text link end -->
-</article>
-
-        <!-- button styles -->
-        <section>
-            <header>
-                <h2 class="">Buttons</h2>
-            </header>
-
-            <div class="container">
-                <div class="block">
-                    <button class="button-link">Submit</button>
-
-                </div>
-            </div>
-        </section>
-        <!-- end button styles -->
+        </div>
+      </div>
+    </section>
+    <!-- end button styles -->
 
 
     <section>
-        <header>
-            <h2 class="">Carousel</h2>
-        </header>
-        <div class="container">
+      <header>
+        <h2 class="">Carousel</h2>
+      </header>
 
-          <div class="half-img">
-            <div class="slideshow-container">
-              <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="img/amorphous/sketchbook1.jpg" style="width:100%">
-                <div class="text">Caption Text</div>
-              </div>
+      <div class="container">
+        <div class="half-img">
+          <div class="model-slides">
+            <figure>
+              <img src="img/amorphous/planet.jpg" src="Planet before render and the render output">
+              <figcaption class="text">test1</figcaption>
+            </figure>
+            <figure class="">
+              <img src="img/amorphous/tree.jpg" src="Tree and bushes model">
+              <figcaption class="text">test2</figcaption>
+            </figure>
+            <figure class="">
+              <img src="img/amorphous/rig-cat.png" src="alien cat rig setup">
+              <figcaption class="text">test3</figcaption>
+            </figure>
+            <figure class="">
+              <img src="img/amorphous/rig-astronaut.png" src="astronaut's rig setup">
+              <figcaption class="text">test4</figcaption>
+            </figure>
+          </div>
 
-              <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="img/amorphous/sketchbook2.jpg" style="width:100%">
-                <div class="text">Caption Two</div>
-              </div>
-
-              <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="img/amorphous/astronaut-sketches.png" style="width:100%">
-                <div class="text">Caption Three</div>
-              </div>
-
-              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-              <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-            <br>
-
-            <div style="text-align:center">
-              <span class="dot" onclick="currentSlide(1)"></span>
-              <span class="dot" onclick="currentSlide(2)"></span>
-              <span class="dot" onclick="currentSlide(3)"></span>
-            </div>
+          <div class="model-slides-nav">
+            <figure><img src="img/amorphous/planet.jpg" src="Planet before render and the render output"></figure>
+            <figure><img src="img/amorphous/tree.jpg" src="Tree and bushes model"></figure>
+            <figure><img src="img/amorphous/rig-cat.png" src="alien cat rig setup"></figure>
+            <figure><img src="img/amorphous/rig-astronaut.png" src="astronaut's rig setup"></figure>
           </div>
         </div>
-      </section>
 
-      <section>
-          <header>
-              <h2 class="">Side Breadcrumbs</h2>
-          </header>
-          <div class="dotstyle dotstyle-fillup" style="position: relative;">
-            <ul>
-              <li class="current"><a href="#">Home</a></li>
-              <li><a href="#hero">About</a></li>
-              <li><a href="#featured">Products</a></li>
-              <li><a href="#projects">Portfolio</a></li>
-              <li><a href="#about">Blog</a></li>
-            </ul>
+        <div class="half-text centered">
+          <div class="code-block ">
+            <code>
+                    <h3>Code:</h3>
+                      &lt;div class=&quot;centered nav-sticky our-pink&quot; id=&quot;&quot;&gt; &lt;a href=&quot;#&quot;&gt;&lt;img alt=&quot;img&quot; class=&quot;nc-icon&quot; src=&quot;img/nc.png&quot; id=&quot;sticky-logo&quot;&gt;&lt;/a&gt; &lt;a class=&quot;head-3 hero-link button-link&quot; href=&quot;index.html#featured&quot; style=&quot;color:white;&quot;&gt; projects &lt;/a&gt; &lt;a class=&quot;head-3 hero-link
+                  </code>
           </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <section>
+      <header>
+        <h2 class="">Project Grid</h2>
+      </header>
+
+      <div class="container">
+        <div class="half-img our-blue">
+          <a class="" id="bg-beep" href="">
+            <div class="featured-description">
+              <div class="head-3">02 Featured</div>
+              <h3 class="head-1"> Amorphous</h3>
+              <div class="head-4">3D Animation 2016</div>
+            </div>
+          </a>
+        </div>
+        <div class="half-text centered">
+          <div class="code-block ">
+            <code>
+                    <h3>Code:</h3>
+                      &lt;div class=&quot;centered nav-sticky our-pink&quot; id=&quot;&quot;&gt; &lt;a href=&quot;#&quot;&gt;&lt;img alt=&quot;img&quot; class=&quot;nc-icon&quot; src=&quot;img/nc.png&quot; id=&quot;sticky-logo&quot;&gt;&lt;/a&gt; &lt;a class=&quot;head-3 hero-link button-link&quot; href=&quot;index.html#featured&quot; style=&quot;color:white;&quot;&gt; projects &lt;/a&gt; &lt;a class=&quot;head-3 hero-link
+                  </code>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <header>
+        <h2 class="">Top nav</h2>
+      </header>
+      <div class="container">
+
+        <div class="half-img ">
+          <div class="centered nav-sticky our-pink" id="">
+            <a href="#"><img alt="img" class="nc-icon" src="img/nc.png" id="sticky-logo"></a>
+            <a class="head-3 hero-link button-link" href="index.html#featured" style="color:white;"> projects </a>
+            <a class="head-3 hero-link button-link" href="index.html#about" style="color:white;"> about </a>
+            <a class="head-3 hero-link button-link" href="img/resume.pdf" target="_blank" style="color:white;"> resume </a>
+          </div>
+
+
+          <div class="left-nav" style="position:relative;">
+            <a class="head-3 my-name" href="index.html">
+                        <img alt="img" class="nc-icon" src="img/nc.png">
+
+                    <div class="head-3 home-link">
+                          &lt;home </div>
+                          </a>
+          </div>
+
+        </div>
+
+        <div class="half-text">
+          <div class="code-block">
+            <code>
+                  <h3>Code:</h3>
+                    &lt;div class=&quot;centered nav-sticky our-pink&quot; id=&quot;&quot;&gt; &lt;a href=&quot;#&quot;&gt;&lt;img alt=&quot;img&quot; class=&quot;nc-icon&quot; src=&quot;img/nc.png&quot; id=&quot;sticky-logo&quot;&gt;&lt;/a&gt; &lt;a class=&quot;head-3 hero-link button-link&quot; href=&quot;index.html#featured&quot; style=&quot;color:white;&quot;&gt; projects &lt;/a&gt; &lt;a class=&quot;head-3 hero-link button-link&quot; href=&quot;index.html#about&quot; style=&quot;color:white;&quot;&gt; about &lt;/a&gt; &lt;a class=&quot;head-3 hero-link button-link&quot; href=&quot;img/resume.pdf&quot; target=&quot;_blank&quot; style=&quot;color:white;&quot;&gt; resume &lt;/a&gt; &lt;/div&gt;
+                </code>
+          </div>
+
+          <div class="code-block">
+            <code>
+                <h3>Code:</h3>
+                    &lt;div class=&quot;left-nav&quot; style=&quot;position:relative;&quot;&gt; &lt;a class=&quot;head-3 my-name&quot; href=&quot;index.html&quot;&gt; &lt;img alt=&quot;img&quot; class=&quot;nc-icon&quot; src=&quot;img/nc.png&quot;&gt; &lt;div class=&quot;head-3 home-link&quot;&gt; &amp;lt;home &lt;/div&gt; &lt;/a&gt; &lt;/div&gt;
+            </div>
+              </div>
+            </div>
         </section>
 
-          <section>
-              <header>
-                  <h2 class="">Project Grid</h2>
-              </header>
+        <section>
+          <header>
+            <h2 class="">Project Info Layout</h2>
+          </header>
 
-              <a class="" id="bg-beep" href="">
-                <div class="featured-description">
-                  <div class="head-3">02 Featured</div>
-                  <h1 class="head-1"> Amorphous</h1>
-                  <div class="head-4">3D Animation 2016</div>
+              <div class="section header-project" id="top" data-section-name="top">
+                <div class="container">
+                  <div class="header-text">
+                    <h1 class="head-1 amorphous-title"> Amorphous</h1>
+                    <div class="head-4"> 3D sci-fi animation</div>
+                    <ul class="header-details p-style">
+                      <li>Amorphous is a short 3D animation of an astronaut and a cat alien exploring an alien planet which was developed in Autodesk Maya and edited on Adobe programs over a course of a 4 months period. </li>
+                    <br>
+                    <br></br>
+                      <li><strong>TASKS </strong> Sketching, concept art, sound design, 3d modeling, rigging, animation, post production editing</li>
+                      <li><strong>TOOLS </strong> Autodesk Maya, Adobe Premiere Pro, Adobe AfterEffects, Photoshop</li>
+                      <li><strong>TEAM </strong> Danielle Ragas, Josephine Ryu, Wan-teen Yang</li>
+                      <li><strong>Spring 2016 </strong></li>
+                    </ul>
+                  </div>
+
+                  <div id="amorphous-header"></div>
                 </div>
-              </a>
-
-              <a class="proj-article " id="bg-eyexpo">
-                <div class="proj-description">
-                  <div class="proj-title head-3 ">Eyexpo </div>
-                  <div class=" head-4 ">graphic designer 2017</div>
+                <div class="centered our-blue">
+                  <a class="button-link  outlinks" href="http://www.sfu.ca/~dragas/IAT%20343/home.html"> Visit Our Development Blog</a>
                 </div>
-              </a>
+              </div>
 
-            </section>
 
-            <section>
-                <header>
-                    <h2 class="">Top nav</h2>
-                </header>
-              </section>
+              <div class="code-block">
+                <code>
+                      <h3>Code:</h3>
+                        &lt;div class=&quot;centered nav-sticky our-pink&quot; id=&quot;&quot;&gt; &lt;a href=&quot;#&quot;&gt;&lt;img alt=&quot;img&quot; class=&quot;nc-icon&quot; src=&quot;img/nc.png&quot; id=&quot;sticky-logo&quot;&gt;&lt;/a&gt; &lt;a class=&quot;head-3 hero-link button-link&quot; href=&quot;index.html#featured&quot; style=&quot;color:white;&quot;&gt; projects &lt;/a&gt; &lt;a class=&quot;head-3 hero-link button-link&quot; href=&quot;index.html#about&quot; style=&quot;color:white;&quot;&gt; about &lt;/a&gt; &lt;a class=&quot;head-3 hero-link button-link&quot; href=&quot;img/resume.pdf&quot; target=&quot;_blank&quot; style=&quot;color:white;&quot;&gt; resume &lt;/a&gt; &lt;/div&gt;
+                    </code>
+              </div>
+
+                  </section>
+
+
 
             </div>
             <!-- end atoms, buttons, text div -->
@@ -304,64 +371,78 @@
 
               <div class="container footer-top">
                 <div class="footer-personalInfo">
-                  <div class="nav-title">
+                  <a class="nav-title" href="index.html#top">
                     Nancy Chen
-                  </div>
+                  </a>
 
-                  <div class="email">
-                    nancy_chen107@hotmail.com
-                  </div>
+
+                  <a href="mailto:yca207@sfu.ca" class="contact email">
+                      <i class="material-icons md-light social-icon">&#xE0E1;</i>
+                      <span class="footer-label">yca207@sfu.ca</span>
+                  </a>
+                  <a class="contact" href="https://www.linkedin.com/in/nancy-chen-b20206133/">
+                    <img class="footer-icon social-icon" src="img/icons/wht-filled-linkedin.png" alt="">
+                    <span class="footer-label">linkedin.com/nancy-chen</span>
+                  </a>
                 </div>
 
                 <div class="footer-listing">
                   <ul>
-                    <li>
-                      <a class="footer-link" href="customize.html">About</a>
-                    </li>
+                    <li><a class="footer-link" href="index.html#about">About</a></li>
+                    <li><a class="footer-link" href="index.html#projects">Projects</a></li>
+                    <li><a class="footer-link" href="img/resume.pdf" target="_blank">Resume</a></li>
+                  </ul>
+                </div>
 
-                    <li>
-                      <a class="footer-link" href="products.html">Works</a>
-                    </li>
-
-                    <li>
-                      <a class="footer-link" href="amorphous.html">Amorphous</a>
-                    </li>
-
-                    <li>
-                      <a class="footer-link" href="beep.html">Beep</a>
-                    </li>
+                <div class="footer-listing">
+                  <ul><li><a class="footer-link" href="amorphous.html">Amorphous</a></li>
+                    <li><a class="footer-link" href="beep.html">Beep</a></li>
+                    <li><a class="footer-link" href="">Eyexpo</a></li>
                   </ul>
                 </div>
 
                 <div class="footer-listing">
                   <ul>
-                    <li>
-                      <a class="footer-link" href="styleguide.html">Styleguide</a>
-                    </li>
-
-                    <li>
-                      <a class="footer-link" href="citations.html">Citation</a>
-                    </li>
-
-                    <li>
-                      <a class="footer-link" href="https://github.com/bordercases/iat339project02">Git Repo</a>
-                    </li>
+                    <li><a class="footer-link" href="styleguide.html">Styleguide</a></li>
+                    <li><a class="footer-link" href="citations.html">Citation</a></li>
+                    <li><a class="footer-link" href="https://github.com/bordercases/iat339project02">Git Repo</a></li>
                   </ul>
                 </div>
                 <!-- go back up -->
-                <a class="top-link" href="#">
-                  <div>
-                    ^
-                  </div>
+                <a class="top-link" href="index.html#top">
+                  <div> ^ </div>
                 </a>
               </div>
-              <!-- footer top ends-->
 
             </footer>
-
     <!-- end footer
    js -->
-    <script src="js/carousel.js"></script>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+   <script src="js/menu.js"></script>
+   <script src="js/dotsNav.js"></script>
+   <script src="slick/slick.min.js"></script>
+   <script>
+   $('.model-slides').slick({
+     slidesToShow: 1,
+     slidesToScroll: 1,
+     arrows: false,
+     fade: true,
+     asNavFor: '.model-slides-nav'
+   });
+
+   $('.model-slides-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.model-slides',
+    centerMode: true,
+    autoplay: true,
+    autoplaySpeed: 10000,
+
+    focusOnSelect: true
+  });</script>
+   <script src="js/smoothScrolling.js"></script>
 </body>
 
 </html>

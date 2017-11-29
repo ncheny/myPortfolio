@@ -14,7 +14,7 @@
    asNavFor: '.concept-slides',
    centerMode: true,
    autoplay: true,
-   autoplaySpeed: 5000,
+   autoplaySpeed: 10000,
    focusOnSelect: true
   });
 
@@ -32,7 +32,7 @@
    asNavFor: '.environment-slides',
    centerMode: true,
    autoplay: true,
-   autoplaySpeed: 5000,
+   autoplaySpeed: 10000,
 
    focusOnSelect: true
   });
@@ -51,19 +51,9 @@
    asNavFor: '.model-slides',
    centerMode: true,
    autoplay: true,
-   autoplaySpeed: 5000,
+   autoplaySpeed: 10000,
 
    focusOnSelect: true
   });
 
-  // $('.animation-slides').slick({
-  //   dots: true,
-  //   arrows: true,
-  //   infinite: true,
-  //   speed: 500,
-  //   fade: true,
-  //   autoplay: true,
-  //   autoplaySpeed: 2000,
-  //   cssEase: 'linear'
-  // });
   });

@@ -17,7 +17,7 @@
 
 <body>
 
-  <div id="fullpage">
+  <div id="top">
 
     <div class="our-pink section" id="hero">
       <div class="hero-icons">
@@ -45,8 +45,8 @@
   </nav>
 
 
-  <div class="section">
-      <div id="featured" class="our-blue container">
+  <div class="section" >
+      <div id="projects" class="our-blue container">
                 <a class="" id="bg-beep" href="beep.html">
           <div class="featured-description">
             <div class="head-3">01 Featured</div>
@@ -99,7 +99,7 @@
 
         </div>
       </div>
-    </div> 
+    </div>
 
 <div class="section">
         <div id="about">
@@ -123,9 +123,9 @@
 
         <div class="container footer-top">
           <div class="footer-personalInfo">
-            <div class="nav-title">
+            <a class="nav-title" href="index.html#top">
               Nancy Chen
-            </div>
+            </a>
 
 
             <a href="mailto:yca207@sfu.ca" class="contact email">
@@ -140,8 +140,8 @@
 
           <div class="footer-listing">
             <ul>
-              <li><a class="footer-link" href="customize.html">About</a></li>
-              <li><a class="footer-link" href="products.html">Projects</a></li>
+              <li><a class="footer-link" href="index.html#about">About</a></li>
+              <li><a class="footer-link" href="index.html#projects">Projects</a></li>
               <li><a class="footer-link" href="img/resume.pdf" target="_blank">Resume</a></li>
             </ul>
           </div>
@@ -161,7 +161,7 @@
             </ul>
           </div>
           <!-- go back up -->
-          <a class="top-link" href="#">
+          <a class="top-link" href="index.html#top">
             <div> ^ </div>
           </a>
         </div>
@@ -182,6 +182,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
   <script src="js/typed.js"></script>
+  <script src="js/smoothScrolling.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       Typed.new('.typed', {

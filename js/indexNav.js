@@ -13,7 +13,7 @@ window.addEventListener('scroll', function() {
   var i;
   // console.log( lastYPos );
 
-  if(lastYPos> windowHeight-50){
+  if(lastYPos> windowHeight-150){
     navDefault.classList.remove("our-pink");
     stickyLogo.style.opacity = "0";
     stickyLogo.style.opacity = "0.8";

@@ -1,0 +1,17 @@
+section {
+  position: relative; }
+
+h2 {
+  color: #00c2e4; }
+
+.code-block {
+  border: 1px solid grey;
+  margin: 3%;
+  padding: 1rem; }
+
+#bg-beep {
+  width: 100%; }
+
+#headings, #paragraph {
+  width: 50%;
+  padding-right: 3%; }
