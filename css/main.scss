@@ -35,7 +35,7 @@ nav {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -62,7 +62,7 @@ strong {
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   margin: 0;
-  font-size: 280%;
+  font-size: 250%;
   // display: inline-block;
   text-transform: uppercase;
   font-weight: bold;
@@ -88,6 +88,7 @@ strong {
 .head-4 {
   font-size: 0.8rem;
   letter-spacing: 0.1rem;
+  font-weight: 500;
   /*text-transform: uppercase;*/
 }
 
@@ -401,6 +402,10 @@ opacity: 0;
     padding-left: 7%;
   }
 
+  .head-1 {
+    font-size: 180%;
+  }
+
   .head-4 {
     margin-top: 1rem;
   }
@@ -411,20 +416,16 @@ opacity: 0;
 
 }
 
-.projects {
-  height: auto;
-  margin: 0;
-  position: relative;
+#projects {
+
+  padding: 5% 0 15% 0;
   box-shadow: $shadow;
 
-  h1 {
-    position: absolute;
-    padding: 0;
-    top: -42px;
-    z-index: 100;
-    left: 3%;
-    text-shadow: 5px 5px 10px #768fa5;
+  .project-header{
+    margin: 5% 0;
+
   }
+
 }
 
 [id*="bg-"] {
@@ -436,13 +437,14 @@ opacity: 0;
 
     &:hover{
         background-color: lighten($blue, 5%);
+        box-shadow: $shadow;
     }
 }
 
 
 #bg-beep {
   background-image: url("../img/beep/concept3.png");
-  width: 50%;
+  width: 33%;
   background-size: 80%;
 
   &:hover{
@@ -454,7 +456,7 @@ opacity: 0;
 #bg-amorphous {
   background-image: url("../img/amorphous/astronaut-render.png");
   background-size: 23%;
-  width: 50%;
+  width: 33%;
 
   &:hover{
     background-size: 25%;
@@ -495,10 +497,12 @@ opacity: 0;
 }
 
 #bg-illus {
-  background-image: url("../img/illustrations/cryingboy.jpg");
-  width: 100%;
+  background-image: url("../img/illustrations/preview.png");
+  width: 33%;
+  background-size: 80%;
+
   &:hover{
-    background-size: 110%;
+    background-size: 85%;
     transition: 0.2s linear;
   }
 }
@@ -664,7 +668,7 @@ footer .nav-title {
   border: 3px solid white;
 border-radius: 2rem;
 padding: 0.2rem;
-    margin: 0 1.5% 3% 1.5%;
+    // margin: 0 1.5% 3% 1.5%;
 }
 
 .material-icons.md-light {
@@ -673,7 +677,37 @@ padding: 0.2rem;
 
 .nc-icon{
 width: 24px;
-margin: 0 1.5% 3% 1.5%;
+// margin: 0 1.5% 3% 1.5%;
+}
+
+.tooltip {
+    position: relative;
+    margin: 0 1.5% 3% 1.5%;
+    transition: 0.2s ease-in-out;
+
+}
+
+.tooltip .tooltiptext {
+    opacity: 0;
+    width: 50px;
+    color: #fff;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-size: 0.8rem;
+    transition: 0.2s all ease-in-out;
+    text-transform: uppercase;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -52px;
+    left: 0;
+
+}
+
+.tooltip:hover .tooltiptext,
+.tooltip:focus .tooltiptext {
+    opacity: 1;
 }
 
 

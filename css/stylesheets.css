@@ -23,7 +23,7 @@ nav {
   padding: 0; }
 
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto; }
 
 a {
@@ -44,7 +44,7 @@ strong {
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   margin: 0;
-  font-size: 280%;
+  font-size: 250%;
   text-transform: uppercase;
   font-weight: bold; }
 
@@ -66,6 +66,7 @@ strong {
 .head-4 {
   font-size: 0.8rem;
   letter-spacing: 0.1rem;
+  font-weight: 500;
   /*text-transform: uppercase;*/ }
 
 [class*="centered"] {
@@ -353,25 +354,20 @@ strong {
   .amorphous .featured-description {
     text-align: left;
     padding-left: 7%; }
+  .featured-description .head-1 {
+    font-size: 180%; }
   .featured-description .head-4 {
     margin-top: 1rem; }
 
 .featured-img {
   max-width: 30rem; }
 
-.projects {
-  height: auto;
-  margin: 0;
-  position: relative;
+#projects {
+  padding: 5% 0 15% 0;
   -webkit-box-shadow: 5px 5px 10px rgba(118, 143, 165, 0.47);
   box-shadow: 5px 5px 10px rgba(118, 143, 165, 0.47); }
-  .projects h1 {
-    position: absolute;
-    padding: 0;
-    top: -42px;
-    z-index: 100;
-    left: 3%;
-    text-shadow: 5px 5px 10px #768fa5; }
+  #projects .project-header {
+    margin: 5% 0; }
 
 [id*="bg-"] {
   background-repeat: no-repeat;
@@ -385,11 +381,13 @@ strong {
   transition: 0.2s linear;
   background-position: center; }
   [id*="bg-"]:hover {
-    background-color: #00d8fe; }
+    background-color: #00d8fe;
+    -webkit-box-shadow: 5px 5px 10px rgba(118, 143, 165, 0.47);
+    box-shadow: 5px 5px 10px rgba(118, 143, 165, 0.47); }
 
 #bg-beep {
   background-image: url("../img/beep/concept3.png");
-  width: 50%;
+  width: 33%;
   background-size: 80%; }
   #bg-beep:hover {
     background-size: 85%;
@@ -400,7 +398,7 @@ strong {
 #bg-amorphous {
   background-image: url("../img/amorphous/astronaut-render.png");
   background-size: 23%;
-  width: 50%; }
+  width: 33%; }
   #bg-amorphous:hover {
     background-size: 25%;
     -webkit-transition: 0.2s linear;
@@ -438,10 +436,11 @@ strong {
     transition: 0.2s linear; }
 
 #bg-illus {
-  background-image: url("../img/illustrations/cryingboy.jpg");
-  width: 100%; }
+  background-image: url("../img/illustrations/preview.png");
+  width: 33%;
+  background-size: 80%; }
   #bg-illus:hover {
-    background-size: 110%;
+    background-size: 85%;
     -webkit-transition: 0.2s linear;
     -o-transition: 0.2s linear;
     transition: 0.2s linear; }
@@ -569,15 +568,41 @@ footer .nav-title {
 .material-icons {
   border: 3px solid white;
   border-radius: 2rem;
-  padding: 0.2rem;
-  margin: 0 1.5% 3% 1.5%; }
+  padding: 0.2rem; }
 
 .material-icons.md-light {
   color: white; }
 
 .nc-icon {
-  width: 24px;
-  margin: 0 1.5% 3% 1.5%; }
+  width: 24px; }
+
+.tooltip {
+  position: relative;
+  margin: 0 1.5% 3% 1.5%;
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out; }
+
+.tooltip .tooltiptext {
+  opacity: 0;
+  width: 50px;
+  color: #fff;
+  border-radius: 6px;
+  padding: 5px 0;
+  font-size: 0.8rem;
+  -webkit-transition: 0.2s all ease-in-out;
+  -o-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+  text-transform: uppercase;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -52px;
+  left: 0; }
+
+.tooltip:hover .tooltiptext,
+.tooltip:focus .tooltiptext {
+  opacity: 1; }
 
 .social-icon:hover {
   opacity: 1;
@@ -667,6 +692,97 @@ iframe {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
+
+#illustration-header {
+  background-image: url(../img/illustrations/roundumbrellagirl.jpg);
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 65%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+[class*="illus-"] {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: block;
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+  transition: 0.2s linear;
+  background-position: center;
+  margin: 3% 1%;
+  background-size: cover;
+  width: 23%;
+  height: 30rem;
+  border: solid 1px lightgrey;
+  -webkit-transition: 0.6s ease;
+  -o-transition: 0.6s ease;
+  transition: 0.6s ease; }
+  [class*="illus-"]:hover {
+    -webkit-box-shadow: 5px 5px 10px rgba(118, 143, 165, 0.47);
+    box-shadow: 5px 5px 10px rgba(118, 143, 165, 0.47);
+    -webkit-transition: 0.6s ease;
+    -o-transition: 0.6s ease;
+    transition: 0.6s ease; }
+
+.illus-1 {
+  background-image: url(../img/illustrations/12kyoko.jpg); }
+
+.illus-2 {
+  background-image: url(../img/illustrations/blknpurp.jpg); }
+
+.illus-3 {
+  background-image: url(../img/illustrations/jojo.jpg); }
+
+.illus-4 {
+  width: 48%;
+  height: 20rem;
+  background-image: url(../img/illustrations/internalized.png); }
+
+.illus-5 {
+  width: 48%;
+  height: 20rem;
+  background-image: url(../img/illustrations/dogtooth.jpg); }
+
+.illus-6 {
+  width: 30%;
+  background-image: url(../img/illustrations/cryingboy.jpg); }
+
+.illus-7 {
+  width: 30%;
+  background-image: url(../img/illustrations/Roundumbrellagirl.jpg); }
+
+.illus-8 {
+  width: 30%;
+  background-image: url(../img/illustrations/n04.jpg); }
+
+.illus-9 {
+  background-image: url(../img/illustrations/p3.jpg); }
+
+.illus-10 {
+  height: 20rem;
+  background-size: contain;
+  background-image: url(../img/comics/lp1.jpg); }
+
+.illus-11 {
+  height: 20rem;
+  background-size: contain;
+  background-image: url(../img/comics/lp2.jpg); }
+
+.illus-12 {
+  height: 20rem;
+  background-size: contain;
+  background-image: url(../img/comics/lp3.jpg); }
+
+.illus-13 {
+  height: 20rem;
+  background-size: contain;
+  background-image: url(../img/comics/lp4.jpg); }
 
 .header-text {
   width: 35%;
@@ -963,8 +1079,6 @@ figure {
   .project-content {
     padding-left: 0;
     width: 100%; }
-  .header-overview {
-    margin-bottom: 0; }
   .footer-personalInfo {
     width: 100%;
     margin: 5% 5% 8% 5%; }
@@ -979,7 +1093,9 @@ figure {
   .code-block {
     width: 100%; }
   #styleguide .square {
-    width: 50%; } }
+    width: 50%; }
+  #projects .project-header {
+    padding-left: 10%; } }
 
 /*half-media area resizes earlier at 720px*/
 @media (max-width: 50em) {
@@ -1012,14 +1128,21 @@ figure {
   iframe {
     height: 20rem; }
   #top #amorphous-header, #top #beep-header,
-  #bg-amorphous, #bg-beep,
+  #top #illustration-header,
+  #bg-amorphous, #bg-beep, #bg-illus,
   .header-text {
     width: 100%; }
-  #top #amorphous-header, #top #beep-header {
+  #top #amorphous-header, #top #beep-header, #top #illustration-header {
     height: 80vh; }
   #beep-header:before,
   #amorphous-header:before {
     display: none; }
+  #bg-illus {
+    background-size: 60%; }
+    #bg-illus:hover {
+      background-size: 65%; }
+  .header-overview {
+    margin-bottom: 0; }
   .header-text {
     -webkit-box-ordinal-group: 3;
     -webkit-order: 2;
@@ -1030,4 +1153,7 @@ figure {
     .header-text .head-1 {
       padding-top: 10%; }
   .header-details {
-    padding-top: 10%; } }
+    padding-top: 5%; }
+  #illustrations [class*="illus-"] {
+    width: 100%;
+    background-size: contain; } }

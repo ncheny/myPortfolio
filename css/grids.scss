@@ -114,9 +114,6 @@
         width: 100%;
     }
 
-    .header-overview{
-          margin-bottom: 0;
-    }
 
 .footer-personalInfo{
   width: 100%;
@@ -144,6 +141,10 @@
 
     #styleguide .square{
       width: 50%;
+    }
+
+    #projects .project-header{
+      padding-left: 10%;
     }
 }
 
@@ -202,18 +203,30 @@
   }
 
   #top #amorphous-header, #top #beep-header,
-  #bg-amorphous, #bg-beep,
+  #top #illustration-header,
+  #bg-amorphous, #bg-beep, #bg-illus,
    .header-text{
     width: 100%;
   }
 
-  #top #amorphous-header, #top #beep-header{
+  #top #amorphous-header, #top #beep-header,#top #illustration-header{
     height: 80vh;
   }
 
   #beep-header:before,
   #amorphous-header:before{
     display: none;
+  }
+
+  #bg-illus{
+    background-size: 60%;
+    &:hover{
+      background-size: 65%;
+    }
+  }
+
+  .header-overview{
+        margin-bottom: 0;
   }
 
   .header-text{
@@ -227,7 +240,13 @@
   }
 
   .header-details{
-    padding-top: 10%;
+    padding-top: 5%;
+  }
+
+  #illustrations [class*="illus-"]{
+    width: 100%;
+    background-size: contain;
+
   }
 
 }

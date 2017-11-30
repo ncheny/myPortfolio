@@ -21,13 +21,34 @@
 
     <div class="our-pink section" id="hero">
       <div class="hero-icons">
-        <i class="material-icons md-light">&#xE338;</i>
-        <i class="material-icons md-light">&#xE333;</i>
-        <i class="material-icons md-light">&#xE3AE;</i>
-        <img alt="img" class="nc-icon" src="img/nc-wht.png">
-        <i class="material-icons md-light">&#xE54B;</i>
-        <i class="material-icons md-light">&#xE54D;</i>
-        <i class="material-icons md-light">&#xE561;</i>
+        <div class="tooltip">
+          <span class="tooltiptext">Game Designer</span>
+          <i class="material-icons md-light">&#xE338;</i>
+        </div>
+        <div class="tooltip">
+          <span class="tooltiptext">UX/UI</span>
+          <i class="material-icons md-light">&#xE333;</i>
+      </div>
+        <div class="tooltip">
+          <span class="tooltiptext">Draw</span>
+          <i class="material-icons md-light">&#xE3AE;</i>
+      </div>
+        <div class="tooltip">
+          <span class="tooltiptext">Me!</span>
+          <img alt="img" class="nc-icon" src="img/nc-wht.png">
+      </div>
+        <div class="tooltip">
+          <span class="tooltiptext">Storyteller</span>
+          <i class="material-icons md-light">&#xE54B;</i>
+      </div>
+        <div class="tooltip">
+          <span class="tooltiptext">Animation</span>
+          <i class="material-icons md-light">&#xE54D;</i>
+      </div>
+        <div class="tooltip">
+          <span class="tooltiptext">Foodie</span>
+          <i class="material-icons md-light">&#xE561;</i>
+        </div>
       </div>
       <div class="my-name centered">
         <h1 class="head-1 ">Nancy Chen </h1>
@@ -45,11 +66,13 @@
   </nav>
 
 
-  <div class="section" >
-      <div id="projects" class="our-blue container">
+  <div class="section our-blue" id="projects">
+    <div class="head-1 centered project-header">Featured Projects</div>
+
+      <div class="our-blue container">
                 <a class="" id="bg-beep" href="beep.html">
           <div class="featured-description">
-            <div class="head-3">01 Featured</div>
+            <div class="head-3">01  </div>
             <h1 class="head-1"> BEEP</h1>
             <div class="head-4">3D Video Game 2017</div>
           </div>
@@ -57,15 +80,23 @@
 
         <a class="" id="bg-amorphous" href="amorphous.html">
           <div class="featured-description">
-            <div class="head-3">02 Featured</div>
+            <div class="head-3">02  </div>
             <h1 class="head-1"> Amorphous</h1>
             <div class="head-4">3D Animation 2016</div>
+          </div>
+        </a>
+
+        <a class="" id="bg-illus" href="illustrations.html">
+          <div class="featured-description">
+            <div class="head-3">03 </div>
+            <h1 class="head-1"> drawings</h1>
+            <div class="head-4">sketches & renders</div>
           </div>
         </a>
       </div>
      </div>
 
-    <div class="section">
+    <!-- <div class="section">
 <div class="projects">
         <div class="container centered">
 
@@ -90,7 +121,7 @@
             </div>
           </a>
 
-          <a class="proj-article our-black" id="bg-illus">
+          <a class="proj-article our-blue" id="bg-illus" href="illustrations.html">
             <div class="proj-description">
               <div class="proj-title head-3 ">Illustrations </div>
               <div class=" head-4 ">sketches & renders </div>
@@ -99,7 +130,7 @@
 
         </div>
       </div>
-    </div>
+    </div> -->
 
 <div class="section">
         <div id="about">
@@ -157,7 +188,7 @@
             <ul>
               <li><a class="footer-link" href="styleguide.html">Styleguide</a></li>
               <li><a class="footer-link" href="citations.html">Citation</a></li>
-              <li><a class="footer-link" href="https://github.com/bordercases/iat339project02">Git Repo</a></li>
+              <li><a class="footer-link" href="https://github.com/pomatoman/myPortfolio">Git Repo</a></li>
             </ul>
           </div>
           <!-- go back up -->
@@ -206,8 +237,8 @@
 					$.scrollify({
 						section : ".section",
             scrollSpeed: 1100,
-scrollbars: true,
-setHeights:false,
+            scrollbars: true,
+            setHeights:false,
 					});
 				});
 			</script> -->
