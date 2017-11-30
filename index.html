@@ -20,7 +20,10 @@
   <div id="top">
 
     <div class="our-pink section" id="hero">
-      <div class="hero-icons">
+      <div class="hero-hidden our-pink"></div>
+
+      <div class="hero-content hero-dropdown">
+        <div class="hero-icons">
         <div class="tooltip">
           <span class="tooltiptext">Game Designer</span>
           <i class="material-icons md-light">&#xE338;</i>
@@ -56,6 +59,7 @@
       <div class="centered typed-text">
         <h4 class="head-4">I like <span class="typed"></span></h1>
     </div>
+  </div>
   </div>
 
   <nav class="centered nav-sticky our-pink" id="nav-default">
@@ -134,11 +138,11 @@
 
 <div class="section">
         <div id="about">
-          <div class="container ">
+          <div class="container">
             <div class="half-img">
-              <img alt="a long person poking their head out from the top" class="about-img" src="img/me.png">
+              <img alt="a long person poking their head out from the top" class="about-img hidden" src="img/me.png">
             </div>
-            <div class="half-text about-text">
+            <div class="half-text about-text ">
               <h2 class="head-1 step">Hello!</h2>
               <p class="p-style">
                 I'm Nancy! I'm a hardworking design student interested in game design, 3D modelling, concept art, and web design. Experienced in sketching, storytelling, and HTML& CSS, I'm always excited to contribute to fun projects. While front end design is my passion, I enjoy multi-tasking between code and asset-creation.<br>
@@ -180,7 +184,7 @@
           <div class="footer-listing">
             <ul><li><a class="footer-link" href="amorphous.html">Amorphous</a></li>
               <li><a class="footer-link" href="beep.html">Beep</a></li>
-              <li><a class="footer-link" href="">Eyexpo</a></li>
+              <li><a class="footer-link" href="illustrations.html">Drawings</a></li>
             </ul>
           </div>
 
@@ -231,6 +235,8 @@
     });
   </script>
   <script src="js/indexNav.js"></script>
+  <script src="js/indexAnim.js"></script>
+
   <!-- <script src="js/jquery.scrollify.js"></script>
   <script>
 				$(function() {
@@ -239,9 +245,10 @@
             scrollSpeed: 1100,
             scrollbars: true,
             setHeights:false,
+            touchScroll:false,
 					});
-				});
-			</script> -->
+				}); -->
+			</script>
 
 </body>
 
