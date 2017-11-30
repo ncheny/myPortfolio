@@ -46,18 +46,7 @@ a {
 strong {
   color: black;
 }
-/* ------------- styling of styleguide id section ------------- */
 
-#atoms,
-#molecules,
-#organisms,
-#text {
-  margin: 5%;
-}
-
-#atoms {
-  margin-top: 9rem;
-}
 /* ------------- styling of atoms ------------- */
 /* stylized headers */
 
@@ -131,26 +120,7 @@ strong {
       top: 3px;
       font-size: 0.8rem;
 }
-/* anchor and button styles */
 
-.inline-link,
-.inline-link:visited {
-  text-decoration: none;
-  font-weight: bold;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-  color: #00c2e4;
-}
-
-.inline-link:hover {
-  color: #1a8496;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-  font-weight: bold;
-  text-decoration: underline;
-}
 /*nav*/
 
 .nav-default {
@@ -183,11 +153,11 @@ left: 4%;
 width: 30px;
 opacity: 0;
 -webkit-transition: all 0.5s ease-in-out;
-    top: 20%;
+    top: 18%;
 }
 
 #sticky-logo:hover{
-  width: 35px;
+  width: 32px;
 }
 
 .nav-title {
@@ -340,22 +310,6 @@ opacity: 0;
   cursor: pointer;
 }
 
-.button-submit {
-  width: 10rem;
-  background: white;
-  color: #00c2e4;
-  border: 1px #00c2e4 solid;
-
-  &:hover {
-    width: 10rem;
-    color: white;
-    background: #00c2e4;
-    border: 1px #00c2e4 solid;
-    -webkit-transition: background-color 1s ease;
-    -o-transition: background-color 1s ease;
-    transition: background-color 1s ease;
-  }
-}
 
 .button-link,
 .button-link:visited {
@@ -372,55 +326,7 @@ opacity: 0;
 
   }
 }
-/* color palette squares */
-/* c/o http://codeitdown.com/css-square-rectangle/ for this code */
 
-.square {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  position: relative;
-  width: 16%;
-  overflow: hidden;
-  /*margin: 0.5%;*/
-  /*float: left;*/
-  -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  color: white;
-  font-size: 0.9rem;
-  /*border-radius: 8px;*/
-  padding: 1rem;
-  text-align: center;
-  box-shadow: 0 10px 30px 2px rgba(0, 0, 0, 0.2);
-}
-
-.square:before {
-  content: "";
-  display: block;
-  padding-top: 100%;
-}
-
-.square-content {
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  text-align: center;
-}
-
-.square-content span {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-  color: white;
-}
 /* color palette */
 /* standard colors */
 
@@ -631,6 +537,8 @@ z-index: -1;
 .about-resume, .about-resume:visited{
   color: $black;
   transition: 0.2s linear;
+  display: block;
+  font-weight: bold;
 
 
   &:hover{
@@ -739,6 +647,8 @@ footer .nav-title {
   }
 }
 
+// icons////////////////////////////////
+
 .social-icon {
   color: white;
   max-width: 24px;
@@ -774,6 +684,8 @@ margin: 0 1.5% 3% 1.5%;
   transition: 0.2s ease-in-out;
 }
 
+////////////////////links
+
 .top-link {
   width: 3.25em;
   height: 3.25em;
@@ -798,4 +710,23 @@ margin: 0 1.5% 3% 1.5%;
   -webkit-transition: 0.2s ease-in-out;
   -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+}
+
+.inline-link,
+.inline-link:visited {
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #00c2e4;
+}
+
+.inline-link:hover {
+  color: #1a8496;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  font-weight: bold;
+  text-decoration: underline;
 }
