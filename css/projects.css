@@ -10,6 +10,9 @@ iframe {
   height: 100%;
   border: none; }
 
+#top {
+  position: relative; }
+
 #amorphous-header {
   background-image: url(../img/amorphous/preview.png);
   top: 0;
@@ -22,7 +25,8 @@ iframe {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  position: relative; }
 
 #beep-header {
   background-image: url(../img/beep/preview.jpg);
@@ -36,13 +40,107 @@ iframe {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  position: relative; }
+
+#illustration-header {
+  background-image: url(../img/illustrations/Roundumbrellagirl.jpg);
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 65%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative; }
+
+[class*="illus-"] {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: block;
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+  transition: 0.2s linear;
+  background-position: center;
+  margin: 3% 1%;
+  background-size: cover;
+  width: 23%;
+  height: 30rem;
+  border: solid 1px lightgrey;
+  -webkit-transition: 0.6s ease;
+  -o-transition: 0.6s ease;
+  transition: 0.6s ease; }
+  [class*="illus-"]:hover {
+    -webkit-box-shadow: 5px 5px 10px rgba(118, 143, 165, 0.47);
+    box-shadow: 5px 5px 10px rgba(118, 143, 165, 0.47);
+    -webkit-transition: 0.6s ease;
+    -o-transition: 0.6s ease;
+    transition: 0.6s ease; }
+
+.illus-1 {
+  background-image: url(../img/illustrations/12kyoko.jpg); }
+
+.illus-2 {
+  background-image: url(../img/illustrations/blknpurp.jpg); }
+
+.illus-3 {
+  background-image: url(../img/illustrations/jojo.jpg); }
+
+.illus-4 {
+  width: 48%;
+  height: 20rem;
+  background-image: url(../img/illustrations/internalized.png); }
+
+.illus-5 {
+  width: 48%;
+  height: 20rem;
+  background-image: url(../img/illustrations/dogtooth.jpg); }
+
+.illus-6 {
+  width: 30%;
+  background-image: url(../img/illustrations/cryingboy.jpg); }
+
+.illus-7 {
+  width: 30%;
+  background-image: url(../img/illustrations/Roundumbrellagirl.jpg); }
+
+.illus-8 {
+  width: 30%;
+  background-image: url(../img/illustrations/n04.jpg); }
+
+.illus-9 {
+  background-image: url(../img/illustrations/p3.jpg); }
+
+.illus-10 {
+  height: 20rem;
+  background-size: contain;
+  background-image: url(../img/comics/lp1.jpg); }
+
+.illus-11 {
+  height: 20rem;
+  background-size: contain;
+  background-image: url(../img/comics/lp2.jpg); }
+
+.illus-12 {
+  height: 20rem;
+  background-size: contain;
+  background-image: url(../img/comics/lp3.jpg); }
+
+.illus-13 {
+  height: 20rem;
+  background-size: contain;
+  background-image: url(../img/comics/lp4.jpg); }
 
 .header-text {
   width: 35%;
   padding-left: 10%;
   position: relative;
-  background: white; }
+  background: white;
+  height: 100%; }
   .header-text .head-1 {
     position: relative;
     z-index: 100;
@@ -69,7 +167,6 @@ iframe {
 #amorphous-header:before {
   content: "";
   position: absolute;
-  left: 35%;
   top: 0;
   width: 0;
   height: 100vh;
@@ -131,6 +228,9 @@ figure {
   height: 100%;
   display: block;
   padding: 1% 1% 0 0; }
+
+.amorphous-cat-gif {
+  max-width: 19%; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -231,4 +331,21 @@ figure {
     opacity: 1; } }
 
 .indented {
-  margin: 10% 2rem 2rem 3%; }
+  margin: 15% 2rem 2rem 5%; }
+
+.scroll-down {
+  position: absolute;
+  left: 20%;
+  z-index: 10;
+  bottom: 0;
+  margin: 7% 0;
+  -webkit-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  opacity: 0.8; }
+  .scroll-down:hover {
+    margin-bottom: 4%;
+    opacity: 1;
+    -webkit-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    transition: all 0.6s ease; }

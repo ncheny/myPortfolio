@@ -1,39 +1,39 @@
 // this stylesheet overrides some style in main.scss
 // to display it better on this page
-
 $pink: #ff9787;
 $blue: #00c2e4;
 $black: black;
 $lightblue: #f0fbff;
 $shadow: 5px 5px 10px rgba(118, 143, 165, 0.47);
 
-section{
+section {
   position: relative;
   margin: 10% 0;
 }
 
-h3{
+h3 {
   color: $pink;
 }
 
-#styleguide{
-
-    margin: 5% 5% 5% 10%;
-
+code {
+  word-wrap: break-word;
 }
 
-.styleguide-title{
+#styleguide {
+  margin: 5% 5% 5% 10%;
+}
+
+.styleguide-title {
   padding: 5% 0;
-margin-bottom: 10%;
-box-shadow: $shadow;
+  margin-bottom: 10%;
+  box-shadow: $shadow;
 }
 
-.block{
-  min-height: 10rem;
-
+.block {
+  min-height: 12rem;
 }
 
-.code-block{
+.code-block {
   border: 1px solid lightgrey;
   margin: 3%;
   padding: 1rem;
@@ -41,14 +41,12 @@ box-shadow: $shadow;
   -o-transition: all 0.5s;
   transition: all 0.5s;
 
-  &:hover{
+  &:hover {
     background-color: $lightblue;
   }
 }
-
 /* color palette squares */
 /* c/o http://codeitdown.com/css-square-rectangle/ for this code */
-
 .square {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -97,20 +95,31 @@ box-shadow: $shadow;
   color: white;
 }
 
-#bg-beep{
+#bg-beep {
   width: 100%;
 }
+//for the sake of showing in the style guide a second id was made
 
-#sticky-logo{
+#bg-beep-1 {
+  background-image: url("../img/beep/concept3.png");
+  width: 33%;
+  background-size: 80%;
+
+  &:hover {
+    background-size: 85%;
+    transition: 0.2s linear;
+  }
+}
+
+.sticky-logo {
+  position: absolute;
+  left: 4%;
+  width: 30px;
   top: 16%;
   opacity: 0.9;
 }
-
-
-
-
 //Citations////////////////////////
- #citation{
-   min-height: 100vh;
-   padding: 10% 0 0 10%;
- }
+#citation {
+  min-height: 100vh;
+  padding: 10% 0 0 10%;
+}

@@ -1,10 +1,9 @@
 /* This is some default styling for the exercise */
-
 *,
-*::before,
-*::after {
+*::after,
+*::before {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .container {
@@ -18,174 +17,197 @@
   height: auto;
 }
 
-.container>.block {
+.container > .block {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   -ms-flex-basis: 30em;
   -ms-flex-preferred-size: 30em;
-      flex-basis: 30em;
+  flex-basis: 30em;
   padding: 0 1rem;
 }
-
 /* c/o http://www.sketchingwithcss.com/samplechapter/cheatsheet.html */
-
 .container .row-wrap {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
 }
 
 .container .row {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .container .center {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-line-pack: end;
-      align-content: flex-end;
+  align-content: flex-end;
 }
-
-.container .row {
-  -ms-flex-wrap: row wrap;
-  flex-wrap: row wrap;
+// for styleguide's scenario
+@media (max-width: 25em) {
+  #styleguide .sticky-logo {
+    position: relative;
+    width: 10%;
+    opacity: 0.9;
+    margin-left: 45%;
+    margin-top: 5%;
+  }
 }
-
-.container .col {
-  -ms-flex-wrap: col wrap;
-  flex-wrap: col wrap;
-}
-
-
 /*screen is smaller than 560px*/
-
 @media (max-width: 35em) {
-
-  .left-nav, .right-nav{
+  .left-nav,
+  .right-nav {
     display: none;
   }
 
-  .vNav{
+  #styleguide .left-nav {
+    display: flex;
+  }
+
+  .vNav {
     display: none;
   }
 
-  #sticky-logo{
-        top: 22%;
-            width: 6%;
-            left: 2%;
+  #sticky-logo {
+    top: 27%;
+    width: 20px;
+    left: 3%;
+
+    &:hover {
+      width: 23px;
+    }
+  }
+  // for the styleguide version
+  #styleguide .sticky-logo {
+    top: 22%;
+    width: 6%;
+    left: 2%;
   }
 
-  .hero-icons{
+  .hero-icons {
     height: 40%;
 
-    .material-icons{
+    .material-icons {
       font-size: 15px;
     }
 
-    .nc-icon{
-      width: 20px;
+    .nc-icon {
+      width: 15px;
     }
   }
 
-  .hero-link{
-        margin: 3% 3% 0 3%;
+  .hero-link {
+    margin: 3% 3% 0;
   }
 
-  .my-name{
-      padding-left: 10%;
+  .my-name {
+    padding-left: 10%;
   }
 
-  .typed-text, .hero-icons{
+  .hero-icons,
+  .typed-text {
     padding-left: 10%;
     justify-content: left;
   }
 
-  .project-content{
+  .project-content {
     padding-left: 0;
-        width: 100%;
-    }
-
-
-.footer-personalInfo{
-  width: 100%;
-      margin: 5% 5% 8% 5%;
-}
-    .footer-listing{
-      width: 25%;
-    }
-
-    .top-link{
-          bottom: 18.25em;
-    }
-
-   .outlinks{
-          font-size: 0.8rem;
-    }
-
-    .indented{
-          margin: 15% 1% 2rem 1%;
-    }
-
-    .code-block{
-      width: 100%;
-    }
-
-    #styleguide .square{
-      width: 50%;
-    }
-
-    #projects .project-header{
-      padding-left: 10%;
-    }
-}
-
-/*half-media area resizes earlier at 720px*/
-@media (max-width: 50em) {
-
-  .head-1{
-        font-size: 200%;
-  }
-  .head-3{
-    font-size: 80%;
-  }
-
-   .half-img, .half-text{
     width: 100%;
   }
 
-  .grids-3{
+  .footer-personalInfo {
+    width: 100%;
+    margin: 0 5%;
+    padding-bottom: 2rem;
+  }
+
+  .footer-listing {
+    width: 25%;
+  }
+
+  .top-link {
+    bottom: 16.25em;
+  }
+
+  .outlinks {
+    font-size: 0.8rem;
+  }
+
+  .indented {
+    margin: 15% 1% 2rem;
+  }
+
+  .code-block {
+    width: 100%;
+  }
+
+  body #styleguide {
+    margin: 5%;
+  }
+
+  #styleguide .square {
+    width: 50%;
+  }
+
+  #projects .project-header {
+    padding-left: 10%;
+  }
+
+  body .styleguide-title {
+    padding: 30% 0 10% 10%;
+  }
+
+  body #citation {
+    padding: 20% 0 0 10%;
+  }
+}
+/*half-media area resizes earlier at 720px*/
+@media (max-width: 50em) {
+  .head-1 {
+    font-size: 200%;
+  }
+
+  .head-3 {
+    font-size: 80%;
+  }
+
+  .half-img,
+  .half-text {
+    width: 100%;
+  }
+
+  .grids-3 {
     max-width: 100%;
     height: auto;
   }
 
-  .amorphous-cat-gif{
+  .amorphous-cat-gif {
     max-width: 100%;
   }
 
-  .half-text{
-        margin: 0 4% 4% 0%;
+  .half-text {
+    margin: 0 4% 4% 0;
   }
 
-  .about-text{
-    padding: 0;
-    padding-left: 10%;
+  .about-text {
+    padding: 0 0 0 10%;
   }
 
-  .about-img{
+  .about-img {
     width: 100%;
     max-width: 20rem;
   }
 
-  #featured, #about{
+  #about,
+  #featured {
     height: auto;
   }
 
@@ -193,65 +215,77 @@
     margin: 25% 0 30% 10%;
   }
 
-  .proj-article{
+  .proj-article {
     max-width: 100%;
     height: auto;
   }
 
-  iframe{
+  #projects .project-row {
+    min-height: 150vh;
+  }
+
+  iframe {
     height: 20rem;
   }
 
-  #top #amorphous-header, #top #beep-header,
+  #top #beep-header,
   #top #illustration-header,
-  #bg-amorphous, #bg-beep, #bg-illus,
-   .header-text{
+  .header-project #amorphous-header,
+  .header-text {
     width: 100%;
   }
 
-  #top #amorphous-header, #top #beep-header,#top #illustration-header{
+  #bg-amorphous,
+  #bg-beep,
+  #bg-illus,
+  #styleguide #bg-beep-1 {
+    width: 100%;
+    min-height: 10rem;
+  }
+
+  #top #amorphous-header,
+  #top #beep-header,
+  #top #illustration-header {
     height: 80vh;
   }
 
-  #beep-header:before,
-  #amorphous-header:before{
+  #amorphous-header:before,
+  #beep-header:before {
     display: none;
   }
 
-  #bg-illus{
+  #bg-illus {
     background-size: 60%;
-    &:hover{
+
+    &:hover {
       background-size: 65%;
     }
   }
 
-  .header-overview{
-        margin-bottom: 0;
+  .header-overview {
+    margin-bottom: 0;
   }
 
-  .header-text{
-    order:2;
-    padding-left: 0;
-        padding: 0 5%;
+  .header-text {
+    order: 2;
+    padding: 0 5%;
 
-    .head-1{
+    .head-1 {
       padding-top: 10%;
     }
   }
 
-  .header-details{
+  .header-details {
     padding-top: 5%;
   }
 
-  #illustrations [class*="illus-"]{
+  #illustrations [class*="illus-"] {
     width: 100%;
     background-size: contain;
-
   }
 
-  .scroll-down{
-visibility: hidden;
-display: none;
- }
-
+  .scroll-down {
+    visibility: hidden;
+    display: none;
+  }
 }

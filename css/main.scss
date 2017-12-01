@@ -3,9 +3,7 @@ $pink: #ff9787;
 $blue: #00c2e4;
 $black: black;
 $lightblue: #f0fbff;
-$shadow: 5px 5px 10px rgba(118, 143, 165, 0.47);
-
- /* ------------- body layout ------------- */
+$shadow: 5px 5px 10px rgba(118, 143, 165, 0.47); /* ------------- body layout ------------- */
 // html,footer,body {
 //   height: 100%;
 //   font-family: 'Roboto Mono', sans-serif;
@@ -22,6 +20,10 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+ol {
+  word-wrap: break-word;
 }
 
 nav {
@@ -44,10 +46,8 @@ a {
 strong {
   color: black;
 }
-
 /* ------------- styling of atoms ------------- */
 /* stylized headers */
-
 [class*="head-"] {
   /*font-family: 'Playfair Display', serif;*/
   font-family: 'Poppins', sans-serif;
@@ -100,7 +100,6 @@ strong {
   flex-wrap: wrap;
 }
 /* fonting some elements */
-
 .p-style {
   font-family: 'Roboto Mono', sans-serif;
   padding: 1rem 0;
@@ -110,18 +109,15 @@ strong {
   font-size: 1rem;
 }
 
-
 .footer-label {
   display: inline-block;
-      font-weight: 400;
-      position: absolute;
-      left: 30px;
-      top: 3px;
-      font-size: 0.8rem;
+  font-weight: 400;
+  position: absolute;
+  left: 30px;
+  top: 3px;
+  font-size: 0.8rem;
 }
-
 /*nav*/
-
 .nav-default {
   background-color: white;
   -webkit-box-shadow: $shadow;
@@ -139,23 +135,24 @@ strong {
   top: 0;
   z-index: 100000;
   // height: 10vh;
-      background-color: white;
-      -webkit-transition: all 0.5s ease-in-out;
-      -o-transition: all 0.5s ease-in-out;
-      transition: all 0.5s ease-in-out;
-      box-shadow: $shadow;
+  background-color: white;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  box-shadow: $shadow;
+  padding: 0.5rem 0;
 }
 
-#sticky-logo{
+#sticky-logo {
   position: absolute;
-left: 4%;
-width: 30px;
-opacity: 0;
--webkit-transition: all 0.5s ease-in-out;
-    top: 18%;
+  left: 4%;
+  width: 23px;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  top: 18%;
 }
 
-#sticky-logo:hover{
+#sticky-logo:hover {
   width: 32px;
 }
 
@@ -225,73 +222,69 @@ opacity: 0;
   text-align: center;
   font-family: 'Roboto Mono', sans-serif;
 }
-
 // .index-content {
 //   position: relative;
 // }
 
 .vNav {
-    position: fixed;
-    top: 30%;
-    // left: 80%;
-    width: 50px;
-    z-index: 9999;
-    list-style-type: none;
+  position: fixed;
+  top: 30%;
+  // left: 80%;
+  width: 50px;
+  z-index: 9999;
+  list-style-type: none;
 }
 
 .vNav ul {
-    position: relative;
-    padding: 3px;
-    // padding-left: 35%;
+  position: relative;
+  padding: 3px;
+  // padding-left: 35%;
 }
 
-.vNav ul li{
-    position: relative;
-    padding-bottom: 1rem;
-    padding-left: 35%;
-    color: $blue;
+.vNav ul li {
+  position: relative;
+  padding-bottom: 1rem;
+  padding-left: 35%;
+  color: $blue;
 }
 
-.vNav a{
-    display: block;
-    width: 12px;
-    height: 12px;
-    // text-indent: -9999px;
-    border-radius: 50%;
-    border: 2px solid;
-    border-color: $blue;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
-
+.vNav a {
+  display: block;
+  width: 12px;
+  height: 12px;
+  // text-indent: -9999px;
+  border-radius: 50%;
+  border: 2px solid;
+  border-color: $blue;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
 }
 
-.vNav a:hover{
-    border-radius: 50%;
-    background-color: $blue;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
-
+.vNav a:hover {
+  border-radius: 50%;
+  background-color: $blue;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
 }
 
-.vNav a.active{
-    border-radius: 50%;
-    background-color: $blue;
-    text-decoration: none;
+.vNav a.active {
+  border-radius: 50%;
+  background-color: $blue;
+  text-decoration: none;
 }
 
 .label {
   color: black;
-    position: relative;
-    top: -60%;
-    right: -200%;
-    width: 100%;
-    text-align: left;
-    font-size: 1em;
-    color: $blue;
-    display: none;
+  position: relative;
+  top: -60%;
+  right: -200%;
+  width: 100%;
+  text-align: left;
+  font-size: 1em;
+  color: $blue;
+  display: none;
 }
 /* buttons now */
-
 [class*="button-"] {
   font-size: 1.2em;
   padding: 0.5rem 0;
@@ -309,26 +302,21 @@ opacity: 0;
   cursor: pointer;
 }
 
-
 .button-link,
 .button-link:visited {
-      background: none;
+  background: none;
   color: grey;
   width: auto;
   transition: all 0.3s ease-in-out;
-
 
   &:hover {
     color: black;
     text-shadow: $shadow;
     transition: all 0.3s ease-in-out;
-
   }
 }
-
 /* color palette */
 /* standard colors */
-
 .our-black {
   background: $black;
   color: white;
@@ -349,6 +337,7 @@ opacity: 0;
   color: white;
 }
 /*styleguide*/
+
 [id*="section-"] {
   margin: 0 2rem 5rem 0;
   flex: 1;
@@ -359,14 +348,14 @@ opacity: 0;
   margin-left: 10%;
 }
 
-.my-name .head-1{
-      font-size: 4em;
+.my-name .head-1 {
+  font-size: 4em;
 }
 
 #hero {
   width: 100%;
-    height: 88vh;
-  }
+  height: 88vh;
+}
 
 .hero-icons {
   width: 100%;
@@ -378,12 +367,12 @@ opacity: 0;
 }
 
 .hero-link {
-  margin: 1% 3%;
+  margin: 0 3%;
 }
 
 #featured {
-    height: 65vh;
-  }
+  height: 65vh;
+}
 
 .featured-description {
   margin: 35% 0 30% 15%;
@@ -412,19 +401,19 @@ opacity: 0;
 
 .featured-img {
   max-width: 30rem;
-
 }
 
 #projects {
-
-  padding: 5% 0 15% 0;
+  padding: 5% 0 0;
   box-shadow: $shadow;
 
-  .project-header{
+  .project-header {
     margin: 5% 0;
-
   }
+}
 
+.project-row {
+  min-height: 45vh;
 }
 
 [id*="bg-"] {
@@ -434,19 +423,18 @@ opacity: 0;
   transition: 0.2s linear;
   background-position: center;
 
-    &:hover{
-        background-color: lighten($blue, 5%);
-        box-shadow: $shadow;
-    }
+  &:hover {
+    background-color: lighten($blue, 5%);
+    box-shadow: $shadow;
+  }
 }
-
 
 #bg-beep {
   background-image: url("../img/beep/concept3.png");
   width: 33%;
   background-size: 80%;
 
-  &:hover{
+  &:hover {
     background-size: 85%;
     transition: 0.2s linear;
   }
@@ -457,7 +445,7 @@ opacity: 0;
   background-size: 23%;
   width: 33%;
 
-  &:hover{
+  &:hover {
     background-size: 25%;
     transition: 0.2s linear;
   }
@@ -468,7 +456,7 @@ opacity: 0;
   width: 100%;
   background-size: 120%;
 
-  &:hover{
+  &:hover {
     background-size: 130%;
     transition: 0.2s linear;
   }
@@ -479,7 +467,7 @@ opacity: 0;
   width: 100%;
   background-size: 110%;
 
-  &:hover{
+  &:hover {
     background-size: 120%;
     transition: 0.2s linear;
   }
@@ -489,7 +477,8 @@ opacity: 0;
   background-image: url("../img/streetbanners/preview.JPG");
   width: 100%;
   background-size: 160%;
-  &:hover{
+
+  &:hover {
     background-size: 170%;
     transition: 0.2s linear;
   }
@@ -500,7 +489,7 @@ opacity: 0;
   width: 33%;
   background-size: 80%;
 
-  &:hover{
+  &:hover {
     background-size: 85%;
     transition: 0.2s linear;
   }
@@ -508,7 +497,7 @@ opacity: 0;
 
 .proj-article {
   max-width: 25%;
-      height: 35vh;
+  height: 35vh;
   // padding-left: 1%;
 }
 
@@ -524,42 +513,39 @@ opacity: 0;
 
 #about {
   // padding: 5rem 0 3rem;
-      // height: 80vh;
-  }
-
-  .about-img{
-    position: relative;
-z-index: -1;
-  }
-
-  .about-text{
-    max-width: 37rem;
-    padding: 10rem 0 3rem 2%;
+  // height: 80vh;
 }
 
-.about-resume, .about-resume:visited{
+.about-img {
+  position: relative;
+  z-index: -1;
+}
+
+.about-text {
+  max-width: 37rem;
+  padding: 10rem 0 3rem 2%;
+}
+
+.about-resume,
+.about-resume:visited {
   color: $black;
   transition: 0.2s linear;
   display: block;
   font-weight: bold;
 
-
-  &:hover{
-    color:$blue;
+  &:hover {
+    color: $blue;
     transition: 0.2s linear;
-
   }
 }
-
 ////////half-blocks /////////////
-
 .half-img {
   width: 50%;
   height: auto;
   display: inline-block;
   position: relative;
   overflow: hidden;
-      padding-left: 1%;
+  padding-left: 1%;
 }
 
 .half-text {
@@ -568,12 +554,10 @@ z-index: -1;
 }
 
 .fullW-text {
-  padding-left:2%;
+  padding-left: 2%;
   // padding: 0 1rem;
 }
-
 /*-------------footer----------*/
-
 #footer {
   margin-top: 5rem;
 }
@@ -593,21 +577,21 @@ footer .nav-title {
   position: relative;
   display: block;
 
-   .email:visited {
+  .email:visited {
     color: #f5f5f5;
     display: block;
   }
 
-  .material-icons{
+  .material-icons {
     border: none;
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
   }
 }
 
-  .email{
-    margin-top:1rem;
-  }
+.email {
+  margin-top: 1rem;
+}
 
 .footer-link {
   font-family: 'Roboto Mono', sans-serif;
@@ -646,13 +630,11 @@ footer .nav-title {
 .footer-listing {
   margin: 3%;
 
-  li{
-        margin: 3% 0;
+  li {
+    margin: 3% 0;
   }
 }
-
 // icons////////////////////////////////
-
 .social-icon {
   color: white;
   max-width: 24px;
@@ -664,53 +646,48 @@ footer .nav-title {
   transition: 0.2s ease-in-out;
 }
 
-.material-icons{
+.material-icons {
   border: 3px solid white;
-border-radius: 2rem;
-padding: 0.2rem;
-transition: all 0.6s ease;
-    // margin: 0 1.5% 3% 1.5%;
+  border-radius: 2rem;
+  padding: 0.2rem;
+  transition: all 0.6s ease;
+  // margin: 0 1.5% 3% 1.5%;
 }
 
 .material-icons.md-light {
   color: rgba(255, 255, 255, 1);
 }
 
-.nc-icon{
-width: 24px;
-// margin: 0 1.5% 3% 1.5%;
+.nc-icon {
+  width: 21px; // margin: 0 1.5% 3% 1.5%;
 }
 
 .tooltip {
-    position: relative;
-    margin: 0 1.5% 3% 1.5%;
-    transition: 0.2s ease-in-out;
-
+  position: relative;
+  margin: 0 1.5% 3%;
+  transition: 0.2s ease-in-out;
 }
 
 .tooltip .tooltiptext {
-    opacity: 0;
-    width: 50px;
-    color: #fff;
-    border-radius: 6px;
-    padding: 5px 0;
-    font-size: 0.8rem;
-    transition: 0.2s all ease-in-out;
-    text-transform: uppercase;
-
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 100;
-    top: -52px;
-    left: 0;
-
+  opacity: 0;
+  width: 50px;
+  color: #fff;
+  border-radius: 6px;
+  padding: 5px 0;
+  font-size: 0.8rem;
+  transition: 0.2s all ease-in-out;
+  text-transform: uppercase;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 100;
+  top: -52px;
+  left: 0;
 }
 
-.tooltip:hover .tooltiptext,
-.tooltip:focus .tooltiptext {
-    opacity: 1;
+.tooltip:focus .tooltiptext,
+.tooltip:hover .tooltiptext {
+  opacity: 1;
 }
-
 
 .social-icon:hover {
   opacity: 1;
@@ -718,9 +695,7 @@ width: 24px;
   -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
-
 ////////////////////links
-
 .top-link {
   width: 3.25em;
   height: 3.25em;
@@ -730,7 +705,7 @@ width: 24px;
   text-align: center;
   position: relative;
   z-index: 4;
-  bottom: 3.25em;
+  bottom: 0.25em;
   padding-top: 1.2rem;
   -o-transition: 0.2s ease;
   transition: 0.2s ease;
@@ -766,21 +741,20 @@ width: 24px;
   text-decoration: underline;
 }
 
-.about-dropdown{
+.about-dropdown {
   animation-name: dropdown;
   animation-duration: 3s;
-  animation-timing-function: ease-in-out;
-  // -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
-// animation-delay: 1s;
+  animation-timing-function: ease-in-out; // -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+  // animation-delay: 1s;
 }
 
-.hero-dropdown{
+.hero-dropdown {
   animation-name: dropdown;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
 }
 
-.hero-hidden{
+.hero-hidden {
   height: 30vh;
   width: 100%;
   position: relative;
@@ -788,11 +762,17 @@ width: 24px;
   z-index: 50;
 }
 
-.hero-content{
-position: relative;
+.hero-content {
+  position: relative;
 }
-
 @keyframes dropdown {
-    from {opacity: 0; top: -30rem;}
-    to {top: 0; opacity: 1;}
+  from {
+    opacity: 0;
+    top: -30rem;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }

@@ -18,7 +18,7 @@
   <nav id="nav-default">
     <div class="left-nav">
       <a class="head-3 my-name" href="index.html">
-          <img alt="img" class="nc-icon" src="img/nc.png">
+          <img alt="nc logo icon" class="nc-icon" src="img/nc.png">
 
       <div class="head-3 home-link">
             &lt;home </div>
@@ -29,9 +29,9 @@
 
   <!-- nav for mobile -->
   <nav class="hidden" id="nav-toggle">
-    <div class="centered nav-sticky" id="nav-default">
-      <a href="#"><img alt="img" class="nc-icon" src="img/nc.png" style="opacity:1;" id="sticky-logo"></a>
-      <a class="head-3 hero-link button-link" href="index.html#featured"> projects </a>
+    <div class="centered nav-sticky">
+      <a class="" href="index.html"><img alt="nc logo icon" class="nc-icon" src="img/nc.png" style="opacity:1;" id="sticky-logo"></a>
+      <a class="head-3 hero-link button-link" href="index.html#projects"> projects </a>
       <a class="head-3 hero-link button-link" href="index.html#about"> about </a>
       <a class="head-3 hero-link button-link" href="img/resume.pdf" target="_blank"> resume </a>
     </div>
@@ -77,7 +77,7 @@
         <a class="scroll-down" href="#concept">
             <i class="material-icons md-light">&#xE5CF;</i>
         </a>
-       </div>
+      </div>
     </div>
 
     <div class="centered our-blue">
@@ -95,11 +95,11 @@
 
             <h2 class="head-2 step">Idea and Concept</h2>
             <div class="p-style">
-              Beep's concept started in my sketchbook as a 3D platformer where player traverse through three different planets with their own unique enemy types and boss. I designed a wide variety of enemies, boss types, enemy interactions, environment, heiroglyph collection system, character stages, enemies type,  color palette, and lighting concept art.
-              <br> <br>
-              The fist world was designed to be comprised of cubes, the second world would have spikes, and the third world would be filled with triangles. Enemies in each world would reflect on the environment shapes. Similarly, player learns how to morph in the first world and would learn special attack skills as they move on to the next planet.
-              <br> <br>
-              Since the cube planet was the most fleshed out and due to time constraint, it was the only planet that was built.
+              Beep's concept started in my sketchbook as a 3D platformer where player traverse through three different planets with their own unique enemy types and boss. I designed a wide variety of enemies, boss types, enemy interactions, environment, heiroglyph
+              collection system, character stages, enemies type, color palette, and lighting concept art.
+              <br> <br> The fist world was designed to be comprised of cubes, the second world would have spikes, and the third world would be filled with triangles. Enemies in each world would reflect on the environment shapes. Similarly, player learns
+              how to morph in the first world and would learn special attack skills as they move on to the next planet.
+              <br> <br> Since the cube planet was the most fleshed out and due to time constraint, it was the only planet that was built.
             </div>
 
           </div>
@@ -165,14 +165,15 @@
       </div>
     </div>
 
-    <div class="section indented" >
+    <div class="section indented">
       <div class="container" id="modelling">
         <div class="half-text">
           <div class="text-content">
 
             <h2 class="head-2 step"> 3D models & textures</h2>
             <div class="p-style">
-              My role in creating and texturing the models were focused on the design of the spaceship and the second enemy type found in later level of the game. While I explored different design of the spaceship models in Maya (with the texturing of the spaceship done by D.Ragas), the form of the trapezoid enemy was set pretty early on with some minor changes in the body ratio. Textures of the trapezoid enemy was created by me in Clip Studio and then compiled in Unity3D.
+              My role in creating and texturing the models were focused on the design of the spaceship and the second enemy type found in later level of the game. While I explored different design of the spaceship models in Maya (with the texturing of the spaceship
+              done by D.Ragas), the form of the trapezoid enemy was set pretty early on with some minor changes in the body ratio. Textures of the trapezoid enemy was created by me in Clip Studio and then compiled in Unity3D.
             </div>
           </div>
         </div>
@@ -188,14 +189,17 @@
       </div>
     </div>
 
-    <div class="section indented" >
+    <div class="section indented">
       <div class="container" id="camera">
         <div class="half-text">
           <div class="text-content">
 
             <h2 class="head-2 step">Camera Research</h2>
             <div class="p-style">
-               Camera was researched by me through several iterations. Initially, it was planned to be a dynamically positioned camera where its position will change depending on user position. However, it quickly proved to be dizzying and would clip through tall objects. Thus, I implemented a transparency toggle on taller objects, but as it was time-consuming to set up on each tall object, I started researching silhouette shaders that were similar to those used in <a class="inline-link" href="https://vltmn.itch.io/lieve-oma">Lieve Oma</a>. This was initially done via the use of ambient occlusion. Other dynamic camera implementations were tested, but as our camera research was nearing the deadline, user controlled camera was chosen- which was first built with horizontal control then both axis enabled.
+              Camera was researched by me through several iterations. Initially, it was planned to be a dynamically positioned camera where its position will change depending on user position. However, it quickly proved to be dizzying and would clip through tall objects.
+              Thus, I implemented a transparency toggle on taller objects, but as it was time-consuming to set up on each tall object, I started researching silhouette shaders that were similar to those used in <a class="inline-link" href="https://vltmn.itch.io/lieve-oma">Lieve Oma</a>.
+              This was initially done via the use of ambient occlusion. Other dynamic camera implementations were tested, but as our camera research was nearing the deadline, user controlled camera was chosen- which was first built with horizontal control
+              then both axis enabled.
             </div>
           </div>
         </div>
@@ -211,12 +215,13 @@
       </div>
     </div>
 
-    <div class="section indented fullW-text" >
-      <div class="container"  id="ui">
-            <h2 class="head-2 step">UI and Particles</h2>
-            <div class="p-style">
-               As our world were asset heavy, there was noticeable lag between levels. Thus, I researched for tutorials online to implement a fading transition between levels. After that, I was responsible for the menu UI where heiroglyphs and game settings would be stored. While the particles feature was scrapped from the final iteration, I created a particle effect on interactive cubes that would activate only when they are in camera view.
-            </div>
+    <div class="section indented fullW-text">
+      <div class="container" id="ui">
+        <h2 class="head-2 step">UI and Particles</h2>
+        <div class="p-style">
+          As our world were asset heavy, there was noticeable lag between levels. Thus, I researched for tutorials online to implement a fading transition between levels. After that, I was responsible for the menu UI where heiroglyphs and game settings would be
+          stored. While the particles feature was scrapped from the final iteration, I created a particle effect on interactive cubes that would activate only when they are in camera view.
+        </div>
 
         <div class="container centered">
           <div class="grids-3"><img src="img/beep/fading.gif" alt="fading animation shown between levels"></div>
@@ -233,18 +238,20 @@
 
             <h2 class="head-2 step">Sound, Waves & World Building</h2>
             <div class="p-style">
-              Sound was collected from <a class="inline-link" href="https://freesound.org/">freesounds.org</a> and <a class="inline-link" href="https://www.youtube.com/audiolibrary/music">Youtube Sound Library</a>. As this was my first time integrating sound into a 3D environment, the process took longer than expected. Nearly all of the sound in the game, from the ambient water streaming to the BGM and the beeping of our main character over random interval was desgined and selected to create a consistent sound palette. Many of the sound had to be triggered by code, like gate opening and puzzle activations, which required me to communicate closely with our coder.
-              <br><br>
-              Water physic came at the latest part of the development so I had to look for one that would fit our game's semi-flat aesthetic with limited time. Through some research, I found a few wave prefabs provided in Unity's Standard Assets, played around with it, and was able to create a customized version in a relatively short time.
-              <br><br>
-              Once that was done, I had to set up the intro screen and the tutorial map. Introduction screen was planned so that once user press start, player would see a UFO crashing onto a planet where our avatar would emerge into the tutorial level. I designed and coded the tutorial stage so semi-diegetic tutorials pop up with control tips. The popup tips were later adopted into other levels as well.
+              Sound was collected from <a class="inline-link" href="https://freesound.org/">freesounds.org</a> and <a class="inline-link" href="https://www.youtube.com/audiolibrary/music">Youtube Sound Library</a>. As this was my first time integrating
+              sound into a 3D environment, the process took longer than expected. Nearly all of the sound in the game, from the ambient water streaming to the BGM and the beeping of our main character over random interval was desgined and selected to
+              create a consistent sound palette. Many of the sound had to be triggered by code, like gate opening and puzzle activations, which required me to communicate closely with our coder.
+              <br><br> Water physic came at the latest part of the development so I had to look for one that would fit our game's semi-flat aesthetic with limited time. Through some research, I found a few wave prefabs provided in Unity's Standard Assets,
+              played around with it, and was able to create a customized version in a relatively short time.
+              <br><br> Once that was done, I had to set up the intro screen and the tutorial map. Introduction screen was planned so that once user press start, player would see a UFO crashing onto a planet where our avatar would emerge into the tutorial
+              level. I designed and coded the tutorial stage so semi-diegetic tutorials pop up with control tips. The popup tips were later adopted into other levels as well.
             </div>
           </div>
         </div>
 
         <div class="half-img container centered">
-          <img src="img/beep/water.gif" style="margin-bottom:2%;"alt="Player going near a stream with an animated water plane ">
-          <img src="img/beep/tutorial.jpg" alt="Tutorial level with semi-diegetic tutorial tips. Sound of player's sound perimeter shown in the top window.">
+          <img src="img/beep/water.gif" style="margin-bottom:2%;" alt="Player going near a stream with an animated water plane ">
+          <img src="img/beep/tutorial.jpg" alt="Tutorial level with floating tutorial tips and player's sound perimeter.">
         </div>
       </div>
     </div>
@@ -257,15 +264,16 @@
           <div class="text-content">
             <h2 class="head-2 step">Game Trailer & Thoughts</h2>
             <div class="p-style">
-              While I've made some simple Unity 2D platformer game before, this was the first time I had to help code, build, and make assets for a Unity 3D game. There are still a lot of design refinements we can make on the game and more playertesting would have helped weed out the small bugs found throughout as well. Overall, if there wass something I would like to change, a final boss combat-able should have been added and some levels could have been compressed to enrich the content quality in each stage.
-              <br><br>
-              The game was showcased in class and at a local indie comic/game convention where we had positive reviews and suggestions. Game trailer was made by J.Ryu.
+              While I've made some simple Unity 2D platformer game before, this was the first time I had to help code, build, and make assets for a Unity 3D game. There are still a lot of design refinements we can make on the game and more playertesting would have
+              helped weed out the small bugs found throughout as well. Overall, if there wass something I would like to change, a final boss combat-able should have been added and some levels could have been compressed to enrich the content quality in
+              each stage.
+              <br><br> The game was showcased in class and at a local indie comic/game convention where we had positive reviews and suggestions. Game trailer was made by J.Ryu.
             </div>
           </div>
         </div>
 
         <div class="half-img">
-            <iframe src='https://player.vimeo.com/video/212249428'></iframe>
+          <iframe title="beep game trailer" src='https://player.vimeo.com/video/212249428'></iframe>
         </div>
 
 
@@ -304,7 +312,8 @@
       </div>
 
       <div class="footer-listing">
-        <ul><li><a class="footer-link" href="amorphous.html">Amorphous</a></li>
+        <ul>
+          <li><a class="footer-link" href="amorphous.html">Amorphous</a></li>
           <li><a class="footer-link" href="beep.html">Beep</a></li>
           <li><a class="footer-link" href="illustrations.html">Drawings</a></li>
         </ul>

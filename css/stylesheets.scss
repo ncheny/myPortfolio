@@ -3,9 +3,10 @@
 /* We can set up preprocessing to combine files */
 @import "main.scss";
 @import "projects.scss";
-// @import "animate.css";
+@import "illus.css";
 
 
+// carousel library stylesheets
 @import "../slick/slick.css";
 @import "../slick/slick-theme.css";
 
