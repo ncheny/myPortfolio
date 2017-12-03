@@ -11,7 +11,7 @@ var offset=200;
 // }
 
 $(window).scroll(function() {
-    if($('#about').offset().top < $(window).scrollTop() +300)
+    if($('#about').offset().top < $(window).scrollTop() +400)
     {
           // alert('visible');
           myImage.classList.remove( "hidden" );
