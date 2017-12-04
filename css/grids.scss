@@ -1,4 +1,4 @@
-/* This is some default styling for the exercise */
+/* This is some default styling for containers */
 *,
 *::after,
 *::before {
@@ -51,7 +51,9 @@
   -ms-flex-line-pack: end;
   align-content: flex-end;
 }
-// for styleguide's scenario
+
+
+// for styleguide's scenario: resize at 400px (very small screen)
 @media (max-width: 25em) {
   #styleguide .sticky-logo {
     position: relative;
@@ -61,6 +63,7 @@
     margin-top: 5%;
   }
 }
+
 /*screen is smaller than 560px*/
 @media (max-width: 35em) {
   .left-nav,
@@ -169,7 +172,9 @@
     padding: 20% 0 0 10%;
   }
 }
-/*half-media area resizes earlier at 720px*/
+
+
+/*media resizing at 720px*/
 @media (max-width: 50em) {
   .head-1 {
     font-size: 200%;

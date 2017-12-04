@@ -35,11 +35,8 @@ strong {
   color: black; }
 
 /* ------------- styling of atoms ------------- */
-/* stylized headers */
 [class*="head-"] {
-  /*font-family: 'Playfair Display', serif;*/
-  font-family: 'Poppins', sans-serif;
-  /*text-transform: uppercase;*/ }
+  font-family: 'Poppins', sans-serif; }
 
 .head-1 {
   font-family: 'Roboto Mono', sans-serif;
@@ -89,7 +86,6 @@ strong {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
-/* fonting some elements */
 .p-style {
   font-family: 'Roboto Mono', sans-serif;
   padding: 1rem 0;
@@ -106,7 +102,6 @@ strong {
   top: 3px;
   font-size: 0.8rem; }
 
-/*nav*/
 .nav-default {
   background-color: white;
   -webkit-box-shadow: 5px 5px 10px rgba(118, 143, 165, 0.47);
@@ -254,7 +249,6 @@ strong {
   color: #00c2e4;
   display: none; }
 
-/* buttons now */
 [class*="button-"] {
   font-size: 1.2em;
   padding: 0.5rem 0;
@@ -287,8 +281,6 @@ strong {
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out; }
 
-/* color palette */
-/* standard colors */
 .our-black {
   background: black;
   color: white; }
@@ -305,7 +297,6 @@ strong {
   background: #00c2e4;
   color: white; }
 
-/*styleguide*/
 [id*="section-"] {
   margin: 0 2rem 5rem 0;
   -webkit-box-flex: 1;
@@ -501,7 +492,6 @@ strong {
 .fullW-text {
   padding-left: 2%; }
 
-/*-------------footer----------*/
 #footer {
   margin-top: 5rem; }
 
@@ -719,6 +709,9 @@ iframe {
   height: 100%;
   border: none; }
 
+figure {
+  margin: 0; }
+
 #top {
   position: relative; }
 
@@ -833,123 +826,8 @@ iframe {
     padding-top: 1rem;
     min-height: 10rem; }
 
-figure {
-  margin: 0; }
-
-.grids-4 {
-  max-width: 25%;
-  height: 100%;
-  display: block; }
-
-.grids-3 {
-  max-width: 33%;
-  height: 100%;
-  display: block;
-  padding: 1% 1% 0 0; }
-
 .amorphous-cat-gif {
   max-width: 19%; }
-
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  margin: auto; }
-
-.mySlides {
-  display: none; }
-  .mySlides img {
-    position: absolute;
-    height: 100%;
-    width: auto;
-    z-index: -1; }
-
-/* Next & previous buttons */
-.next,
-.prev {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  -webkit-transition: 0.6s ease;
-  -o-transition: 0.6s ease;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  background: rgba(0, 0, 0, 0.18); }
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px; }
-
-/* On hover, add a black background color with a little bit see-through */
-.next:hover,
-.prev:hover {
-  background: rgba(0, 0, 0, 0.5); }
-
-/* Caption text */
-.text {
-  background: rgba(0, 0, 0, 0.28);
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center; }
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-  text-shadow: 1px 2px 2px black; }
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  -webkit-transition: background-color 0.6s ease;
-  -o-transition: background-color 0.6s ease;
-  transition: background-color 0.6s ease; }
-
-.active,
-.dot:hover {
-  background-color: #717171; }
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s; }
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4; }
-  to {
-    opacity: 1; } }
-
-@keyframes fade {
-  from {
-    opacity: 0.4; }
-  to {
-    opacity: 1; } }
 
 .indented {
   margin: 15% 2rem 2rem 5%; }
@@ -973,7 +851,29 @@ figure {
     .scroll-down:hover .material-icons {
       padding: 0.8rem; }
 
-/* This is some default styling for the exercise */
+.grids-4 {
+  max-width: 25%;
+  height: 100%;
+  display: block; }
+
+.grids-3 {
+  max-width: 33%;
+  height: 100%;
+  display: block;
+  padding: 1% 1% 0 0; }
+
+/* Carousel Caption text */
+.text {
+  background: rgba(0, 0, 0, 0.28);
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center; }
+
+/* This is some default styling for containers */
 *,
 *::after,
 *::before {
@@ -1106,7 +1006,7 @@ figure {
   body #citation {
     padding: 20% 0 0 10%; } }
 
-/*half-media area resizes earlier at 720px*/
+/*media resizing at 720px*/
 @media (max-width: 50em) {
   .head-1 {
     font-size: 200%; }

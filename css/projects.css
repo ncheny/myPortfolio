@@ -14,7 +14,7 @@ iframe {
   position: relative; }
 
 #amorphous-header {
-  background-image: url(../img/amorphous/preview.png);
+  background-image: url("../img/amorphous/preview.png");
   top: 0;
   left: 0;
   width: 65%;
@@ -29,7 +29,7 @@ iframe {
   position: relative; }
 
 #beep-header {
-  background-image: url(../img/beep/preview.jpg);
+  background-image: url("../img/beep/preview.jpg");
   top: 0;
   left: 0;
   height: 100vh;
@@ -42,98 +42,6 @@ iframe {
   display: -ms-flexbox;
   display: flex;
   position: relative; }
-
-#illustration-header {
-  background-image: url(../img/illustrations/Roundumbrellagirl.jpg);
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 65%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative; }
-
-[class*="illus-"] {
-  background-repeat: no-repeat;
-  background-size: 100%;
-  display: block;
-  -webkit-transition: 0.2s linear;
-  -o-transition: 0.2s linear;
-  transition: 0.2s linear;
-  background-position: center;
-  margin: 3% 1%;
-  background-size: cover;
-  width: 23%;
-  height: 30rem;
-  border: solid 1px lightgrey;
-  -webkit-transition: 0.6s ease;
-  -o-transition: 0.6s ease;
-  transition: 0.6s ease; }
-  [class*="illus-"]:hover {
-    -webkit-box-shadow: 5px 5px 10px rgba(118, 143, 165, 0.47);
-    box-shadow: 5px 5px 10px rgba(118, 143, 165, 0.47);
-    -webkit-transition: 0.6s ease;
-    -o-transition: 0.6s ease;
-    transition: 0.6s ease; }
-
-.illus-1 {
-  background-image: url(../img/illustrations/12kyoko.jpg); }
-
-.illus-2 {
-  background-image: url(../img/illustrations/blknpurp.jpg); }
-
-.illus-3 {
-  background-image: url(../img/illustrations/jojo.jpg); }
-
-.illus-4 {
-  width: 48%;
-  height: 20rem;
-  background-image: url(../img/illustrations/internalized.png); }
-
-.illus-5 {
-  width: 48%;
-  height: 20rem;
-  background-image: url(../img/illustrations/dogtooth.jpg); }
-
-.illus-6 {
-  width: 30%;
-  background-image: url(../img/illustrations/cryingboy.jpg); }
-
-.illus-7 {
-  width: 30%;
-  background-image: url(../img/illustrations/Roundumbrellagirl.jpg); }
-
-.illus-8 {
-  width: 30%;
-  background-image: url(../img/illustrations/n04.jpg); }
-
-.illus-9 {
-  background-image: url(../img/illustrations/p3.jpg); }
-
-.illus-10 {
-  height: 20rem;
-  background-size: contain;
-  background-image: url(../img/comics/lp1.jpg); }
-
-.illus-11 {
-  height: 20rem;
-  background-size: contain;
-  background-image: url(../img/comics/lp2.jpg); }
-
-.illus-12 {
-  height: 20rem;
-  background-size: contain;
-  background-image: url(../img/comics/lp3.jpg); }
-
-.illus-13 {
-  height: 20rem;
-  background-size: contain;
-  background-image: url(../img/comics/lp4.jpg); }
 
 .header-text {
   width: 35%;
@@ -163,8 +71,8 @@ iframe {
   -webkit-box-shadow: 5px 5px 10px rgba(118, 143, 165, 0.47);
   box-shadow: 5px 5px 10px rgba(118, 143, 165, 0.47); }
 
-#beep-header:before,
-#amorphous-header:before {
+#amorphous-header:before,
+#beep-header:before {
   content: "";
   position: absolute;
   top: 0;
@@ -197,7 +105,8 @@ iframe {
   .left-nav .nc-icon {
     width: 40px;
     height: auto; }
-  .left-nav .home-link, .left-nav .home-link:visited {
+  .left-nav .home-link,
+  .left-nav .home-link:visited {
     font-size: 0.7rem;
     color: black; }
 
@@ -250,7 +159,8 @@ figure {
     z-index: -1; }
 
 /* Next & previous buttons */
-.prev, .next {
+.next,
+.prev {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -272,7 +182,8 @@ figure {
   border-radius: 3px 0 0 3px; }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.next:hover,
+.prev:hover {
   background: rgba(0, 0, 0, 0.5); }
 
 /* Caption text */
@@ -308,7 +219,8 @@ figure {
   -o-transition: background-color 0.6s ease;
   transition: background-color 0.6s ease; }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171; }
 
 /* Fading animation */
@@ -320,13 +232,13 @@ figure {
 
 @-webkit-keyframes fade {
   from {
-    opacity: .4; }
+    opacity: 0.4; }
   to {
     opacity: 1; } }
 
 @keyframes fade {
   from {
-    opacity: .4; }
+    opacity: 0.4; }
   to {
     opacity: 1; } }
 
@@ -349,3 +261,5 @@ figure {
     -webkit-transition: all 0.6s ease;
     -o-transition: all 0.6s ease;
     transition: all 0.6s ease; }
+    .scroll-down:hover .material-icons {
+      padding: 0.8rem; }

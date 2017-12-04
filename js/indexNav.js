@@ -1,3 +1,6 @@
+// when user scroll near the end of the hero section in index
+// which is the window height, top nav changes style
+
 'use strict';
 // var nameofVariable= object.property
 window.innerWidth;
