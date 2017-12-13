@@ -29,6 +29,29 @@ figure {
   margin: 0;
 }
 
+//////////// Grids ////////////////////
+
+
+.grids-2{
+  max-width: 40%;
+  height: 100%;
+  display: block;
+  padding: 1% 1% 0 0;
+
+}
+.grids-4 {
+  max-width: 25%;
+  height: 100%;
+  display: block;
+}
+
+.grids-3 {
+  max-width: 33%;
+  height: 100%;
+  display: block;
+  padding: 1% 1% 0 0;
+}
+
 
 #top {
   position: relative;
@@ -51,6 +74,20 @@ figure {
 
 #beep-header {
   background-image: url("../img/beep/preview.jpg");
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 65%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // z-index: 1000;
+  display: flex;
+  position: relative;
+}
+
+#cycle-header {
+  background-image: url("../img/streetbanners/preview.jpg");
   top: 0;
   left: 0;
   height: 100vh;
@@ -101,7 +138,8 @@ figure {
 }
 
 #amorphous-header:before,
-#beep-header:before {
+#beep-header:before,
+#cycle-header:before {
   content: "";
   position: absolute;
   // left: 35%;
@@ -169,7 +207,7 @@ figure {
 }
 
 
-.amorphous-cat-gif {
+#animation .amorphous-cat-gif {
   max-width: 19%;
 }
 
@@ -198,20 +236,6 @@ figure {
   }
 }
 
-//////////// Grids ////////////////////
-
-.grids-4 {
-  max-width: 25%;
-  height: 100%;
-  display: block;
-}
-
-.grids-3 {
-  max-width: 33%;
-  height: 100%;
-  display: block;
-  padding: 1% 1% 0 0;
-}
 
 
 /////////////* Carousel  *////////

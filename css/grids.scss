@@ -235,6 +235,7 @@
 
   #top #beep-header,
   #top #illustration-header,
+  #top #cycle-header,
   .header-project #amorphous-header,
   .header-text {
     width: 100%;
@@ -250,12 +251,14 @@
 
   #top #amorphous-header,
   #top #beep-header,
+  #top #cycle-header,
   #top #illustration-header {
     height: 80vh;
   }
 
   #amorphous-header:before,
-  #beep-header:before {
+  #beep-header:before,
+  #cycle-header:before {
     display: none;
   }
 

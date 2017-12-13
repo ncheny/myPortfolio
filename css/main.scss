@@ -418,6 +418,7 @@ strong {
   display: flex;
   transition: 0.2s linear;
   background-position: center;
+  width: 33%;
 
   &:hover {
     background-color: lighten($blue, 5%);
@@ -427,7 +428,6 @@ strong {
 
 #bg-beep {
   background-image: url("../img/beep/concept3.png");
-  width: 33%;
   background-size: 80%;
 
   &:hover {
@@ -439,7 +439,6 @@ strong {
 #bg-amorphous {
   background-image: url("../img/amorphous/astronaut-render.png");
   background-size: 23%;
-  width: 33%;
 
   &:hover {
     background-size: 25%;
@@ -448,8 +447,7 @@ strong {
 }
 
 #bg-evidentp {
-  background-image: url("../img/beep/preview.jpg");
-  width: 100%;
+  // background-image: url("../img/beep/preview.jpg");
   background-size: 120%;
 
   &:hover {
@@ -459,30 +457,27 @@ strong {
 }
 
 #bg-eyexpo {
-  background-image: url("../img/eyexpo/preview.jpg");
-  width: 100%;
-  background-size: 110%;
+  background-image: url("../img/eyexpo/techglobe.png");
+  background-size: 70%;
 
   &:hover {
-    background-size: 120%;
+    background-size: 75%;
     transition: 0.2s linear;
   }
 }
 
 #bg-banners {
-  background-image: url("../img/streetbanners/preview.JPG");
-  width: 100%;
-  background-size: 160%;
+  background-image: url("../img/streetbanners/final.png");
+  background-size: 60%;
 
   &:hover {
-    background-size: 170%;
+    background-size: 66%;
     transition: 0.2s linear;
   }
 }
 
 #bg-illus {
   background-image: url("../img/illustrations/preview.png");
-  width: 33%;
   background-size: 80%;
 
   &:hover {

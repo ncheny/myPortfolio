@@ -376,7 +376,8 @@ strong {
   -webkit-transition: 0.2s linear;
   -o-transition: 0.2s linear;
   transition: 0.2s linear;
-  background-position: center; }
+  background-position: center;
+  width: 33%; }
   [id*="bg-"]:hover {
     background-color: #00d8fe;
     -webkit-box-shadow: 5px 5px 10px rgba(118, 143, 165, 0.47);
@@ -384,7 +385,6 @@ strong {
 
 #bg-beep {
   background-image: url("../img/beep/concept3.png");
-  width: 33%;
   background-size: 80%; }
   #bg-beep:hover {
     background-size: 85%;
@@ -394,8 +394,7 @@ strong {
 
 #bg-amorphous {
   background-image: url("../img/amorphous/astronaut-render.png");
-  background-size: 23%;
-  width: 33%; }
+  background-size: 23%; }
   #bg-amorphous:hover {
     background-size: 25%;
     -webkit-transition: 0.2s linear;
@@ -403,8 +402,6 @@ strong {
     transition: 0.2s linear; }
 
 #bg-evidentp {
-  background-image: url("../img/beep/preview.jpg");
-  width: 100%;
   background-size: 120%; }
   #bg-evidentp:hover {
     background-size: 130%;
@@ -413,28 +410,25 @@ strong {
     transition: 0.2s linear; }
 
 #bg-eyexpo {
-  background-image: url("../img/eyexpo/preview.jpg");
-  width: 100%;
-  background-size: 110%; }
+  background-image: url("../img/eyexpo/techglobe.png");
+  background-size: 70%; }
   #bg-eyexpo:hover {
-    background-size: 120%;
+    background-size: 75%;
     -webkit-transition: 0.2s linear;
     -o-transition: 0.2s linear;
     transition: 0.2s linear; }
 
 #bg-banners {
-  background-image: url("../img/streetbanners/preview.JPG");
-  width: 100%;
-  background-size: 160%; }
+  background-image: url("../img/streetbanners/final.png");
+  background-size: 60%; }
   #bg-banners:hover {
-    background-size: 170%;
+    background-size: 66%;
     -webkit-transition: 0.2s linear;
     -o-transition: 0.2s linear;
     transition: 0.2s linear; }
 
 #bg-illus {
   background-image: url("../img/illustrations/preview.png");
-  width: 33%;
   background-size: 80%; }
   #bg-illus:hover {
     background-size: 85%;
@@ -712,6 +706,23 @@ iframe {
 figure {
   margin: 0; }
 
+.grids-2 {
+  max-width: 40%;
+  height: 100%;
+  display: block;
+  padding: 1% 1% 0 0; }
+
+.grids-4 {
+  max-width: 25%;
+  height: 100%;
+  display: block; }
+
+.grids-3 {
+  max-width: 33%;
+  height: 100%;
+  display: block;
+  padding: 1% 1% 0 0; }
+
 #top {
   position: relative; }
 
@@ -732,6 +743,21 @@ figure {
 
 #beep-header {
   background-image: url("../img/beep/preview.jpg");
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 65%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative; }
+
+#cycle-header {
+  background-image: url("../img/streetbanners/preview.jpg");
   top: 0;
   left: 0;
   height: 100vh;
@@ -774,7 +800,8 @@ figure {
   box-shadow: 5px 5px 10px rgba(118, 143, 165, 0.47); }
 
 #amorphous-header:before,
-#beep-header:before {
+#beep-header:before,
+#cycle-header:before {
   content: "";
   position: absolute;
   top: 0;
@@ -826,7 +853,7 @@ figure {
     padding-top: 1rem;
     min-height: 10rem; }
 
-.amorphous-cat-gif {
+#animation .amorphous-cat-gif {
   max-width: 19%; }
 
 .indented {
@@ -850,17 +877,6 @@ figure {
     transition: all 0.6s ease; }
     .scroll-down:hover .material-icons {
       padding: 0.8rem; }
-
-.grids-4 {
-  max-width: 25%;
-  height: 100%;
-  display: block; }
-
-.grids-3 {
-  max-width: 33%;
-  height: 100%;
-  display: block;
-  padding: 1% 1% 0 0; }
 
 /* Carousel Caption text */
 .text {
@@ -1041,6 +1057,7 @@ figure {
     height: 20rem; }
   #top #beep-header,
   #top #illustration-header,
+  #top #cycle-header,
   .header-project #amorphous-header,
   .header-text {
     width: 100%; }
@@ -1052,10 +1069,12 @@ figure {
     min-height: 10rem; }
   #top #amorphous-header,
   #top #beep-header,
+  #top #cycle-header,
   #top #illustration-header {
     height: 80vh; }
   #amorphous-header:before,
-  #beep-header:before {
+  #beep-header:before,
+  #cycle-header:before {
     display: none; }
   #bg-illus {
     background-size: 60%; }
