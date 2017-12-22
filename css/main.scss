@@ -698,26 +698,29 @@ footer .nav-title {
 
 ////////////////////links styling//////////////////
 .top-link {
-  width: 3.25em;
-  height: 3.25em;
+  width: 2.5em;
+  height: 2.5em;
   border-radius: 50%;
-  background: $black;
+  background: black;
   display: inline-block;
   text-align: center;
-  position: relative;
+  position: fixed;
   z-index: 4;
-  bottom: 0.25em;
-  padding-top: 1.2rem;
+  bottom: 2%;
+  padding-top: 0.8rem;
   -o-transition: 0.2s ease;
   transition: 0.2s ease;
   -webkit-transition: 0.2s ease;
   color: white;
   text-decoration: none;
+  right: 2%;
+  opacity: 0.3;
 }
 
 .top-link:hover {
+  opacity: 1;
   color: white;
-  transform: scale(1.2);
+  // transform: scale(1.1);
   -webkit-transition: 0.2s ease-in-out;
   -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;

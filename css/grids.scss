@@ -136,9 +136,9 @@
     width: 25%;
   }
 
-  .top-link {
-    bottom: 16.25em;
-  }
+  // .top-link {
+  //   bottom: 16.25em;
+  // }
 
   .outlinks {
     font-size: 0.8rem;
@@ -235,7 +235,7 @@
 
   #top #beep-header,
   #top #illustration-header,
-  #top #cycle-header,
+  #top #cycle-header,  #top #eyexpo-header,
   .header-project #amorphous-header,
   .header-text {
     width: 100%;
@@ -252,12 +252,14 @@
   #top #amorphous-header,
   #top #beep-header,
   #top #cycle-header,
+  #top #eyexpo-header,
   #top #illustration-header {
     height: 80vh;
   }
 
   #amorphous-header:before,
   #beep-header:before,
+  #eyexpo-header:before,
   #cycle-header:before {
     display: none;
   }

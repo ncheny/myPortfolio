@@ -58,8 +58,8 @@ figure {
 }
 
 ///////// project header content///////////////////
-#amorphous-header {
-  background-image: url("../img/amorphous/preview.png");
+
+[id*="header"] {
   top: 0;
   left: 0;
   width: 65%;
@@ -70,35 +70,25 @@ figure {
   // z-index: 1000;
   display: flex;
   position: relative;
+}
+
+#amorphous-header {
+  background-image: url("../img/amorphous/preview.png");
 }
 
 #beep-header {
   background-image: url("../img/beep/preview.jpg");
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 65%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  // z-index: 1000;
-  display: flex;
-  position: relative;
 }
 
 #cycle-header {
   background-image: url("../img/streetbanners/preview.jpg");
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 65%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  // z-index: 1000;
-  display: flex;
-  position: relative;
 }
+
+#eyexpo-header {
+  background-image: url("../img/eyexpo/preview.jpg");
+}
+
+
 
 .header-text {
   // margin-top: auto;
@@ -139,7 +129,8 @@ figure {
 
 #amorphous-header:before,
 #beep-header:before,
-#cycle-header:before {
+#cycle-header:before,
+#eyexpo-header:before{
   content: "";
   position: absolute;
   // left: 35%;

@@ -13,6 +13,12 @@ iframe {
 figure {
   margin: 0; }
 
+.grids-2 {
+  max-width: 40%;
+  height: 100%;
+  display: block;
+  padding: 1% 1% 0 0; }
+
 .grids-4 {
   max-width: 25%;
   height: 100%;
@@ -27,8 +33,7 @@ figure {
 #top {
   position: relative; }
 
-#amorphous-header {
-  background-image: url("../img/amorphous/preview.png");
+[id*="header-"] {
   top: 0;
   left: 0;
   width: 65%;
@@ -37,10 +42,12 @@ figure {
   background-repeat: no-repeat;
   background-size: cover;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   position: relative; }
+
+#amorphous-header {
+  background-image: url("../img/amorphous/preview.png"); }
 
 #beep-header {
   background-image: url("../img/beep/preview.jpg");
@@ -52,13 +59,12 @@ figure {
   background-repeat: no-repeat;
   background-size: cover;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   position: relative; }
 
 #cycle-header {
-  background-image: url("../img/streetbanners/preview.JPG");
+  background-image: url("../img/streetbanners/preview.jpg");
   top: 0;
   left: 0;
   height: 100vh;
@@ -67,7 +73,6 @@ figure {
   background-repeat: no-repeat;
   background-size: cover;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   position: relative; }
@@ -101,7 +106,8 @@ figure {
   box-shadow: 5px 5px 10px rgba(118, 143, 165, 0.47); }
 
 #amorphous-header:before,
-#beep-header:before {
+#beep-header:before,
+#cycle-header:before {
   content: "";
   position: absolute;
   top: 0;
