@@ -88,6 +88,9 @@ figure {
   background-image: url("../img/eyexpo/preview.jpg");
 }
 
+#evidentp-header {
+  background-image: url("../img/evidentpoint/headerimg.jpg");
+}
 
 
 .header-text {
@@ -130,6 +133,7 @@ figure {
 #amorphous-header:before,
 #beep-header:before,
 #cycle-header:before,
+#evidentp-header:before,
 #eyexpo-header:before{
   content: "";
   position: absolute;
@@ -140,6 +144,8 @@ figure {
   border-left: 8vh solid #ffffff;
   border-top: 50vh solid transparent;
   border-bottom: 50vh solid transparent;
+  // text-shadow: $shadow;
+
 }
 
 //project nav stylings ///////////////////////////
