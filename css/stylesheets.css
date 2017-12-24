@@ -1020,6 +1020,7 @@ figure {
   #top #beep-header,
   #top #illustration-header,
   #top #cycle-header, #top #eyexpo-header,
+  #top #evidentp-header,
   .header-project #amorphous-header,
   .header-text {
     width: 100%; }
@@ -1033,11 +1034,13 @@ figure {
   #top #beep-header,
   #top #cycle-header,
   #top #eyexpo-header,
-  #top #illustration-header {
+  #top #illustration-header,
+  #top #evidentp-header {
     height: 80vh; }
   #amorphous-header:before,
   #beep-header:before,
   #eyexpo-header:before,
+  #evidentp-header:before,
   #cycle-header:before {
     display: none; }
   #bg-illus {
