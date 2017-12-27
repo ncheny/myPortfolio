@@ -37,7 +37,6 @@ figure {
   top: 0;
   left: 0;
   width: 65%;
-  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -74,7 +73,7 @@ figure {
 
 .header-overview {
   font-size: 0.8rem;
-  margin-bottom: 25%; }
+  margin-bottom: 10%; }
 
 .header-details {
   padding-top: 10%;
@@ -98,7 +97,7 @@ figure {
   position: absolute;
   top: 0;
   width: 0;
-  height: 100vh;
+  height: 100%;
   border-left: 8vh solid #ffffff;
   border-top: 50vh solid transparent;
   border-bottom: 50vh solid transparent; }
