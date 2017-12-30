@@ -171,6 +171,16 @@
   body #citation {
     padding: 20% 0 0 10%;
   }
+
+  .step-short{
+    width: 100%;
+  }
+
+  .wide-text{
+    width: 100%;
+    max-width: 100%;
+    padding-top:1rem;
+  }
 }
 
 
@@ -244,7 +254,7 @@
 
   #bg-amorphous,
   #bg-beep,
-  #bg-illus,
+  #bg-illus,#bg-banners,#bg-eyexpo,#bg-evidentp,
   #styleguide #bg-beep-1 {
     width: 100%;
     min-height: 10rem;
@@ -300,5 +310,9 @@
   .scroll-down {
     visibility: hidden;
     display: none;
+  }
+
+  .footer-link{
+  font-size: 0.7rem;
   }
 }

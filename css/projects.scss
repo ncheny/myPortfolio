@@ -33,7 +33,7 @@ figure {
 
 
 .grids-2{
-  max-width: 40%;
+  max-width: 50%;
   height: 100%;
   display: block;
   padding: 1% 1% 0 0;
@@ -188,23 +188,34 @@ figure {
   color: $blue;
 }
 
+.step-short {
+  color: $blue;
+  width: 30%;
+}
+
 .narrow{
   // width: 10rem;
 }
 
 .project-content {
-  padding-left: 10%;
+  padding-left: 7%;
   width: 95%;
 }
 
 .text-content {
-  margin: 0 5%;
+  margin: 0 10% 0 5%;
   max-width: 50rem;
 
   .p-style {
     padding-top: 1rem;
     min-height: 10rem;
   }
+}
+
+.wide-text{
+  width: 70%;
+padding-top: 0;
+max-width: 47rem;
 }
 
 
@@ -214,7 +225,7 @@ figure {
 
 
 .indented {
-  margin: 15% 2rem 2rem 5%;
+  margin: 15% 8% 2rem 8%;
 }
 
 .scroll-down {

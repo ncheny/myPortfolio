@@ -477,6 +477,9 @@ strong {
 .fullW-text {
   padding-left: 2%; }
 
+.fullW-img {
+  padding-top: 2%; }
+
 #footer {
   margin-top: 5rem; }
 
@@ -525,7 +528,8 @@ footer .nav-title {
   /*text-align: center;*/
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  margin-top: 10rem; }
 
 .footer-personalInfo {
   position: relative;
@@ -697,7 +701,7 @@ figure {
   margin: 0; }
 
 .grids-2 {
-  max-width: 40%;
+  max-width: 50%;
   height: 100%;
   display: block;
   padding: 1% 1% 0 0; }
@@ -817,22 +821,31 @@ figure {
 .step {
   color: #00c2e4; }
 
+.step-short {
+  color: #00c2e4;
+  width: 30%; }
+
 .project-content {
-  padding-left: 10%;
+  padding-left: 7%;
   width: 95%; }
 
 .text-content {
-  margin: 0 5%;
+  margin: 0 10% 0 5%;
   max-width: 50rem; }
   .text-content .p-style {
     padding-top: 1rem;
     min-height: 10rem; }
 
+.wide-text {
+  width: 70%;
+  padding-top: 0;
+  max-width: 47rem; }
+
 #animation .amorphous-cat-gif {
   max-width: 19%; }
 
 .indented {
-  margin: 15% 2rem 2rem 5%; }
+  margin: 15% 8% 2rem 8%; }
 
 .scroll-down {
   position: absolute;
@@ -982,7 +995,13 @@ figure {
   body .styleguide-title {
     padding: 30% 0 10% 10%; }
   body #citation {
-    padding: 20% 0 0 10%; } }
+    padding: 20% 0 0 10%; }
+  .step-short {
+    width: 100%; }
+  .wide-text {
+    width: 100%;
+    max-width: 100%;
+    padding-top: 1rem; } }
 
 /*media resizing at 720px*/
 @media (max-width: 50em) {
@@ -1026,7 +1045,7 @@ figure {
     width: 100%; }
   #bg-amorphous,
   #bg-beep,
-  #bg-illus,
+  #bg-illus, #bg-banners, #bg-eyexpo, #bg-evidentp,
   #styleguide #bg-beep-1 {
     width: 100%;
     min-height: 10rem; }
@@ -1063,4 +1082,6 @@ figure {
     background-size: contain; }
   .scroll-down {
     visibility: hidden;
-    display: none; } }
+    display: none; }
+  .footer-link {
+    font-size: 0.7rem; } }
