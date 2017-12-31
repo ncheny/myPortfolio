@@ -34,6 +34,11 @@ a {
 strong {
   color: black; }
 
+em {
+  font-weight: 100;
+  font-size: 0.8rem;
+  color: grey; }
+
 /* ------------- styling of atoms ------------- */
 [class*="head-"] {
   font-family: 'Poppins', sans-serif; }
@@ -740,7 +745,7 @@ figure {
   background-image: url("../img/beep/preview.jpg"); }
 
 #cycle-header {
-  background-image: url("../img/streetbanners/preview.jpg"); }
+  background-image: url("../img/streetbanners/preview.png"); }
 
 #eyexpo-header {
   background-image: url("../img/eyexpo/preview.jpg"); }
@@ -841,7 +846,7 @@ figure {
   padding-top: 0;
   max-width: 47rem; }
 
-#animation .amorphous-cat-gif {
+.amorphous-cat-gif {
   max-width: 19%; }
 
 .indented {
@@ -1015,7 +1020,7 @@ figure {
   .grids-3 {
     max-width: 100%;
     height: auto; }
-  .amorphous-cat-gif {
+  #animation .amorphous-cat-gif {
     max-width: 100%; }
   .half-text {
     margin: 0 4% 4% 0; }
@@ -1079,9 +1084,8 @@ figure {
       padding-top: 10%; }
   .header-details {
     padding-top: 5%; }
-  #illustrations [class*="illus-"] {
-    width: 100%;
-    background-size: contain; }
+  .img2-block, .img3-block, .img4-block {
+    width: 100%; }
   .scroll-down {
     visibility: hidden;
     display: none; }

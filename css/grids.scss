@@ -204,7 +204,7 @@
     height: auto;
   }
 
-  .amorphous-cat-gif {
+  #animation .amorphous-cat-gif {
     max-width: 100%;
   }
 
@@ -304,9 +304,9 @@
     padding-top: 5%;
   }
 
-  #illustrations [class*="illus-"] {
+  .img2-block, .img3-block, .img4-block{
     width: 100%;
-    background-size: contain;
+    // background-size: contain;
   }
 
   .scroll-down {

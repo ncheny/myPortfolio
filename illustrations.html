@@ -10,6 +10,7 @@
   <link href="css/stylesheets.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/css/lightgallery.css" rel="stylesheet">
 
 </head>
 <!-- Nav menu -->
@@ -56,8 +57,8 @@
   <div class="section header-project">
     <div class="container " id="top">
       <div class="header-text">
-        <h1 class="head-1"> Illustrations</h1>
-        <div class="head-4"> Sketches and renders</div>
+        <h1 class="head-1"> Drawings</h1>
+        <div class="head-4"> Illustrations and storytelling</div>
         <div class="p-style header-overview">
           I like to draw in my free time. Sometime it's fanart, fan comics, or orignal doodles. See more on my <a href="https://www.instagram.com/aradied/" class="inline-link">Instagram</a> and <a href="http://aradiedart.tumblr.com/" class="inline-link">Tumblr</a>!
         </div>
@@ -68,7 +69,7 @@
 
       <div id="illustration-header">
         <a class="scroll-down" href="#illustrations">
-            <i class="material-icons" style="border: 3px solid black;">&#xE5CF;</i>
+            <i class="material-icons" style="border: 3px solid black; color: black;">&#xE5CF;</i>
         </a>
       </div>
     </div>
@@ -80,28 +81,62 @@
   </div>
 
   <div class="project-content" id="illustrations">
+    <div id="lightgallery" class="container proj-row">
 
-    <div class="container proj-row">
-      <div class=" illus-1"></div>
-      <div class=" illus-2"></div>
-      <div class=" illus-3"></div>
-      <div class=" illus-9"></div>
-    </div>
-    <div class="container proj-row">
-      <div class=" illus-4"></div>
-      <div class=" illus-5"></div>
-    </div>
-    <div class="container centered proj-row">
-      <div class=" illus-6"></div>
-      <div class=" illus-7"></div>
-      <div class=" illus-8"></div>
-    </div>
-    <div class="container proj-row">
-      <div class=" illus-10"></div>
-      <div class=" illus-11"></div>
-      <div class=" illus-12"></div>
-      <div class=" illus-13"></div>
-    </div>
+      <a class="img4-block" href="img/illustrations/12kyoko.jpg" data-sub-html="Juuni Kokki fanart">
+        <div class=" illus-1"></div>
+      </a>
+      <a class="img4-block"href="img/illustrations/blknpurp.jpg" data-sub-html="Original sketch">
+        <div class=" illus-2"></div>
+      </a>
+      <a class="img4-block"href="img/illustrations/jojo.jpg" data-sub-html="Jojo Bizarre Adventure fanart">
+        <div class=" illus-3"></div>
+      </a>
+      <a class="img4-block"href="img/illustrations/p3.jpg" data-sub-html="Persona 3 fanart">
+        <div class=" illus-9"></div>
+      </a>
+
+      <a class="img2-block"href="img/illustrations/storyboard.jpg" data-sub-html="UX storyboard of a software made for physical therapists">
+        <div class=" illus-4"></div>
+      </a>
+      <a class="img2-block"href="img/illustrations/dogtooth.jpg" data-sub-html="Study illustration of the movie 'Dogtooth'">
+        <div class=" illus-5"></div>
+      </a>
+
+      <a class="img3-block"href="img/illustrations/cryingboy.jpg" data-sub-html="Original">
+        <div class=" illus-6"></div>
+      </a>
+      <a class="img3-block"href="img/illustrations/Roundumbrellagirl.jpg"  data-sub-html="Photo and drawing collage">
+        <div class=" illus-7"></div>
+      </a>
+      <a class="img3-block"href="img/illustrations/n04.jpg" data-sub-html="Photo and drawing collage">
+        <div class=" illus-8"></div>
+      </a>
+      <a class="img4-block"href="img/comics/lp1.jpg" data-sub-html="Little Prince fan comic based on a chapter in the book">
+        <div class=" illus-10"></div>
+      </a>
+      <a class="img4-block"href="img/comics/lp2.jpg"  data-sub-html="Little Prince fan comic based on a chapter in the book">
+        <div class=" illus-11"></div>
+      </a>
+      <a class="img4-block"href="img/comics/lp3.jpg"  data-sub-html="Little Prince fan comic based on a chapter in the book">
+        <div class=" illus-12"></div>
+      </a>
+      <a class="img4-block"href="img/comics/lp4.jpg"  data-sub-html="Little Prince fan comic based on a chapter in the book">
+        <div class=" illus-13"></div>
+      </a>
+
+      <a class="img2-block"href="img/illustrations/internalized.png" data-sub-html="Illustration made for the school newspaper 'The Peak'">
+        <div class=" illus-16"></div>
+      </a>
+      <a class="img4-block"href="img/comics/carn1.jpg" data-sub-html="Storyboard excercise referencing the video 'Carn'">
+        <div class=" illus-14"></div>
+      </a>
+      <a class="img4-block"href="img/comics/carn2.jpg" data-sub-html="Storyboard excercise referencing the video 'Carn'">
+        <div class=" illus-15"></div>
+      </a>
+
+  </div>
+  <!-- end lightgallery -->
 
   </div>
   <!-- end of project content -->
@@ -173,9 +208,18 @@
 
   <script src="js/menu.js"></script>
   <script src="js/dotsNav.js"></script>
-  <script src="slick/slick.min.js"></script>
-  <script src="js/beep-slides.js"></script>
-  <script src="js/smoothScrolling.js"></script>
+  <!-- <script src="js/smoothScrolling.js"></script> -->
+
+<!-- lightgallery plugins -->
+<script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+<script src="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/js/lightgallery.js"></script>
+<script src="https://cdn.rawgit.com/sachinchoolur/lg-pager.js/master/dist/lg-pager.js"></script>
+<script src="https://cdn.rawgit.com/sachinchoolur/lg-fullscreen.js/master/dist/lg-fullscreen.js"></script>
+<script src="https://cdn.rawgit.com/sachinchoolur/lg-zoom.js/master/dist/lg-zoom.js"></script>
+
+<script>
+    lightGallery(document.getElementById('lightgallery'));
+</script>
 
 
 </body>

@@ -1,6 +1,6 @@
-/* ------------- illustration page ------------- */
+/* ------------- variables ------------- */
 #illustration-header {
-  background-image: url("../img/illustrations/Roundumbrellagirl.jpg");
+  background-image: url("../img/illustrations/roundumbrellagirl.jpg");
   top: 0;
   left: 0;
   height: 100vh;
@@ -9,7 +9,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   position: relative; }
@@ -17,6 +16,18 @@
 .proj-row {
   margin-top: 2%;
   width: 100%; }
+
+.img2-block {
+  width: 48%;
+  margin: 1%; }
+
+.img3-block {
+  width: 30%;
+  margin: 1%; }
+
+.img4-block {
+  width: 23%;
+  margin: 1%; }
 
 [class*="illus-"] {
   background-repeat: no-repeat;
@@ -26,9 +37,8 @@
   -o-transition: 0.2s linear;
   transition: 0.2s linear;
   background-position: center;
-  margin: 1%;
   background-size: cover;
-  width: 23%;
+  width: 100%;
   height: 30rem;
   border: solid 1px lightgrey;
   -webkit-transition: 0.6s ease;
@@ -51,25 +61,20 @@
   background-image: url("../img/illustrations/jojo.jpg"); }
 
 .illus-4 {
-  width: 48%;
   height: 20rem;
-  background-image: url("../img/illustrations/internalized.png"); }
+  background-image: url("../img/illustrations/storyboard.jpg"); }
 
 .illus-5 {
-  width: 48%;
   height: 20rem;
   background-image: url("../img/illustrations/dogtooth.jpg"); }
 
 .illus-6 {
-  width: 30%;
   background-image: url("../img/illustrations/cryingboy.jpg"); }
 
 .illus-7 {
-  width: 30%;
   background-image: url("../img/illustrations/Roundumbrellagirl.jpg"); }
 
 .illus-8 {
-  width: 30%;
   background-image: url("../img/illustrations/n04.jpg"); }
 
 .illus-9 {
@@ -94,3 +99,18 @@
   height: 20rem;
   background-size: contain;
   background-image: url("../img/comics/lp4.jpg"); }
+
+.illus-14 {
+  height: 20rem;
+  background-size: contain;
+  background-image: url("../img/comics/carn1.jpg"); }
+
+.illus-15 {
+  height: 20rem;
+  background-size: contain;
+  background-image: url("../img/comics/carn2.jpg"); }
+
+.illus-16 {
+  height: 20rem;
+  background-size: contain;
+  background-image: url("../img/illustrations/internalized.png"); }
