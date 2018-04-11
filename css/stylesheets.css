@@ -753,6 +753,9 @@ figure {
 #evidentp-header {
   background-image: url("../img/evidentpoint/headerimg.jpg"); }
 
+#videop-header {
+  background-image: url("../img/videoproduction/header.png"); }
+
 .header-text {
   width: 35%;
   padding-left: 10%;
@@ -785,6 +788,7 @@ figure {
 #beep-header:before,
 #cycle-header:before,
 #evidentp-header:before,
+#videop-header:before,
 #eyexpo-header:before {
   content: "";
   position: absolute;
