@@ -58,8 +58,14 @@ figure {
 #eyexpo-header {
   background-image: url("../img/eyexpo/preview.jpg"); }
 
+#brg-header {
+  color: red; }
+
 #evidentp-header {
   background-image: url("../img/evidentpoint/headerimg.jpg"); }
+
+#videop-header {
+  background-image: url("../img/videoproduction/header.png"); }
 
 .header-text {
   width: 35%;
@@ -93,6 +99,7 @@ figure {
 #beep-header:before,
 #cycle-header:before,
 #evidentp-header:before,
+#videop-header:before,
 #eyexpo-header:before {
   content: "";
   position: absolute;
@@ -154,7 +161,7 @@ figure {
   padding-top: 0;
   max-width: 47rem; }
 
-#animation .amorphous-cat-gif {
+.amorphous-cat-gif {
   max-width: 19%; }
 
 .indented {

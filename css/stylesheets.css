@@ -750,11 +750,18 @@ figure {
 #eyexpo-header {
   background-image: url("../img/eyexpo/preview.jpg"); }
 
+#brg-header {
+  background-image: url("../img/brg/BRGoutside.jpg"); }
+
 #evidentp-header {
   background-image: url("../img/evidentpoint/headerimg.jpg"); }
 
 #videop-header {
   background-image: url("../img/videoproduction/header.png"); }
+
+#lunular-header {
+  background-color: #ddfaff;
+  background-image: url("../img/lunular/processBG.png"); }
 
 .header-text {
   width: 35%;
@@ -789,6 +796,8 @@ figure {
 #cycle-header:before,
 #evidentp-header:before,
 #videop-header:before,
+#brg-header:before,
+#lunular-header:before,
 #eyexpo-header:before {
   content: "";
   position: absolute;
