@@ -36,6 +36,20 @@ img {
   height: auto;
 }
 
+.cell img{
+  display: block;
+}
+
+.cell{
+display: inline-block;
+ width: calc(20% - 3rem );
+ margin: 1rem;
+}
+
+.responsive-image{
+  max-width: 100%;
+}
+
 a {
   text-decoration: none;
 }
@@ -141,7 +155,7 @@ em{
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  box-shadow: $shadow;
+  // box-shadow: $shadow;
   padding: 0.5rem 0;
 }
 
@@ -225,65 +239,17 @@ em{
   font-family: 'Roboto Mono', sans-serif;
 }
 
-////// side dots vertical nav //////////
-.vNav {
-  position: fixed;
-  top: 30%;
-  // left: 80%;
-  width: 50px;
-  z-index: 9999;
-  list-style-type: none;
-}
-
-.vNav ul {
-  position: relative;
-  padding: 3px;
-  // padding-left: 35%;
-}
-
-.vNav ul li {
-  position: relative;
-  padding-bottom: 1rem;
-  padding-left: 35%;
-  color: $blue;
-}
-
-.vNav a {
-  display: block;
-  width: 12px;
-  height: 12px;
-  // text-indent: -9999px;
-  border-radius: 50%;
-  border: 2px solid;
-  border-color: $blue;
-  text-decoration: none;
-  transition: all 0.3s ease-in-out;
-}
-
-.vNav a:hover {
-  border-radius: 50%;
-  background-color: $blue;
-  text-decoration: none;
-  transition: all 0.3s ease-in-out;
-}
-
-.vNav a.active {
-  border-radius: 50%;
-  background-color: $blue;
-  text-decoration: none;
-}
-
-.label {
-  color: black;
-  position: relative;
-  top: -60%;
-  right: -200%;
-  width: 100%;
-  text-align: left;
-  font-size: 1em;
-  color: $blue;
-  display: none;
-}
+// .label {
+//   color: black;
+//   position: relative;
+//   top: -60%;
+//   right: -200%;
+//   width: 100%;
+//   text-align: left;
+//   font-size: 1em;
+//   color: $blue;
+//   display: none;
+// }
 
 /////////////* buttons  *///////////////
 [class*="button-"] {
@@ -760,7 +726,7 @@ footer .nav-title {
 ///////////* animations *////////////
 
 .about-dropdown {
-  animation-name: dropdown;
+  animation-name: slide-in;
   animation-duration: 3s;
   animation-timing-function: ease-in-out; // -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
   // animation-delay: 1s;
@@ -791,6 +757,19 @@ footer .nav-title {
 
   to {
     top: 0;
+    opacity: 1;
+  }
+}
+
+
+@keyframes slide-in{
+  from{
+    left: -20rem;
+    opacity: 0;
+  }
+
+  to {
+    left: 0;
     opacity: 1;
   }
 }

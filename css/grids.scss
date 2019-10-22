@@ -317,4 +317,13 @@
   .footer-link{
   font-size: 0.7rem;
   }
+
+  .grid{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .cell {
+    width:calc(50% - 2rem);
+  }
 }

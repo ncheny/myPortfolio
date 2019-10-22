@@ -17,7 +17,7 @@ window.addEventListener('scroll', function() {
   // console.log( lastYPos );
 
   if(lastYPos> windowHeight-150){
-    navDefault.classList.remove("our-pink");
+    navDefault.classList.remove("our-blue");
     stickyLogo.style.opacity = "0";
     stickyLogo.style.opacity = "0.8";
 
@@ -27,12 +27,12 @@ window.addEventListener('scroll', function() {
     }
 
   }else{
-    navDefault.classList.add("our-pink");
+    navDefault.classList.add("our-blue");
     stickyLogo.style.opacity = "0";
 
 
     for (i = 0; i < x.length; i++) {
-        x[i].style.color = "white";
+        x[i].style.color = "black";
     }
 
 
