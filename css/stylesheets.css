@@ -50,6 +50,10 @@ em {
   font-size: 0.8rem;
   color: grey; }
 
+figcaption {
+  font-style: italic;
+  margin: 0.5rem; }
+
 /* ------------- styling of atoms ------------- */
 [class*="head-"] {
   font-family: 'Poppins', sans-serif; }
@@ -440,6 +444,9 @@ em {
 
 .fullW-img {
   padding-top: 2%; }
+
+.padded-text {
+  margin: 2rem 8%; }
 
 #footer {
   margin-top: 5rem; }

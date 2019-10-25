@@ -64,6 +64,11 @@ em{
   font-size: 0.8rem;
   color: grey;
 }
+
+figcaption{
+  font-style: italic;
+  margin:0.5rem;
+}
 /* ------------- styling of atoms ------------- */
 
 ////////* stylized headers *////////////////
@@ -530,7 +535,9 @@ em{
   // padding: 0 1rem;
 }
 
-
+.padded-text{
+  margin: 2rem 8%;
+}
 
 ///////////* footer *////////////
 
