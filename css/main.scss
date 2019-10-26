@@ -382,7 +382,12 @@ figcaption{
   box-shadow: $shadow;
 
   .project-header {
-    margin: 5% 0;
+    margin: 5%;
+    text-shadow: $shadow;
+    color: $black;
+    // margin: 5% 80% 5% 5%;
+    // padding: 0.3rem;
+    // background-color: white;
   }
 }
 
@@ -406,6 +411,36 @@ figcaption{
 
 #bg-beep {
   background-image: url("../img/beep/concept3.png");
+  background-size: 80%;
+
+  &:hover {
+    background-size: 85%;
+    transition: 0.2s linear;
+  }
+}
+
+#bg-brg {
+  background-image: url("../img/brg/brgBG.png");
+  background-size: 80%;
+
+  &:hover {
+    background-size: 85%;
+    transition: 0.2s linear;
+  }
+}
+
+#bg-lunular {
+  background-image: url("../img/lunular/lunularBG.png");
+  background-size: 80%;
+
+  &:hover {
+    background-size: 85%;
+    transition: 0.2s linear;
+  }
+}
+
+#bg-m2m {
+  background-image: url("../img/m2m/m2mBG.png");
   background-size: 80%;
 
   &:hover {
@@ -546,11 +581,15 @@ figcaption{
 }
 
 footer .nav-title {
-  color: white;
+  color: $black;
   font-size: 1.2rem;
   margin-bottom: 1rem;
   width: 100%;
   text-transform: uppercase;
+}
+
+.nav-title:visited{
+  color: $black;
 }
 
 .contact {
@@ -559,6 +598,7 @@ footer .nav-title {
   font-size: 0.9rem;
   position: relative;
   display: block;
+  color: $black;
 
   .email:visited {
     color: #f5f5f5;
@@ -620,7 +660,7 @@ footer .nav-title {
 }
 // icons////////////////////////////////
 .social-icon {
-  color: white;
+  // color: white;
   max-width: 24px;
   height: auto;
   opacity: 0.7;
