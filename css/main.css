@@ -30,6 +30,11 @@ a {
 strong {
   color: black; }
 
+em {
+  font-weight: 100;
+  font-size: 0.8rem;
+  color: grey; }
+
 /* ------------- styling of atoms ------------- */
 [class*="head-"] {
   font-family: 'Poppins', sans-serif; }
@@ -390,9 +395,9 @@ strong {
 
 #bg-evidentp {
   background-image: url("../img/evidentpoint/preview.png");
-  background-size: 100%; }
+  background-size: 80%; }
   #bg-evidentp:hover {
-    background-size: 100%;
+    background-size: 85%;
     -webkit-transition: 0.2s linear;
     -o-transition: 0.2s linear;
     transition: 0.2s linear; }
@@ -473,6 +478,9 @@ strong {
 .fullW-text {
   padding-left: 2%; }
 
+.fullW-img {
+  padding-top: 2%; }
+
 #footer {
   margin-top: 5rem; }
 
@@ -521,7 +529,8 @@ footer .nav-title {
   /*text-align: center;*/
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  margin-top: 10rem; }
 
 .footer-personalInfo {
   position: relative;
