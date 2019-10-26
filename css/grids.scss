@@ -246,6 +246,7 @@
   #top #beep-header,
   #top #beep2-header,
   #top #brg-header,
+  #top #lunular-header,
   #top #illustration-header,
   #top #cycle-header,  #top #eyexpo-header,
   #top #evidentp-header,
@@ -256,7 +257,10 @@
 
   #bg-amorphous,
   #bg-beep,
-  #bg-illus,#bg-banners,#bg-eyexpo,#bg-evidentp,
+  #bg-illus,
+  #bg-banners,#bg-eyexpo,
+  #bg-evidentp,#bg-brg,
+  #bg-lunular, #bg-m2m,
   #styleguide #bg-beep-1 {
     width: 100%;
     min-height: 10rem;
@@ -264,7 +268,8 @@
 
   #top #amorphous-header,
   #top #beep-header,
-  #top #beep2-header
+  #top #beep2-header,
+  #top #lunular-header,
   #top #brg-header,
   #top #cycle-header,
   #top #eyexpo-header,
@@ -279,6 +284,7 @@
   #beep-header:before,
   #beep2-header:before,
   #brg-header:before,
+  #lunular-header:before,
   #eyexpo-header:before,
   #evidentp-header:before,
   #cycle-header:before {
