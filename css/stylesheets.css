@@ -625,7 +625,8 @@ footer .nav-title {
   color: white;
   text-decoration: none;
   right: 2%;
-  opacity: 0.3; }
+  opacity: 0.3;
+  z-index: 100000; }
 
 .top-link:hover {
   opacity: 1;
@@ -1053,6 +1054,9 @@ figure {
   .half-img,
   .half-text {
     width: 100%; }
+  .grids-2 {
+    max-width: 50%;
+    height: auto; }
   .grids-3 {
     max-width: 100%;
     height: auto; }
