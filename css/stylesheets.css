@@ -783,8 +783,8 @@ figure {
   background-image: url("../img/videoproduction/header.png"); }
 
 #lunular-header {
-  background-color: #ddfaff;
-  background-image: url("../img/lunular/processBG.png"); }
+  background-color: #ffda5b;
+  background-image: url("../img/lunular/exploreGroup.svg"); }
 
 .header-text {
   width: 35%;
@@ -1038,8 +1038,6 @@ figure {
     padding: 30% 0 10% 10%; }
   body #citation {
     padding: 20% 0 0 10%; }
-  .step-short {
-    width: 100%; }
   .wide-text {
     width: 100%;
     max-width: 100%;
@@ -1154,4 +1152,6 @@ figure {
     -ms-flex-direction: row;
     flex-direction: row; }
   .cell {
-    width: calc(50% - 2rem); } }
+    width: calc(50% - 2rem); }
+  .step-short {
+    width: 100%; } }
