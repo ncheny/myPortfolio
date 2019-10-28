@@ -342,7 +342,7 @@ figcaption {
     box-shadow: 5px 5px 10px rgba(118, 143, 165, 0.47); }
 
 #bg-beep {
-  background-image: url("../img/beep/concept3.png");
+  background-image: url("../img/beep2/beep2BG.png");
   background-size: 80%; }
   #bg-beep:hover {
     background-size: 85%;
@@ -784,7 +784,7 @@ figure {
 
 #lunular-header {
   background-color: #ffda5b;
-  background-image: url("../img/lunular/exploreGroup.svg"); }
+  background-image: url("../img/lunular/lunularheader.png"); }
 
 .header-text {
   width: 35%;

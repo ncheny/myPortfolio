@@ -11,6 +11,11 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+  <!-- light gallery icons -->
+  <link href="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/css/lightgallery.css" rel="stylesheet">
+  <!-- tab icon -->
+  <link rel="icon" href="img/me-icon.png">
+
 </head>
 <!-- Nav menu -->
 
@@ -120,8 +125,12 @@
 
         </div>
       </div>
-      <div class="half-img ">
+
+      <!-- bug -->
+      <div class="half-img" id="care-thumbnail">
+        <a href="img/lunular/care.svg"data-sub-html=" Why AR technology used in the fashion industry w">
         <img class="responsive-image" src="img/lunular/care.svg" alt="">
+        </a>
     </div>
   </div>
 </div>
@@ -166,10 +175,18 @@
         </div>
       </div>
 
-      <div class="container">
-        <div class="grids-3"><img src="img/lunular/researchPhotos.jpg" alt=""></div>
-        <div class="grids-3"><img src="img/lunular/persona.png" alt=""></div>
-        <div class="grids-3"><img src="img/lunular/personaSalon.png" alt=""></div>
+      <div class="container" id="audience-thumbnails">
+        <a class="grids-3" href="img/lunular/researchPhotos.jpg" data-sub-html="">
+          <img src="img/lunular/researchPhotos.jpg" alt="">
+        </a>
+        <a class="grids-3" href="img/lunular/persona.png" data-sub-html="">
+          <img src="img/lunular/persona.png" alt="">
+        </a>
+        <a class="grids-3" href="img/lunular/personaSalon.png" data-sub-html="">
+          <img src="img/lunular/personaSalon.png" alt="">
+        </a>
+        <!-- <div class="grids-3"><img src="img/lunular/persona.png" alt=""></div>
+        <div class="grids-3"><img src="img/lunular/personaSalon.png" alt=""></div> -->
     </div>
 
 
@@ -183,9 +200,13 @@
         </div>
       </div>
 
-      <div class="container">
-        <div class="grids-2"><img src="img/lunular/journeyMap.png" alt=""></div>
-        <div class="grids-2"><img src="img/lunular/wireflow.png" alt=""></div>
+      <div class="container" id="wireflow-thumbnails">
+        <a class="grids-2" href="img/lunular/journeyMap.png" data-sub-html="Jessica's journey map of getting her nails done before using Lunular VS after using Lunular">
+          <img src="img/lunular/journeyMap.png" alt="">
+        </a>
+        <a class="grids-2" href="img/lunular/wireflow.png" data-sub-html="App feature wireflow map">
+          <img src="img/lunular/wireflow.png" alt="">
+        </a>
     </div>
 
       <div class="fullW-text p-style padded-text">
@@ -231,8 +252,10 @@
           </div>
         </div>
 
-        <div class="half-img ">
-          <img class="responsive-image " src="img/lunular/userexperience.svg" alt="">
+        <div class="half-img " id="reframe-thumbnail">
+          <a href="img/lunular/userexperience.svg" class="responsive-image" data-sub-html="Main issues that were found in prototype testing" >
+            <img src="img/lunular/userexperience.svg" alt="">
+          </a>
       </div>
 
       <div class="half-text">
@@ -391,6 +414,33 @@
   <script src="slick/slick.min.js"></script>
   <script src="js/eyexpo-slides.js"></script>
   <!-- <script src="js/smoothScrolling.js"></script> -->
+
+
+  <!-- lightgallery scripts -->
+    <script src="js/lightgallery/lightgallery.min.js"></script>
+    <!-- lightgallery plugins -->
+    <script src="js/lightgallery/lg-thumbnail.min.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-fullscreen.js/master/dist/lg-fullscreen.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-zoom.js/master/dist/lg-zoom.js"></script>
+
+    <script>
+    lightGallery(document.getElementById('audience-thumbnails'), {
+        thumbnail:true
+    });
+    lightGallery(document.getElementById('wireflow-thumbnails'), {
+        thumbnail:true
+    });
+    lightGallery(document.getElementById('care-thumbnail'), {
+      thumbnail:true,
+      animateThumb: false,
+      showThumbByDefault: false
+    });
+    lightGallery(document.getElementById('reframe-thumbnail'), {
+      thumbnail:true,
+      animateThumb: false,
+      showThumbByDefault: false
+    });
+    </script>
 
 
 </body>

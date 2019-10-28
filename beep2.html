@@ -10,6 +10,9 @@
   <link href="css/stylesheets.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- light gallery icons -->
+  <link href="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/css/lightgallery.css" rel="stylesheet">
+  <!-- tab icon -->
   <link rel="icon" href="img/me-icon.png">
 </head>
 <!-- Nav menu -->
@@ -165,10 +168,16 @@
          To make sure that user is experiencing not only story and time progression in the environment from morning to night, I made sure each area is dominated by a shade of colour palette to further reinforce a changing environment.
         </div>
       </div>
-      <div class="container centered">
-        <div class="grids-3"><img src="img/beep2/leveldesign.png" alt=""></div>
-        <div class="grids-3"><img src="img/beep2/leveldesign7.jpg" alt=""></div>
-        <div class="grids-3"><img src="img/beep2/levelprogression.jpg" alt=""></div>
+      <div class="container centered" id="leveldesign-thumbnails">
+        <a class="grids-3" href="img/beep2/leveldesign.png" data-sub-html="Initial level layout sketch made for the level designer">
+          <img src="img/beep2/leveldesign.png" alt="">
+        </a>
+        <a class="grids-3" href="img/beep2/leveldesign7.jpg" data-sub-html="Puzzle design sketches">
+          <img src="img/beep2/leveldesign7.jpg" alt="">
+        </a>
+        <a class="grids-3" href="img/beep2/levelprogression.jpg" data-sub-html="Initial planned level design colour and environment progression vs finalized level screenshots">
+          <img src="img/beep2/levelprogression.jpg" alt="">
+        </a>
       </div>
     </div>
 
@@ -183,24 +192,35 @@
         </div>
       </div>
       <div class="container centered">
-        <div class="grids-3"><img src="img/beep2/door.gif" alt=""></div>
         <div class="grids-3"><img src="img/beep2/door2.gif" alt=""></div>
         <div class="grids-3"><img src="img/beep2/door3.gif" alt=""></div>
         <div class="grids-3"><img src="img/beep2/grassGIF.gif" alt=""></div>
+        <div class="grids-3"><img src="img/beep2/turnaround.gif" alt=""></div>
+
       </div>
 
       <div class="fullW-text p-style padded-text">
         We first start by researching different styles, sketching it out, then creating it in Maya. Texturing is also done in Maya, then we would export it into Unity. After it is imported into Unity, a few more set up steps are needed, before it can be placed into the environment for interaction. Usually, different types of an environment object were created so my team can choose which they like best.
       </div>
-      <div class="container centered">
-        <div class="grids-3"><img src="img/beep2/doordesigns.jpg" alt=""></div>
-        <div class="grids-3"><img src="img/beep2/foliage1.jpg" alt=""></div>
-        <div class="grids-3"><img src="img/beep2/pillars2.png" alt=""></div>
-      </div>
-      <div class="container centered">
-        <div class="grids-3"><img src="img/beep2/topiary3.png" alt=""></div>
-        <div class="grids-3"><img src="img/beep2/wall.png" alt=""></div>
-        <div class="grids-3"><img src="img/beep2/wall3.png" alt=""></div>
+      <div class="container centered" id="model-thumbnails">
+        <a class="grids-3" href="img/beep2/doordesigns.jpg" data-sub-html="Door, doorframe, and pillar sketches made before modeling">
+          <img src="img/beep2/doordesigns.jpg" alt="">
+        </a>
+        <a class="grids-3" href="img/beep2/foliage1.jpg" data-sub-html="Different types of hanging leaves foliage">
+          <img src="img/beep2/foliage1.jpg" alt="">
+        </a>
+        <a class="grids-3" href="img/beep2/pillars2.png" data-sub-html="Pillar model and grass plane tested in 3D environment">
+          <img src="img/beep2/pillars2.png" alt="">
+        </a>
+        <a class="grids-3" href="img/beep2/topiary3.png" data-sub-html="Various sizes of topiary were made and can be modified to create a topiary wall if needed">
+          <img src="img/beep2/topiary3.png" alt="">
+        </a>
+        <a class="grids-3" href="img/beep2/wall.png" data-sub-html="Various maze wall textures were made to find the right eeriely, mystical, and aged atmosphere">
+          <img src="img/beep2/wall.png" alt="">
+        </a>
+        <a class="grids-3" href="img/beep2/wall3.png" data-sub-html="Wall texture are seamless with an alternate worn down version.">
+          <img src="img/beep2/wall3.png" alt="">
+        </a>
       </div>
 
       </div>
@@ -217,15 +237,19 @@
           I built multiple versions of level 2, helped set up 3D objects for other levels, and created the environment of level 4's entire map. From lighting, modeling, texturing, asset placement, and sound design, I worked closely with our puzzle designer, Josephine, to achieve the user experience we had envisioned.
         </div>
 
-        <div class="container centered">
-          <div class=""><img src="img/beep2/assetplacement.JPG" alt="fading animation shown between levels"></div>
-        </div>
-
-        <div class="container centered">
-          <div class="grids-3"><img src="img/beep2/lvlfive.png" alt="heiroglyph collection log UI system"></div>
-          <div class="grids-3"><img src="img/beep2/lvlfive2.png" alt="particle system near interactive object turns on when in camera view"></div>
-          <div class="grids-3"><img src="img/beep2/lvlfive5.jpg" alt="fading animation shown between levels"></div>
-
+        <div class="container centered" id="levelbuilding-thumbnails">
+          <a class="" href="img/beep2/assetplacement.JPG" data-sub-html="Initial level layout was colour coded, then using the layout map made by the level designer, I placed in environment objects">
+            <img src="img/beep2/assetplacement.JPG" alt="">
+          </a>
+          <a class="grids-3" href="img/beep2/lvlfive.png" data-sub-html="Initial maze level setup had different wall textures for testing and no light rendering yet.">
+            <img src="img/beep2/lvlfive.png" alt="Trying to find the right light level to convey a dark, underground area that is also easy for player to navigate through.">
+          </a>
+          <a class="grids-3" href="img/beep2/lvlfive2.png" data-sub-html="Final level rendering with wall texture and lighting baked.">
+            <img src="img/beep2/lvlfive2.png" alt="">
+          </a>
+          <a class="grids-3" href="img/beep2/lvlfive5.jpg" data-sub-html="">
+            <img src="img/beep2/lvlfive5.jpg" alt="">
+          </a>
         </div>
 
       </div>
@@ -242,11 +266,16 @@
       Our game's main feature is to communicate the gameplay diegetically without relying on any text. Therefore, sound plays an important role of giving player feedback, since we have very little UI elements. I focused on incorporating sound seamlessly so user can have a smooth experience while playing the game.
     </div>
 
-    <div class="container centered">
-
-      <div class="grids-3"><img src="img/beep2/ui2.jpg" alt="heiroglyph collection log UI system"></div>
-      <div class="grids-3"><img src="img/beep2/ui3.jpg" alt="particle system near interactive object turns on when in camera view"></div>
-      <div class="grids-3"><img src="img/beep2/ui.png" alt="fading animation shown between levels"></div>
+    <div class="container centered" id="sound-thumbnails">
+      <a class="grids-3" href="img/beep2/ui2.jpg" data-sub-html="Beginning cutscene sound were compiled, edited, and integrated into the 3D environment to create an immersive first impression">
+        <img src="img/beep2/ui2.jpg" alt="">
+      </a>
+      <a class="grids-3" href="img/beep2/ui3.jpg" data-sub-html="Question and exclamation mark UI have similar but unique SFX to indicate different hostility level.">
+        <img src="img/beep2/ui3.jpg" alt="">
+      </a>
+      <a class="grids-3" href="img/beep2/ui.png" data-sub-html="Initial UI sketch that was pitched to help translate instruction to the user without usage of text">
+        <img src="img/beep2/ui.png" alt="">
+      </a>
 
     </div>
   </div>
@@ -273,17 +302,23 @@
         <div class="half-img">
           <iframe title="beep game trailer" src='https://player.vimeo.com/video/330174515'></iframe>
         </div>
-
-
       </div>
 
-      <div class="container centered">
-        <div class="grids-3"><img src="img/beep2/lvltwo.jpg" alt="level 2 screenshot"></div>
-        <div class="grids-3"><img src="img/beep2/lvlfive4.png" alt="level 5 screenshot"></div>
-        <div class="grids-3"><img src="img/beep2/lvlfour.jpg" alt="level 4 screenshot"></div>
-        <figcaption>Screenshots</figcaption>
+      <div class="container centered" id="screenshot-thumbnails">
+        <a class="grids-3" href="img/beep2/lvltwo.jpg" data-sub-html="Level 2 screenshot" >
+          <img src="img/beep2/lvltwo.jpg" alt="level 2 screenshot">
+        </a>
+        <a class="grids-3" href="img/beep2/lvlfive4.png" data-sub-html="Level 4 screenshot" >
+          <img src="img/beep2/lvlfive4.png" alt="level 4 screenshot">
+        </a>
+        <a class="grids-3" href="img/beep2/lvlfour.jpg" data-sub-html="level 3 screenshot" >
+          <img src="img/beep2/lvlfour.jpg" alt="Level 3 screenshot">
+        </a>
+
       </div>
     </section>
+    <!-- end video/screenshots -->
+
 
 
   <footer id="footer" class="our-blue">
@@ -354,9 +389,29 @@
   <script src="js/dotsNav.js"></script>
   <script src="slick/slick.min.js"></script>
   <script src="js/beep-slides.js"></script>
-  <script src="js/smoothScrolling.js"></script>
+  <!-- <script src="js/smoothScrolling.js"></script> -->
+
+  <!-- lightgallery scripts -->
+    <script src="js/lightgallery/lightgallery.min.js"></script>
+    <!-- lightgallery plugins -->
+    <script src="js/lightgallery/lg-thumbnail.min.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-fullscreen.js/master/dist/lg-fullscreen.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-zoom.js/master/dist/lg-zoom.js"></script>
+
+    <script>
+    lightGallery(document.getElementById('leveldesign-thumbnails'), {
+        thumbnail:true});
+    lightGallery(document.getElementById('model-thumbnails'), {
+        thumbnail:true});
+    lightGallery(document.getElementById('levelbuilding-thumbnails'), {
+        thumbnail:true});
+    lightGallery(document.getElementById('sound-thumbnails'), {
+            thumbnail:true});
+    lightGallery(document.getElementById('screenshot-thumbnails'), {
+                thumbnail:true});
 
 
+    </script>
 </body>
 
 </html>
