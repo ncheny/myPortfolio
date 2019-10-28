@@ -1,9 +1,9 @@
 /* We can set up preprocessing to combine files */
 /* ------------- variables ------------- */
 /* ------------- body layout ------------- */
-@import url(illus.css);
 @import url(../slick/slick.css);
 @import url(../slick/slick-theme.css);
+@import url(lightgallery.css);
 body {
   font-family: 'Roboto Mono', sans-serif;
   /*padding: 1em;*/
