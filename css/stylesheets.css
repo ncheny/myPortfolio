@@ -369,7 +369,7 @@ figcaption {
     transition: 0.2s linear; }
 
 #bg-m2m {
-  background-image: url("../img/m2m/m2mBG.png");
+  background-image: url("../img/m2m/devices.png");
   background-size: 80%; }
   #bg-m2m:hover {
     background-size: 85%;
@@ -776,6 +776,9 @@ figure {
 #brg-header {
   background-image: url("../img/brg/BRGoutside.jpg"); }
 
+#m2m-header {
+  background-image: url("../img/m2m/m2mBG.jpg"); }
+
 #evidentp-header {
   background-image: url("../img/evidentpoint/headerimg.jpg"); }
 
@@ -821,6 +824,7 @@ figure {
 #evidentp-header:before,
 #videop-header:before,
 #brg-header:before,
+#m2m-header:before,
 #lunular-header:before,
 #eyexpo-header:before {
   content: "";
@@ -1082,6 +1086,7 @@ figure {
   #top #beep-header,
   #top #beep2-header,
   #top #brg-header,
+  #top #m2m-header,
   #top #lunular-header,
   #top #illustration-header,
   #top #cycle-header, #top #eyexpo-header,
@@ -1103,6 +1108,7 @@ figure {
   #top #beep2-header,
   #top #lunular-header,
   #top #brg-header,
+  #top #m2m-header,
   #top #cycle-header,
   #top #eyexpo-header,
   #top #illustration-header,
@@ -1113,6 +1119,7 @@ figure {
   #beep-header:before,
   #beep2-header:before,
   #brg-header:before,
+  #m2m-header:before,
   #lunular-header:before,
   #eyexpo-header:before,
   #evidentp-header:before,
