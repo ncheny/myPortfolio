@@ -1,7 +1,7 @@
 /* ------------- variables ------------- */
 $pink: #ff9787;
 $blue: #00c2e4;
-$black: black;
+$black: #181b20;
 $lightblue: #f0fbff;
 $shadow: 5px 5px 10px rgba(118, 143, 165, 0.47);
 
@@ -17,6 +17,16 @@ $shadow: 5px 5px 10px rgba(118, 143, 165, 0.47);
   // z-index: 1000;
   display: flex;
   position: relative;
+}
+
+#illustrations{
+  background-color: #f6faff;
+}
+
+.illus-headtext{
+margin: 5% 5% 5% 0;
+text-shadow: $shadow;
+color: $black;
 }
 
 // overwrites the one in main.scss
@@ -44,6 +54,8 @@ $shadow: 5px 5px 10px rgba(118, 143, 165, 0.47);
 }
 
 
+
+
 // RESIZING
 // larger than 1280px, resize:
 
@@ -66,7 +78,7 @@ $shadow: 5px 5px 10px rgba(118, 143, 165, 0.47);
 
   .column-flex{
     width: 100%;
-    height: 3500px;
+    height: 3605px;
   }
 }
 
@@ -77,7 +89,7 @@ $shadow: 5px 5px 10px rgba(118, 143, 165, 0.47);
 
   .column-flex{
     width: 100%;
-    height: 3000px;
+    height: 3060px;
   }
 }
 

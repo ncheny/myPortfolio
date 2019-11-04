@@ -80,9 +80,9 @@ figcaption{
 .head-1 {
   font-family: 'Roboto Mono', sans-serif;
   text-transform: uppercase;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.1rem;
   margin: 0;
-  font-size: 250%;
+  font-size: 200%;
   // display: inline-block;
   text-transform: uppercase;
   font-weight: bold;
@@ -382,12 +382,15 @@ figcaption{
   box-shadow: $shadow;
 
   .project-header {
-    margin: 5%;
+    margin: 4%;
     text-shadow: $shadow;
     color: $black;
+    max-width: 10rem;
     // margin: 5% 80% 5% 5%;
     // padding: 0.3rem;
     // background-color: white;
+    // writing-mode: vertical-lr;
+    // text-orientation: inherit;
   }
 }
 
@@ -401,7 +404,7 @@ figcaption{
   display: flex;
   transition: 0.2s linear;
   background-position: center;
-  width: 33%;
+  width: 27%;
 
   &:hover {
     background-color: lighten($blue, 5%);
@@ -581,15 +584,16 @@ figcaption{
 }
 
 footer .nav-title {
-  color: $black;
+  color: $blue;
   font-size: 1.2rem;
   margin-bottom: 1rem;
   width: 100%;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .nav-title:visited{
-  color: $black;
+  color: $blue;
 }
 
 .contact {
@@ -616,23 +620,34 @@ footer .nav-title {
   margin-top: 1rem;
 }
 
+.footer-link-section-title{
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 0.8rem;
+  color: $black;
+}
+
 .footer-link {
   font-family: 'Roboto Mono', sans-serif;
-  font-size: 0.9rem;
-  color: #f5f5f5;
+  font-size: 0.8rem;
+  color: $black;
   text-decoration: none;
-  opacity: 0.7;
+  opacity: 0.4;
   -o-transition: 0.2s linear;
   transition: 0.2s linear;
   -webkit-transition: 0.2s linear;
 }
 
-.footer-link:hover {
+.footer-link:hover,
+.nav-title:hover,
+.email:hover,
+.contact:hover {
   // font-size: 1rem;
+  color: $blue;
   -o-transition: 0.2s linear;
   transition: 0.2s linear;
   -webkit-transition: 0.2s linear;
   opacity: 1;
+text-shadow:$shadow;
 }
 
 .footer-top {
@@ -651,6 +666,13 @@ footer .nav-title {
   max-width: 30rem;
 }
 
+.footer-listings-section{
+  width: 60%;
+display: flex;
+flex-wrap: wrap;
+
+}
+
 .footer-listing {
   margin: 3%;
 
@@ -666,6 +688,14 @@ footer .nav-title {
   -ms-flex-pack: center;
   justify-content: center;
   background-color: #2a2a2a;
+}
+
+.copyright{
+  color: grey;
+  font-family: 'Roboto Mono', sans-serif;
+font-size: 0.7rem;
+text-decoration: none;
+letter-spacing: 0.3rem;
 }
 
 // icons////////////////////////////////

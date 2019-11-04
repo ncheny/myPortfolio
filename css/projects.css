@@ -52,6 +52,9 @@ figure {
 #beep-header {
   background-image: url("../img/beep/preview.jpg"); }
 
+#beep2-header {
+  background-image: url("../img/beep2/beepCover.jpg"); }
+
 #cycle-header {
   background-image: url("../img/streetbanners/preview.png"); }
 
@@ -59,13 +62,20 @@ figure {
   background-image: url("../img/eyexpo/preview.jpg"); }
 
 #brg-header {
-  color: red; }
+  background-image: url("../img/brg/BRGoutside.jpg"); }
+
+#m2m-header {
+  background-image: url("../img/m2m/m2mBG.jpg"); }
 
 #evidentp-header {
   background-image: url("../img/evidentpoint/headerimg.jpg"); }
 
 #videop-header {
   background-image: url("../img/videoproduction/header.png"); }
+
+#lunular-header {
+  background-color: #ffda5b;
+  background-image: url("../img/lunular/lunularheader.png"); }
 
 .header-text {
   width: 35%;
@@ -97,9 +107,13 @@ figure {
 
 #amorphous-header:before,
 #beep-header:before,
+#beep2-header:before,
 #cycle-header:before,
 #evidentp-header:before,
 #videop-header:before,
+#brg-header:before,
+#m2m-header:before,
+#lunular-header:before,
 #eyexpo-header:before {
   content: "";
   position: absolute;
@@ -146,8 +160,8 @@ figure {
   width: 30%; }
 
 .project-content {
-  padding-left: 7%;
-  width: 95%; }
+  padding: 7%;
+  width: 100%; }
 
 .text-content {
   margin: 0 10% 0 5%;
@@ -185,6 +199,10 @@ figure {
     transition: all 0.6s ease; }
     .scroll-down:hover .material-icons {
       padding: 0.8rem; }
+
+.blk-stroke {
+  border: 3px solid black;
+  color: black; }
 
 /* Carousel Caption text */
 .text {

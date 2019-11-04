@@ -65,6 +65,7 @@
 
 /*screen is smaller than 560px*/
 @media (max-width: 35em) {
+
   .left-nav,
   .right-nav {
     display: none;
@@ -131,8 +132,14 @@
     padding-bottom: 2rem;
   }
 
+  .footer-listings-section {
+    width: 100%;
+    margin: 0 5%;
+    padding-bottom: 2rem;
+  }
+
   .footer-listing {
-    width: 25%;
+    width: 23%;
   }
 
   // .top-link {
@@ -183,10 +190,11 @@
 @media (max-width: 50em) {
   .head-1 {
     font-size: 200%;
+    // max-width: auto;
   }
 
   .head-3 {
-    font-size: 80%;
+    font-size: 70%;
   }
 
   .half-img,
@@ -343,5 +351,23 @@
   }
   .step-short{
     width: 100%;
+  }
+
+  #projects .project-header {
+    margin: 25% 5% 11% 10%;
+        max-width: 25rem;
+        font-size: 250%;
+  }
+}
+
+// changing project row title
+// larger than 800px, less than 1476 px:
+
+@media only screen and (min-width : 800px) and (max-width: 1475px){
+
+#projects .project-header {
+  font-size: 120%;
+    writing-mode: vertical-lr;
+    text-orientation: inherit;
   }
 }

@@ -128,6 +128,7 @@ figure {
     position: relative;
     z-index: 100;
     padding-top: 50%;
+
   }
 }
 
@@ -225,8 +226,8 @@ figure {
 }
 
 .project-content {
-  padding-left: 7%;
-  width: 95%;
+  padding: 7%;
+  width: 100%;
 }
 
 .text-content {
@@ -273,6 +274,11 @@ max-width: 47rem;
       padding: 0.8rem;
     }
   }
+}
+
+.blk-stroke{
+  border: 3px solid black;
+  color: black
 }
 
 

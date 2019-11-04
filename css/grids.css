@@ -117,8 +117,6 @@
     padding: 30% 0 10% 10%; }
   body #citation {
     padding: 20% 0 0 10%; }
-  .step-short {
-    width: 100%; }
   .wide-text {
     width: 100%;
     max-width: 100%;
@@ -129,14 +127,17 @@
   .head-1 {
     font-size: 200%; }
   .head-3 {
-    font-size: 80%; }
+    font-size: 70%; }
   .half-img,
   .half-text {
     width: 100%; }
+  .grids-2 {
+    max-width: 50%;
+    height: auto; }
   .grids-3 {
     max-width: 100%;
     height: auto; }
-  .amorphous-cat-gif {
+  #animation .amorphous-cat-gif {
     max-width: 100%; }
   .half-text {
     margin: 0 4% 4% 0; }
@@ -158,6 +159,10 @@
   iframe {
     height: 20rem; }
   #top #beep-header,
+  #top #beep2-header,
+  #top #brg-header,
+  #top #m2m-header,
+  #top #lunular-header,
   #top #illustration-header,
   #top #cycle-header, #top #eyexpo-header,
   #top #evidentp-header,
@@ -166,19 +171,31 @@
     width: 100%; }
   #bg-amorphous,
   #bg-beep,
-  #bg-illus, #bg-banners, #bg-eyexpo, #bg-evidentp,
+  #bg-illus,
+  #bg-banners, #bg-eyexpo,
+  #bg-evidentp, #bg-brg,
+  #bg-lunular, #bg-m2m,
   #styleguide #bg-beep-1 {
     width: 100%;
     min-height: 10rem; }
   #top #amorphous-header,
   #top #beep-header,
+  #top #beep2-header,
+  #top #lunular-header,
+  #top #brg-header,
+  #top #m2m-header,
   #top #cycle-header,
   #top #eyexpo-header,
   #top #illustration-header,
   #top #evidentp-header {
-    min-height: 70vh; }
+    min-height: 70vh;
+    max-height: 70vh; }
   #amorphous-header:before,
   #beep-header:before,
+  #beep2-header:before,
+  #brg-header:before,
+  #m2m-header:before,
+  #lunular-header:before,
   #eyexpo-header:before,
   #evidentp-header:before,
   #cycle-header:before {
@@ -193,16 +210,30 @@
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
-    padding: 0 5%; }
+    padding: 0 5%;
+    margin-bottom: 15%; }
     .header-text .head-1 {
       padding-top: 10%; }
   .header-details {
     padding-top: 5%; }
-  #illustrations [class*="illus-"] {
-    width: 100%;
-    background-size: contain; }
+  .img2-block, .img3-block, .img4-block {
+    width: 100%; }
   .scroll-down {
     visibility: hidden;
     display: none; }
   .footer-link {
-    font-size: 0.7rem; } }
+    font-size: 0.7rem; }
+  .grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+  .cell {
+    width: calc(50% - 2rem); }
+  .step-short {
+    width: 100%; } }

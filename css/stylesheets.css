@@ -61,9 +61,9 @@ figcaption {
 .head-1 {
   font-family: 'Roboto Mono', sans-serif;
   text-transform: uppercase;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.1rem;
   margin: 0;
-  font-size: 250%;
+  font-size: 200%;
   text-transform: uppercase;
   font-weight: bold; }
 
@@ -318,9 +318,10 @@ figcaption {
   -webkit-box-shadow: 5px 5px 10px rgba(118, 143, 165, 0.47);
   box-shadow: 5px 5px 10px rgba(118, 143, 165, 0.47); }
   #projects .project-header {
-    margin: 5%;
+    margin: 4%;
     text-shadow: 5px 5px 10px rgba(118, 143, 165, 0.47);
-    color: black; }
+    color: black;
+    max-width: 10rem; }
 
 .project-row {
   min-height: 45vh; }
@@ -335,7 +336,7 @@ figcaption {
   -o-transition: 0.2s linear;
   transition: 0.2s linear;
   background-position: center;
-  width: 33%; }
+  width: 27%; }
   [id*="bg-"]:hover {
     background-color: #00d8fe;
     -webkit-box-shadow: 5px 5px 10px rgba(118, 143, 165, 0.47);
@@ -481,14 +482,15 @@ figcaption {
   margin-top: 5rem; }
 
 footer .nav-title {
-  color: black;
+  color: #00c2e4;
   font-size: 1.2rem;
   margin-bottom: 1rem;
   width: 100%;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: bold; }
 
 .nav-title:visited {
-  color: black; }
+  color: #00c2e4; }
 
 .contact {
   font-style: italic;
@@ -508,21 +510,31 @@ footer .nav-title {
 .email {
   margin-top: 1rem; }
 
+.footer-link-section-title {
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 0.8rem;
+  color: black; }
+
 .footer-link {
   font-family: 'Roboto Mono', sans-serif;
-  font-size: 0.9rem;
-  color: #f5f5f5;
+  font-size: 0.8rem;
+  color: black;
   text-decoration: none;
-  opacity: 0.7;
+  opacity: 0.4;
   -o-transition: 0.2s linear;
   transition: 0.2s linear;
   -webkit-transition: 0.2s linear; }
 
-.footer-link:hover {
+.footer-link:hover,
+.nav-title:hover,
+.email:hover,
+.contact:hover {
+  color: #00c2e4;
   -o-transition: 0.2s linear;
   transition: 0.2s linear;
   -webkit-transition: 0.2s linear;
-  opacity: 1; }
+  opacity: 1;
+  text-shadow: 5px 5px 10px rgba(118, 143, 165, 0.47); }
 
 .footer-top {
   padding: 1.5rem;
@@ -538,6 +550,14 @@ footer .nav-title {
   width: 40%;
   max-width: 30rem; }
 
+.footer-listings-section {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
 .footer-listing {
   margin: 3%; }
   .footer-listing li {
@@ -550,6 +570,13 @@ footer .nav-title {
   -ms-flex-pack: center;
   justify-content: center;
   background-color: #2a2a2a; }
+
+.copyright {
+  color: grey;
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 0.7rem;
+  text-decoration: none;
+  letter-spacing: 0.3rem; }
 
 .social-icon {
   max-width: 24px;
@@ -872,8 +899,8 @@ figure {
   width: 30%; }
 
 .project-content {
-  padding-left: 7%;
-  width: 95%; }
+  padding: 7%;
+  width: 100%; }
 
 .text-content {
   margin: 0 10% 0 5%;
@@ -911,6 +938,10 @@ figure {
     transition: all 0.6s ease; }
     .scroll-down:hover .material-icons {
       padding: 0.8rem; }
+
+.blk-stroke {
+  border: 3px solid black;
+  color: black; }
 
 /* Carousel Caption text */
 .text {
@@ -1024,8 +1055,12 @@ figure {
     width: 100%;
     margin: 0 5%;
     padding-bottom: 2rem; }
+  .footer-listings-section {
+    width: 100%;
+    margin: 0 5%;
+    padding-bottom: 2rem; }
   .footer-listing {
-    width: 25%; }
+    width: 23%; }
   .outlinks {
     font-size: 0.8rem; }
   .indented {
@@ -1052,7 +1087,7 @@ figure {
   .head-1 {
     font-size: 200%; }
   .head-3 {
-    font-size: 80%; }
+    font-size: 70%; }
   .half-img,
   .half-text {
     width: 100%; }
@@ -1161,4 +1196,16 @@ figure {
   .cell {
     width: calc(50% - 2rem); }
   .step-short {
-    width: 100%; } }
+    width: 100%; }
+  #projects .project-header {
+    margin: 25% 5% 11% 10%;
+    max-width: 25rem;
+    font-size: 250%; } }
+
+@media only screen and (min-width: 800px) and (max-width: 1475px) {
+  #projects .project-header {
+    font-size: 120%;
+    -webkit-writing-mode: vertical-lr;
+    -ms-writing-mode: tb-lr;
+    writing-mode: vertical-lr;
+    text-orientation: inherit; } }
