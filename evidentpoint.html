@@ -12,6 +12,9 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- tab icon -->
   <link rel="icon" href="img/me-icon.png">
+  <!-- light gallery icons -->
+  <link href="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/css/lightgallery.css" rel="stylesheet">
+
 </head>
 <!-- Nav menu -->
 
@@ -59,12 +62,12 @@
     <div class="container " id="top">
       <div class="header-text">
         <h1 class="head-1"> Evident Point</h1>
-        <div class="head-4"> UI and front end developer</div>
+        <div class="head-4"> UI and front end developer intern</div>
         <div class="p-style header-overview">
           Evident Point specializes in customized digital publishing for clients. During the co-op placement, I was responsible for developing UI for Active Textbook, which is a digital tool that let user annotate PDFs and e-books with various media.
         </div>
         <ul class="header-details p-style">
-          <li><strong>TASKS </strong> Research, conceptualization, creating mockups, page styling, identifying and fixing front end bugs </li>
+          <li><strong>TASKS </strong> Research, conceptualization, creating mockups, page styling, identifying and fixing front end bugs (quality assurance) </li>
           <li><strong>TOOLS </strong> HTML, SCSS, Javascript, Photoshop</li>
           <li><strong>CO-OP </strong></li>
           <li><strong>FALL 2016</strong> 4 Month</li>
@@ -128,6 +131,30 @@
               <img src="img/evidentpoint/Reportfilterfinal.jpg" alt="">
               <figcaption class="text">6. Final version that was approved</figcaption>
             </figure>
+            <figure>
+              <img src="img/evidentpoint/errorpage3.jpg" alt="">
+              <figcaption class="text">Redesigning error page for ActiveTextbook. Initial design doesn't have the branding logo of ActiveTextbook.</figcaption>
+            </figure>
+           <figure>
+              <img src="img/evidentpoint/errorpage1.jpg" alt="">
+              <figcaption class="text">Redesigning error page for ActiveTextbook. Concept 1: Adding links to direct user to a direct action. </figcaption>
+            </figure>
+            <figure>
+              <img src="img/evidentpoint/errorpage4.jpg" alt="">
+              <figcaption class="text">Redesigning error page for ActiveTextbook. Concept 2: Moving the links a bit closer for easier access.</figcaption>
+            </figure>
+            <figure>
+              <img src="img/evidentpoint/errorpage2.jpg" alt="">
+              <figcaption class="text">Redesigning error page for ActiveTextbook. Final design: avoiding duplicate action and feedback.</figcaption>
+            </figure>
+            <figure>
+              <img src="img/evidentpoint/book-info-mockup.jpg" alt="">
+              <figcaption class="text">Redesigning Book informaion page. Client required quiz feature need to be paired up with the book.</figcaption>
+            </figure>
+            <figure>
+              <img src="img/evidentpoint/book-info-mockup2.jpg" alt="">
+              <figcaption class="text">Redesigning Book informaion page. Final design: Book page shows all the quizzes' name, respective score, and finished date to user.</figcaption>
+            </figure>
           </div>
           <div class="ui-slides-nav">
             <img src="img/evidentpoint/Reportfilter.jpg" alt="">
@@ -136,6 +163,13 @@
             <img src="img/evidentpoint/Reportfilter4.jpg" alt="">
             <img src="img/evidentpoint/Reportfilter5.jpg" alt="">
             <img src="img/evidentpoint/Reportfilterfinal.jpg" alt="">
+            <img src="img/evidentpoint/errorpage3.jpg" alt="">
+            <img src="img/evidentpoint/errorpage1.jpg" alt="">
+            <img src="img/evidentpoint/errorpage4.jpg" alt="">
+            <img src="img/evidentpoint/errorpage2.jpg" alt="">
+            <img src="img/evidentpoint/book-info-mockup.jpg" alt="">
+            <img src="img/evidentpoint/book-info-mockup2.jpg" alt="">
+
           </div>
         </div>
 
@@ -171,16 +205,28 @@ Clients with different needs usually require new sets of UI icons to be made bas
         </div>
 
       </div>
-      <div class="container fullW-img">
-        <div style="max-width:10%; padding-right:0.5rem;"><img src="img/evidentpoint/settingsButtons.png" alt=""></div>
-        <div style="max-width:90%;"><img src="img/evidentpoint/buttons@2x.png" alt=""></div>
-      </div>
+      <div class="container fullW-img" id="icon-thumbnails">
+        <a href="img/evidentpoint/settingsButtons.png"style="max-width:10%; padding-right:0.5rem;">
+          <img src="img/evidentpoint/settingsButtons.png" alt="">
+        </a>
+        <a style="max-width:90%;" href="img/evidentpoint/buttons@2x.png">
+          <img src="img/evidentpoint/buttons@2x.png" alt="">
+        </a>
+        <a style="max-width:50%; padding-right:0.5rem;" href="img/evidentpoint/edit-sidebar-icons.png">
+          <img src="img/evidentpoint/edit-sidebar-icons.png" alt="">
+        </a>
+        <a style="max-width:50%;" href="img/evidentpoint/sidebar-icons.png">
+          <img src="img/evidentpoint/sidebar-icons.png" alt="">
+        </a>
     </div>
+  </div>
+  <!-- icons end -->
+  <!-- documentation start -->
 
     <div class="section indented fullW-text">
       <div class="container" id="">
-        <h2 class="head-2 step">Documentation</h2>
-        <div class="p-style">
+        <h2 class="head-2 step-short">Documentation</h2>
+        <div class="p-style wide-text">
 Throughout my placement, I had to navigate through the large codebase of the Active Textbook portal. Initially, it was daunting and confusing with many unused files and an outdated guide which made the onboarding period even longer and more frustrating. To tackle this problem, I worked with a senior developer on cleaning up the files and revamping the file structure, so it would match user’s mental map easier. By updating the documentation, the next co-op student wouldn’t have to spend as much time navigating the code base and other developers can also use the guide to make portal customization changes if need to.
         </div>
 
@@ -281,6 +327,17 @@ Throughout my placement, I had to navigate through the large codebase of the Act
   <script src="js/ep-slides.js"></script>
   <!-- <script src="js/smoothScrolling.js"></script> -->
 
+  <!-- lightgallery scripts -->
+    <script src="js/lightgallery/lightgallery.min.js"></script>
+    <!-- lightgallery plugins -->
+    <script src="js/lightgallery/lg-thumbnail.min.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-fullscreen.js/master/dist/lg-fullscreen.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-zoom.js/master/dist/lg-zoom.js"></script>
+
+    <script>
+    lightGallery(document.getElementById('icon-thumbnails'), {
+        thumbnail:true    });
+    </script>
 
 </body>
 
