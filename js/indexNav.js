@@ -13,14 +13,14 @@ var resume = document.querySelector( "#resume" );
 var width = document.documentElement.clientWidth;
 
 
-// if window is already less than 414 px, remove resume section
-if ( width < 414 ) {
+// if window is already less than 1441 px, remove resume section
+if ( width < 1441 ) {
   console.log( "Window width is less than 414px, hiding resume nav link" );
  resume.classList.add( "hidden" );
 };
 
 //add in resume nav link if window is wider than 414px
-if ( width > 414 ) {
+if ( width > 1441 ) {
  resume.classList.remove( "hidden" );
 };
 
@@ -28,11 +28,11 @@ if ( width > 414 ) {
 // add it back in if window is larger
 window.addEventListener( "resize", function() {
     var width = document.documentElement.clientWidth;
-    if ( width < 414 ) {
+    if ( width < 1441 ) {
     console.log( "Window width is less than 414px, hiding resume nav link" );
    resume.classList.add( "hidden" );
 
- }else if ( windowWidth > 414 ){
+ }else if ( windowWidth > 1441 ){
    console.log( "Window width is more than 414px, adding resume nav link");
    resume.classList.remove( "hidden" );
   }

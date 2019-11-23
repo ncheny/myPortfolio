@@ -77,6 +77,10 @@ figure {
   background-color: #ffda5b;
   background-image: url("../img/lunular/lunularheader.png"); }
 
+#gamejam-header {
+  background-color: #ffda5b;
+  background-image: url("../img/games/com-concept.png"); }
+
 .header-text {
   width: 35%;
   padding-left: 10%;
@@ -113,6 +117,7 @@ figure {
 #videop-header:before,
 #brg-header:before,
 #m2m-header:before,
+#gamejam-header:before,
 #lunular-header:before,
 #eyexpo-header:before {
   content: "";

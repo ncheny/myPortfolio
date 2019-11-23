@@ -414,6 +414,15 @@ figcaption {
     -o-transition: 0.2s linear;
     transition: 0.2s linear; }
 
+#bg-games {
+  background-image: url("../img/games/preview.png");
+  background-size: 60%; }
+  #bg-games:hover {
+    background-size: 66%;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear; }
+
 #bg-illus {
   background-image: url("../img/illustrations/preview.png");
   background-size: 80%; }
@@ -816,6 +825,10 @@ figure {
   background-color: #ffda5b;
   background-image: url("../img/lunular/lunularheader.png"); }
 
+#gamejam-header {
+  background-color: #ffda5b;
+  background-image: url("../img/games/com-concept.png"); }
+
 .header-text {
   width: 35%;
   padding-left: 10%;
@@ -852,6 +865,7 @@ figure {
 #videop-header:before,
 #brg-header:before,
 #m2m-header:before,
+#gamejam-header:before,
 #lunular-header:before,
 #eyexpo-header:before {
   content: "";
@@ -1126,6 +1140,7 @@ figure {
   #top #illustration-header,
   #top #cycle-header, #top #eyexpo-header,
   #top #evidentp-header,
+  #top #gamejam-header,
   .header-project #amorphous-header,
   .header-text {
     width: 100%; }
@@ -1133,7 +1148,7 @@ figure {
   #bg-beep,
   #bg-illus,
   #bg-banners, #bg-eyexpo,
-  #bg-evidentp, #bg-brg,
+  #bg-evidentp, #bg-brg, #bg-games,
   #bg-lunular, #bg-m2m,
   #styleguide #bg-beep-1 {
     width: 100%;
@@ -1146,6 +1161,7 @@ figure {
   #top #m2m-header,
   #top #cycle-header,
   #top #eyexpo-header,
+  #top #gamejam-header,
   #top #illustration-header,
   #top #evidentp-header {
     min-height: 70vh;
@@ -1158,7 +1174,8 @@ figure {
   #lunular-header:before,
   #eyexpo-header:before,
   #evidentp-header:before,
-  #cycle-header:before {
+  #evidentp-header:before,
+  #gamejam-header:before {
     display: none; }
   #bg-illus {
     background-size: 60%; }

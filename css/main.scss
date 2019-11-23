@@ -492,6 +492,16 @@ figcaption{
   }
 }
 
+#bg-games {
+  background-image: url("../img/games/preview.png");
+  background-size: 60%;
+
+  &:hover {
+    background-size: 66%;
+    transition: 0.2s linear;
+  }
+}
+
 #bg-illus {
   background-image: url("../img/illustrations/preview.png");
   background-size: 80%;

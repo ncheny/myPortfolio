@@ -259,6 +259,7 @@
   #top #illustration-header,
   #top #cycle-header,  #top #eyexpo-header,
   #top #evidentp-header,
+  #top #gamejam-header,
   .header-project #amorphous-header,
   .header-text {
     width: 100%;
@@ -268,7 +269,7 @@
   #bg-beep,
   #bg-illus,
   #bg-banners,#bg-eyexpo,
-  #bg-evidentp,#bg-brg,
+  #bg-evidentp,#bg-brg,#bg-games,
   #bg-lunular, #bg-m2m,
   #styleguide #bg-beep-1 {
     width: 100%;
@@ -283,6 +284,7 @@
   #top #m2m-header,
   #top #cycle-header,
   #top #eyexpo-header,
+  #top #gamejam-header,
   #top #illustration-header,
   #top #evidentp-header {
     min-height: 70vh;
@@ -298,7 +300,8 @@
   #lunular-header:before,
   #eyexpo-header:before,
   #evidentp-header:before,
-  #cycle-header:before {
+  #evidentp-header:before,
+  #gamejam-header:before {
     display: none;
   }
 
