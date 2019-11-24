@@ -29,6 +29,11 @@ text-shadow: $shadow;
 color: $black;
 }
 
+.illus-subtext{
+  color: grey;
+margin-top: 1rem;
+}
+
 // overwrites the one in main.scss
 .cell {
   display: block;

@@ -21,6 +21,10 @@
   text-shadow: 5px 5px 10px rgba(118, 143, 165, 0.47);
   color: #181b20; }
 
+.illus-subtext {
+  color: grey;
+  margin-top: 1rem; }
+
 .cell {
   display: block;
   width: 90%;
